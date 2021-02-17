@@ -13,3 +13,7 @@ Conteúdos das cadeiras da lincenciatura do curso Mestrado Integrado em Engenhar
 #### 2º SEMESTRE: <br/>
  - [Programação Imperativa](https://github.com/fliper6/MIEI-Licenciatura/tree/main/1%C2%BA%20ano/PI) <br/>
  - [Laboratórios de Informática II](https://github.com/fliper6/MIEI-Licenciatura/tree/main/1%C2%BA%20ano/LI2) <br/>
+ - [Lógica EI](https://github.com/fliper6/MIEI-Licenciatura/tree/main/1%C2%BA%20ano/2%C2%BA%20Semestre/LOG.%20EI) <br/>
+ - [Sistemas de Computação](https://github.com/fliper6/MIEI-Licenciatura/tree/main/1%C2%BA%20ano/2%C2%BA%20Semestre/SC) <br/>
+ - [Tópicos de Física Moderna](https://github.com/fliper6/MIEI-Licenciatura/tree/main/1%C2%BA%20ano/2%C2%BA%20Semestre/TFM) <br/>
+ - [Análise](https://github.com/fliper6/MIEI-Licenciatura/tree/main/1%C2%BA%20ano/2%C2%BA%20Semestre/ANALISE) <br/>
