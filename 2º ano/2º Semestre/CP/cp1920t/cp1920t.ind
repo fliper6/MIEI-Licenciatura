@@ -1,0 +1,60 @@
+\begin{theindex}
+
+  \item \LaTeX  , \hyperpage{1}
+    \subitem \texttt  {bibtex}, \hyperpage{2}
+    \subitem \texttt  {lhs2TeX}, \hyperpage{1}
+    \subitem \texttt  {makeindex}, \hyperpage{2}
+
+  \indexspace
+
+  \item C\IeC {\'a}lculo de Programas, \hyperpage{1, 2}
+    \subitem Material Pedag\IeC {\'o}gico, \hyperpage{1}
+      \subsubitem BTree.hs, \hyperpage{3}
+  \item Combinador ``pointfree''
+    \subitem \emph  {cata}, \hyperpage{11}
+    \subitem \emph  {either}, \hyperpage{12}
+
+  \indexspace
+
+  \item Fun\IeC {\c c}\IeC {\~a}o
+    \subitem $\pi _1$, \hyperpage{11}
+    \subitem $\pi _2$, \hyperpage{11, 12}
+    \subitem \emph  {length}, \hyperpage{7}, \hyperpage{12}
+    \subitem \emph  {map}, \hyperpage{11}
+    \subitem \emph  {uncurry}, \hyperpage{12}
+  \item Functor, \hyperpage{4}, \hyperpage{6--9}, \hyperpage{12, 13}
+
+  \indexspace
+
+  \item Haskell, \hyperpage{1, 2}, \hyperpage{6}, \hyperpage{9}
+    \subitem ``Literate Haskell'', \hyperpage{1}
+    \subitem Biblioteca
+      \subsubitem PFP, \hyperpage{8}
+      \subsubitem Probability, \hyperpage{7, 8}
+    \subitem Gloss, \hyperpage{2}, \hyperpage{9}, \hyperpage{13}
+    \subitem interpretador
+      \subsubitem GHCi, \hyperpage{2}, \hyperpage{8}
+    \subitem Monad
+      \subsubitem Random, \hyperpage{9}
+    \subitem QuickCheck, \hyperpage{2}
+
+  \indexspace
+
+  \item Mosaico de Truchet, \hyperpage{9}
+
+  \indexspace
+
+  \item N\IeC {\'u}meros naturais ($I\mskip -\thinmuskip \mskip -\thinmuskip N$), 
+		\hyperpage{11}
+
+  \indexspace
+
+  \item Programa\IeC {\c c}\IeC {\~a}o liter\IeC {\'a}ria, 
+		\hyperpage{1}
+
+  \indexspace
+
+  \item U.Minho
+    \subitem Departamento de Inform\IeC {\'a}tica, \hyperpage{1}
+
+\end{theindex}
