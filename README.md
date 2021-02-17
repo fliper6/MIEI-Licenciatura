@@ -4,8 +4,8 @@ Conteúdos de cadeiras (de programação) da lincenciatura do curso Mestrado Int
 ### 1º ANO: <br/>
 
 #### 1º SEMESTRE: <br/>
- - [Laboratórios de Informática I](https://github.com/fliper6/MIEI-Licenciatura/tree/main/1%C2%BA%20ano/LI1) <br/>
  - [Programação Funcional](https://github.com/fliper6/MIEI-Licenciatura/tree/main/1%C2%BA%20ano/PF) <br/>
+ - [Laboratórios de Informática I](https://github.com/fliper6/MIEI-Licenciatura/tree/main/1%C2%BA%20ano/LI1) <br/>
 #### 2º SEMESTRE: <br/>
  - [Programação Imperativa](https://github.com/fliper6/MIEI-Licenciatura/tree/main/1%C2%BA%20ano/PI) <br/>
  - [Laboratórios de Informática II](https://github.com/fliper6/MIEI-Licenciatura/tree/main/1%C2%BA%20ano/LI2) <br/>
