@@ -17,3 +17,14 @@ Conteúdos das cadeiras da lincenciatura do curso Mestrado Integrado em Engenhar
  - [Sistemas de Computação](https://github.com/fliper6/MIEI-Licenciatura/tree/main/1%C2%BA%20ano/2%C2%BA%20Semestre/SC) <br/>
  - [Tópicos de Física Moderna](https://github.com/fliper6/MIEI-Licenciatura/tree/main/1%C2%BA%20ano/2%C2%BA%20Semestre/TFM) <br/>
  - [Análise](https://github.com/fliper6/MIEI-Licenciatura/tree/main/1%C2%BA%20ano/2%C2%BA%20Semestre/ANALISE) <br/>
+
+### 2º ANO: <br/>
+
+#### 1º SEMESTRE: <br/>
+ - [Algoritmos e Complexidade](https://github.com/fliper6/MIEI-Licenciatura/tree/main/2%C2%BA%20ano/1%C2%BA%20Semestre/ALGC) <br/>
+ - [Arquitetura de Computadores](https://github.com/fliper6/MIEI-Licenciatura/tree/main/2%C2%BA%20ano/1%C2%BA%20Semestre/ARQC) <br/>
+ - [Comunicação de Dados](https://github.com/fliper6/MIEI-Licenciatura/tree/main/2%C2%BA%20ano/1%C2%BA%20Semestre/CD) <br/>
+ - [Estatística Aplicada](https://github.com/fliper6/MIEI-Licenciatura/tree/main/2%C2%BA%20ano/1%C2%BA%20Semestre/EA) <br/>
+ - [Engenharia Económica](https://github.com/fliper6/MIEI-Licenciatura/tree/main/2%C2%BA%20ano/1%C2%BA%20Semestre/EE) <br/>
+ - [Introdução aos Sistemas Dinâmicos](https://github.com/fliper6/MIEI-Licenciatura/tree/main/2%C2%BA%20ano/1%C2%BA%20Semestre/ISD) <br/>
+
