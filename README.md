@@ -28,3 +28,11 @@ Conteúdos das cadeiras da lincenciatura do curso Mestrado Integrado em Engenhar
  - [Engenharia Económica](https://github.com/fliper6/MIEI-Licenciatura/tree/main/2%C2%BA%20ano/1%C2%BA%20Semestre/EE) <br/>
  - [Introdução aos Sistemas Dinâmicos](https://github.com/fliper6/MIEI-Licenciatura/tree/main/2%C2%BA%20ano/1%C2%BA%20Semestre/ISD) <br/>
 
+#### 2º SEMESTRE: <br/>
+ - [Cálculo de Programas](https://github.com/fliper6/MIEI-Licenciatura/tree/main/2%C2%BA%20ano/2%C2%BA%20Semestre/CP) <br/>
+ - [Laboratórios de Informática III](https://github.com/fliper6/MIEI-Licenciatura/tree/main/2%C2%BA%20ano/2%C2%BA%20Semestre/LI3) <br/>
+ - [Eletromagnetismo](https://github.com/fliper6/MIEI-Licenciatura/tree/main/2%C2%BA%20ano/2%C2%BA%20Semestre/ELETRO) <br/>
+ - [Programação Orientada aos Objetos](https://github.com/fliper6/MIEI-Licenciatura/tree/main/2%C2%BA%20ano/2%C2%BA%20Semestre/POO) <br/>
+ - [Sistemas Operativos](https://github.com/fliper6/MIEI-Licenciatura/tree/main/2%C2%BA%20ano/2%C2%BA%20Semestre/SO) <br/>
+ - [Computação com R](https://github.com/fliper6/MIEI-Licenciatura/tree/main/2%C2%BA%20ano/2%C2%BA%20Semestre/R) <br/>
+
