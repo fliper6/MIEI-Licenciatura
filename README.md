@@ -36,3 +36,12 @@ Conteúdos das cadeiras da lincenciatura do curso Mestrado Integrado em Engenhar
  - [Sistemas Operativos](https://github.com/fliper6/MIEI-Licenciatura/tree/main/2%C2%BA%20ano/2%C2%BA%20Semestre/SO) <br/>
  - [Computação com R](https://github.com/fliper6/MIEI-Licenciatura/tree/main/2%C2%BA%20ano/2%C2%BA%20Semestre/R) <br/>
 
+### 3º ANO: <br/>
+
+#### 1º SEMESTRE: <br/>
+ - [Bases de Dados](https://github.com/fliper6/MIEI-Licenciatura/tree/main/3%C2%BA%20ano/1%C2%BA%20Semestre/BD) <br/>
+ - [Desenvolvimento de Sistemas de Software](https://github.com/fliper6/MIEI-Licenciatura/tree/main/3%C2%BA%20ano/1%C2%BA%20Semestre/DSS) <br/>
+ - [Modelos Determinísticos de Investigação Operacional](https://github.com/fliper6/MIEI-Licenciatura/tree/main/3%C2%BA%20ano/1%C2%BA%20Semestre/MDIO) <br/>
+ - [Métodos Numéricos e Otimização não Linear](https://github.com/fliper6/MIEI-Licenciatura/tree/main/3%C2%BA%20ano/1%C2%BA%20Semestre/MNOL) <br/>
+ - [Redes de Computadores](https://github.com/fliper6/MIEI-Licenciatura/tree/main/3%C2%BA%20ano/1%C2%BA%20Semestre/REDES) <br/>
+ - [Sistemas Distribuídos](https://github.com/fliper6/MIEI-Licenciatura/tree/main/3%C2%BA%20ano/1%C2%BA%20Semestre/SD) <br/>
