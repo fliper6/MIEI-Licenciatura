@@ -1,0 +1,13 @@
+4.c
+a.out
+ex3
+ex3.c
+ex4
+ex5
+ex5.c
+ex6.c
+execs.pdf
+guiao-03.pdf
+guiao3.c
+ola.txt
+pdf	ola.txt

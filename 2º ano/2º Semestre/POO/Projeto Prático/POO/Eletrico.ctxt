@@ -1,0 +1,11 @@
+#BlueJ class context
+comment0.target=Eletrico
+comment1.params=elet
+comment1.target=Eletrico(Eletrico)
+comment2.params=
+comment2.target=Eletrico()
+comment3.params=o
+comment3.target=boolean\ equals(java.lang.Object)
+comment4.params=
+comment4.target=Eletrico\ clone()
+numComments=5

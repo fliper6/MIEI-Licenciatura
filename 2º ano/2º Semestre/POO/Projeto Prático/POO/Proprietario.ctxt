@@ -1,0 +1,19 @@
+#BlueJ class context
+comment0.target=Proprietario
+comment1.params=proprietario
+comment1.target=Proprietario(Proprietario)
+comment2.params=
+comment2.target=Proprietario()
+comment3.params=
+comment3.target=java.util.ArrayList\ getQueue()
+comment4.params=queue
+comment4.target=void\ setQueue(java.util.List)
+comment5.params=alug
+comment5.target=void\ addQueue(Aluguer)
+comment6.params=o
+comment6.target=boolean\ equals(java.lang.Object)
+comment7.params=
+comment7.target=java.lang.String\ toString()
+comment8.params=
+comment8.target=Proprietario\ clone()
+numComments=9

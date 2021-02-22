@@ -1,0 +1,11 @@
+#BlueJ class context
+comment0.target=Hibrido
+comment1.params=hibrido
+comment1.target=Hibrido(Hibrido)
+comment2.params=
+comment2.target=Hibrido()
+comment3.params=o
+comment3.target=boolean\ equals(java.lang.Object)
+comment4.params=
+comment4.target=Hibrido\ clone()
+numComments=5

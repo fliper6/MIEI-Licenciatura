@@ -1,0 +1,14 @@
+Raciocínio: http://horstmann.com/sjsu/cs46a/bluej-linux/
+1) Sacar o Java SE deste site "https://www.oracle.com/technetwork/java/javase/downloads/index.html"
+   Extrair a pasta para a "Home" 
+   Inserir o comando "tar xvfz Downloads/jdk-12.0.1_linux-x64_bin.tar.gz" (aqui depende do nome do zip que extrairam)
+
+2) Sacar o BlueJ deste site (a versão para 'Other', mesmo que tenha Ubuntu/Debian "https://www.bluej.org/"
+   Inserir o comando "jdk-12.0.1/bin/java -jar Downloads/BlueJ-generic-421.jar" (aqui os nomes dependem do Java SE e BlueJ que instalam)
+    
+3) Vai abrir uma janela de instalação - mas ainda nos falta o JavaFX
+   Sacar o JavaFX do site "https://gluonhq.com/products/javafx/" (o JavaFX Linux SDK)
+   Extrair a pasta para a "Home" 
+   No instalador, na parte do JavaFX, pôr essa diretoria - e seguir em frente
+
+4) Inserir o comando "bluej/bluej" - o BlueJ vai abrir !
