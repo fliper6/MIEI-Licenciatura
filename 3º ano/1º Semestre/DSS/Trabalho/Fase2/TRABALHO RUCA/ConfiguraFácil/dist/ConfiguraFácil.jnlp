@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="ConfiguraFácil.jnlp">
+  <information>
+    <title>ConfiguraFácil</title>
+    <vendor>pc</vendor>
+    <description>null</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="ConfiguraFácil.jar" size="213465" download="eager" />
+    <jar href="lib\mysql-connector-java-5.1.45-bin.jar" size="999810" download="eager" />
+  </resources>
+  <application-desc main-class="Presentation.LoginFuncionario"  name="ConfiguraFácil" >
+  </application-desc>
+  <update check="always"/>
+</jnlp>

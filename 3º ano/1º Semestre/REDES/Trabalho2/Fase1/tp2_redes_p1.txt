@@ -1,0 +1,96 @@
+1) Prepare uma topologia no CORE para verificar o comportamento do traceroute. Ligue um host (servidor) s1 a um router r2; o router r2
+a um router r3, o router r3 a um router r4, que por sua vez, se liga a um host (pc) h5. (Note que pode não existir conectividade IP
+imediata entre s1 e h5 até que o routing estabilize). Ajuste o nome dos equipamentos atribuídos por defeito para a topologia do enunciado.
+	*print topologia*
+
+1.a) Active o wireshark ou o tcpdump no pc s1. Numa shell de s1, execute o comando traceroute -l para o endereço IP do host h5.
+	*Print consola*
+
+1.b) Registe e analise o tráfego ICMP enviado por s1 e o tráfego ICMP recebido como resposta. Comente os resultados face ao comportamento esperado.
+	*Print wireshark (filter "ICMP" + comment(fazer))*
+
+1.c) Qual deve ser o valor inicial mínimo do campo TTL para alcançar o destino h5? Verifique na prática que a sua resposta está correta.
+	Teoricamente, o valor inicial mínimo do campo TTL para alcançar o destino h5 deve ser 4.
+   	O datagrama efetua 4 saltos até chegar ao h5: - do s1 ao r2 (1)
+						   - do r2 ao r3 (2)
+						   - do r3 ao r4 (3)
+						   - do r4 ao h5 (4)
+     	Verificamos na prática (print) que o TTL mínimo é 4, pois na coluna info vemos que quando o TTL é inferior a 4 não se obtém resposta, mas a partir de 4 sim.
+
+1.d) Qual o valor médio do tempo de ida-e-volta (Round-Trip Time) obtido?
+	Para calcular o tempo médio de ida/volta, consideramos apenas as mensagens com um TTL >= 4, pois apenas essas chegam ao destino.
+	Como tal, há 7 mensagens de ida e 7 de volta.
+	Tempo médio de ida = 39.959973437 ms (o tempo varia muito pouco de uma mensagem para outra, aumentado sistematicamente, por isso consideramos o tempo
+do 4º mensagem - a do meio - como o tempo médio)
+	Tempo médio de volta = 39.959994732 ms (mesma lógica)
+	RTT = 39.959973437 (tempo média de ida) + 39.959994732 (tempo médio de chegada) = 79.919968169 ms (aprox. 79.92 ms)
+
+2.a) Qual é o endereço IP da interface ative do seu computador?
+	Para ver o IP da interface ativa do computador, ordenamos os packets por source e, com o filtro icmp aplicado, vemos o source IP do primeiro packet enviado
+(pelo nosso computador). 
+     Neste caso, é 192.168.100.196
+
+2.b) Qual é o valor do campo protocolo?
+	O valor do campo protocolo é ICMP (1).
+     O que identifica?
+	Identifica o pacote enviado, do tipo ICMP.
+
+2.c) Quantos bytes tem o cabeçalho IP(v4)?
+	Cabeçalho IP: 20 bytes (como se pode observar no print)
+     Quantos bytes tem o campo de dados (payload) do datagrama?
+	Campo de dados (payload): 36 bytes
+     Como se calcula o tamanho do payload?
+	Subtraimos o tamanho do cabeçalho IP - 20 - ao comprimento total (total length) - 56.
+
+2.d) O datagrama IP foi fragmentado? Justifique.
+	Não. Flags no print:
+		"More fragments: Not Set"
+		"Fragment offset: 0"
+	Logo o datagrama não foi fragmentado.
+
+2.e) (...) Para a sequência de mensagens ICMP enviadas pelo seu computador, indique que campos do cabeçalho IP variam de pacote para pacote.
+	O nosso computador envia 4 mensagens ICMP diferentes.
+    	A primeira mensagem é um ping enviado pelo pingplotter para testar a conectividade e não deve, portanto, ser considerada juntamente com os outras.
+     	Entre as restantes, variam a identificação e o time to live das mensagens.
+
+2.f) Observa algum padrão nos valores do campo de Identificação do datagrama IP e TTL?
+	Sim, nas mensagens ICMP enviadas pelo nosso computador estes valores são incrementados com cada datagrama.
+
+2.g) Qual é o valor do campo TTL?
+	Há 2 respostas ICMP TTL exceeded enviadas ao computador.
+	    TTL da primeira resposta: 64 ms
+	    TTL da segunda resposta: 254 ms
+     Esse valor permanece constante para todas as mensagens de resposta ICMP TTL exceeded enviados ao seu host? Porquê?
+    	Como podemos observar, o valor não permanece constante para todas as respostas ICMP TTL exceeded enviadas ao computador. Concluimos que é mais eficaz
+usar TTL's elevados para garantir que a mensagem chega ao destino, sendo que após a primeira tentativa falhada, o programa atribui um TTL maior à seguinte para 
+tentar garantir que chega ao destino.
+
+3) É necessário relembrar que a primeira mensagem ICMP enviada é um ping para testar a conectividade, logo esta e o primeiro bloco de fragmentos,
+no topo do print, não estão a vermelho no programa. Não devem ser consideradas.
+
+3.a) Localize a primeira mensagem ICMP. Porque é que houve necessidade de fragmentar o pacote inicial?
+	O tamanho máximo que se pode enviar num só pacote são 1500 bytes. Como se pretende enviar 4006 bytes de informação,
+não é possível enviar tudo de uma vez, logo é necessário fragmentar o pacote, neste caso em 3 fragmentos.
+
+3.b) Que informação no cabeçalho indica que o datagrama foi fragmentado?
+	O bit "More fragments" está set, indicando que o datagrama foi fragmentado e que ainda estão a chegar mais fragmentos.
+     Que informação no cabeçalho IP indica que se trata do primeiro fragmento?
+	O offset do fragmento é 0, logo é o primeiro fragmento.
+     Qual é o tamanho deste datagrama IP?
+	1500 bytes, como podemos observar através do parâmetro "Total Length".
+
+3.c) Que informação do cabeçalho IP indica que não se trata do primeiro fragmento?
+	O offset do fragmento em questão é 1480, o que significa que é o segundo fragmento.
+     Há mais fragmentos? O que nos permite afirmar isso?
+	Sim, o bit de "More fragments" está set, logo este ainda não é o último fragmento.
+
+3.d) Quantos fragmentos foram criados a partir do datagrama original?
+	Foram criados 3 fragmentos, sendo a mensagem ICMP o primeiro, mais as duas mensagens a seguir com a descrição "Fragmented IP protocol" na coluna "Info".
+     Como se detecta o último fragmento correspondente ao datagrama original?
+	É o fragmento cuja flag "More fragments" não esteja set.
+
+3.e) Indique, resumindo, os campos que mudam no cabeçalho IP entre os diferentes fragmentos, e explique a forma como esta informação permite reconstruir
+o datagrama original.
+	Os campos que mudam são o comprimento da mensagem (total length), o bit "More fragments", que indica se é ou não o último fragmento, e o offset
+do fragmento. A partir destas informações é possível saber o comprimento do datagrama original, somando os dos fragmentos, bem como a informação, se juntarmos
+a informação dos fragmentos pela ordem em que eles foram enviados, através do offset de cada um.

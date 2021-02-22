@@ -1,0 +1,93 @@
+% -----------------------------------------------------------------
+% FP5- Exerc. 6
+% Pretende-se calcular um valor aproximado do integral I de ln(1/x) em
+% [1,2]
+% (a) Use a regra de Simpson para obter uma aproximação de I com três casas
+% decimais correctas
+% (b) Sem calcular o valor exacto de I diga, justificando, se a aproximação
+%  calculada é por defeito ou por excesso
+% --------------------------------------------------------
+
+a =
+
+     1
+
+
+b =
+
+     2
+
+
+f =
+
+     Inline function:
+     f(x) = log(1./x)
+
+Se queremos calcular uma aproximação Isc de I com 3 casas decimais correctas,
+então |e(Isc)| <= 0.5*10^-3 -> tol = 0.5*10^-3
+
+tol =
+
+  5.0000e-004
+
+Devemos determinar qual o menor número de subintervalos que garante obter
+uma aproximação com erro de truncatura que não exceda, em valor absoluto, 0.5×10^(-3)
+Prima uma tecla para determinar n
+      
+|e(Isc)| <= M *(b-a)^5 /(180 n^4) <= tol, M = max |f^4(x)| em [1, 2], então
+o número mínimo de subintervalos n que garante |e(Isc)| <= tol
+ é dado por n >= raiz quarta de (M*(b-a)^4/(180*tol)
+               
+1º. Calcular M = max |f^4(x)| em [1, 2]
+Vamos estudar o comportamento da 4ª derivada de f(x) em [1,2]
+
+ 
+df4 =
+ 
+6/x^4
+ 
+Por análise do gráfico vemos que a 4ª derivada é decrescente e positiva em [1,2]
+|f^4(1)|=6, |f^4(2)|=0.375 então M =max |f^4(x)|=|f^4(1)| =6
+     
+2º. Determinar n - número mínimo de subintervalos que garante |e(Isc)| <= tol
+Prima uma tecla para determinar n
+      
+Como |e(Isc)| <= M *(b-a)^5 /(180 n^4) <= tol, então
+o número mínimo de subintervalos n que garante |e(Isc)| <= tol
+ é dado por n >= raiz quarta de (M*(b-a)^4/(180*tol)
+
+n =
+
+    2.8574
+
+Como n deve ser inteiro e par temos que aproximar o valor obtido
+pelo valor inteiro par mais próximo por excesso
+                  
+n = 4 é o menor número de subintervalos que garante |e(Isc)| <=tol
+ ----------------------------------------------
+            
+3º. Calcular o valor aproximado do integral usando a regra de Simpson
+composta com n subintervalos em [a, b]
+                  
+Prima uma tecla para calcular um valor aproximado do integral
+usando a regra de Simpson composta:
+                  
+                  
+O valor aproximado da integral, Isc = -0.386259562814567
+-----------------------------------------------------------------
+Sem calcular o valor exacto de I, é possivel dizer se o valor aproximado
+obtido para I é por excesso ou por defeito? Justifique
+Prima uma tecla para continuar
+Uma vez que a 4ª derivada é sempre positiva em [2,1]
+e(Isc) = -(b-a)/180 h^4 f^(4)(psi) < 0
+Como e(Isc) = I -Isc < 0 <=> I < Isc
+então a aproximação Isc de I é por excesso
+  
+Podemos confirmar os resultados porque sabemos calcular
+o valor do integral da função dada
+Prima uma tecla para continuar
+O valor do integral....................................I = -0.386294361119891
+O valor aproximado pelo regra de Simpson composta....Isc = -0.386259562814567
+O erro absoluto de Isc.....|e(Isc)|= |I - Isc|= 3.47983053236023e-005
+|e(Isc)| <= 0.0005
+Note que realmente a aproximação calculada é por excesso e que o erro é menor que 0.5*10^-3

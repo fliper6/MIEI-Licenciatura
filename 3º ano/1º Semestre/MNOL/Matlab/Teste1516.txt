@@ -1,0 +1,89 @@
+-----------------------------------------------------------------------------Exercício 1:
+a) Construa o polinómio p3(x), calcular B(8): p3(x) = 0.5417*x^3 + -14.25*x^2 + 125.9583*x -356.25, B(8) = 16.7500
+Command Window:
+>> x = [7, 9, 10, 11];
+>> y = [13, 18, 20, 26];
+>> p3 = polyfit(x,y,3);
+>> b8 = polyval (p3,8);
+
+b) NÃO SAI
+
+-----------------------------------------------------------------------------Exercício 2:
+a) Estime o valor de f(7.5) usando uma spline cúbica: f(7.5) = 20.352
+>> x=[1 2 3  5  7 9];
+>> y=[1 3 2 12 21 6];
+>> xx = spline(x,y,7.5)
+
+b) Escreva a expressão do segmento a que pertence x = 7.5: s5(x) = -0.45*(x-7)^3 -3*(x-7)^2 + 0.32*(x-7) + 21
+>> xx = spline(x,y)
+>> xx.coefs
+%escolher 5ª linha, sendo que 7.5 está contido no 5º intervalo (de 7 a 9) 
+ 
+c) Estime o valor de f(7.5) usando uma spline cúbica completa: f(7.5) = 13.939
+
+>> x=[1 2 3  5 7 9];
+>> y=[1 3 2 12 21 6];
+
+% Forçar derivada nas pontas
+>> d0 = (y(2)-y(1)) / (x(2)-x(1));
+>> dn = (y(6)-y(5)) / (x(6)-x(5));
+
+% "Eliminamos o 2º e penúltimo elemento"
+>> xx = spline (x([1,3:4,6]), [d0 y([1,3:4,6]) dn], 7.5);
+
+-----------------------------------------------------------------------------Exercício 3:
+a)Calcule uma aproximação à solução do integral com uma precisão de 10^(-10): z = -0.505402
+
+
+Editor:
+function [F]=QuadFunction(x)
+F=ln(x) ./ (1 + x); 
+end
+
+Command Window:
+>> z = quad('QuadFunction',0.1,1,1.e-10)
+
+-----------------------------------------------------------------------------Exercício 4:
+Editor:
+function F = Sistema_N_Linear_Equals_0(x)
+F(1) = (x(1)^6 - x(2)^3 - 0.5)* e^(-x(1)^2-x(2)^2);
+F(2) = 20*(x(1)^2 - x(2)^2) - 5;
+end
+
+Command Window:
+>> x0=[1.5 0.5];
+>> options = optimset('TolX',1.e-5,'TolFun',1.e-5);
+>> [x,f,e,o] = fsolve('Sistema_N_Linear_Equals_0',x0,options)
+
+
+Solução (10 casas decimais): x = 1.038427790549806  y =  0.910127574194777
+>> x
+
+Número de cálculos da função: 4
+>> o
+
+O processo convergiu?: Sim, porque a exitflag = 1.
+>> e
+
+-----------------------------------------------------------------------------Exercício 5:
+Editor:
+function F = Sistema_N_Linear_Equals_0(x)
+F(1) = x*sin(x/2) - 2;
+end
+
+Command Window:
+>> x0 = 5;
+>> options = optimset('TolX',1.e-12,'TolFun',1.e-12);
+>> [x,f,e,o] = fsolve('Sistema_N_Linear_Equals_0',x0,options)
+
+Aproximação à solução b (6 casas decimais): x =  5.545209
+
+Número de cálculos da função: 16 (no octave)
+>> o
+
+Número de iterações da função: 12 (no octave)
+>> o
+
+O processo convergiu?: Sim, porque a exitflag = 1.
+>> e
+-----------------------------------------------------------------------------Exercício 6,7,8: NÃO SAI

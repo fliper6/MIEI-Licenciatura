@@ -1,0 +1,50 @@
+1.a) Indique que endereços IP e máscaras de rede foram atribuídos pelo CORE aos diversos equipamentos da topologia.
+	Copiar IPs e máscaras do print.
+
+1.b) Trata-se de endereços públicos ou privados? Porquê?
+	Os endereços IP privados encontram-se nas seguintes gamas de valores:
+		10.0.0.0 - 10.255.255.255
+		172.16.0.0 - 172.31.255.255
+		192.168.0.0 - 192.168.255.255
+	Como podemos observar no print, os nossos endereços tratam-se de IP privados, pois estão contidos no terceiro intervalo mencionado.
+
+1.c) Por que razão não é atribuído um endereço IP aos switches?
+	Nesta arquitetura, não é atribuído um IP aos switches porque eles são unmanaged, isto é, switches sem opção de configuração,
+usados para pequenas networks. Neste caso, não há necessidade de ter switches com IP sendo que se trata de uma ligação de apenas
+3 dispositivos (PCs) com o router.
+
+1.d) *print*
+
+1.e) *print*
+
+2.a) Inclua no seu relatório as tabelas de encaminhamento obtidas; interprete as várias entradas de cada tabela.
+	Tabela do router b:
+	- Quando o destino é um IP da rede local do router, o pacote é enviado diretamente. A gateway nestas linhas da tabela
+é 0.0.0.0 porque não é necessário fazer nenhum salto para alcançar o destino.
+	- Para alcançar os outros destinos já é necessário indicar o próximo salto na gateway, que equivale a um dos IPs
+da interface dos routers adjacentes a que está ligado.
+
+	Tabela do portátil n9:
+	- O portátil envia pacotes para o router (primeira linha da tabela) através da interface do router b, a que se encontra
+conectado.
+	- O router depois reencaminha-os para os outros portáteis da rede local (segunda linha).
+
+2.b) Diga, justificando, se está a ser usado encaminhamento estático ou dinâmico.
+	Está a ser usado encaminhamento estático, pois as tabelas possuem um caminho por defeito (default - 0.0.0.0). Este é um
+caso específico de encaminhamento estático, e constitui a rota a seguir caso não haja uma entrada específica na tabela para a rede de destino.
+
+2.c) Admita que, por questões administrativas, a rota por defeito (0.0.0.0 ou default) deve ser retirada
+definitivamente da tabela de encaminhamento do servidor S1 localizado no departamento A. Que implicação tem esta
+medida para os utilizadores da empresa que acedem ao servidor? Justifique
+	*print consola*
+	Utilizamos o comando "route del default gw 0.0.0.0".
+	O servidor S1 continua a ser capaz de comunicar com os restantes portáteis da subrede local do departamento A (10.0.0.0), todavia
+deixa de conseguir alcançar o router A.
+
+2.d) Adicione as rotas estáticas necessárias para restaurar a conectividade para o servidor S1 por forma a contornar a restrição imposta
+na alínea c). Utilize para o efeito o comando route add e registe os comandos que usou. 
+	Criar uma rota estática do servidor S1 a cada um dos outros routers. Tirar print.
+
+2.e) Teste a nova política de encaminhamento garantindo que o servidor está novamente acessível utilizando para o efeito o comando ping.
+Registe a nova tabela de encaminhamento do servidor.
+	*Tirar print dos pings em cada consola e da nova tabela*

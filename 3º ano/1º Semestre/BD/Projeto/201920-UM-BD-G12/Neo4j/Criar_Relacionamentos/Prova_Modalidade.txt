@@ -1,0 +1,6 @@
+LOAD CSV WITH HEADERS FROM 'file:///Prova.csv' AS line
+MATCH (prova:Prova {idProva: ToInteger(line.idProva) })
+MATCH (modalidade:Modalidade {idModalidade: ToInteger(line.idModalidade) })
+
+CREATE (prova)-[:Possui]->(modalidade)
+RETURN prova, modalidade

@@ -1,0 +1,5 @@
+LOAD CSV WITH HEADERS FROM 'file:///Categoria.csv' AS line
+CREATE (categoria:Categoria {idCategoria: toInteger(line.idCategoria)})
+SET categoria.idModalidade = toInteger(line.idModalidade),
+    categoria.designacao = line.designacao
+RETURN categoria;

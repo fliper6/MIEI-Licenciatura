@@ -1,0 +1,7 @@
+LOAD CSV WITH HEADERS FROM 'file:///Multa.csv' AS line
+CREATE (multa:Multa {idMulta: toInteger(line.idMulta)})
+SET multa.flag = line.flag,
+    multa.valor = toFloat(line.valor),
+    multa.idTeste = toInteger(line.idTeste),
+    multa.idAtleta = toInteger(line.idAtleta)
+RETURN multa;

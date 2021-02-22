@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="683b98c8-3bd8-4524-8661-1dd580cfdf74" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1SEhIYOnwhJKbM1l2aaI0BPVNwZ" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="settings.editor.selected.configurable" value="terminal" />
+  </component>
+  <component name="RunManager">
+    <configuration name="Unnamed" type="Application" factoryName="Application" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Main" />
+      <module name="Guiao_3" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="683b98c8-3bd8-4524-8661-1dd580cfdf74" name="Default Changelist" comment="" />
+      <created>1571134582441</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1571134582441</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="461" y="154" width="424" height="480" key="FileChooserDialogImpl" timestamp="1575140942399">
+      <screen x="0" y="28" width="1366" height="740" />
+    </state>
+    <state x="461" y="154" width="424" height="480" key="FileChooserDialogImpl/0.28.1366.740@0.28.1366.740" timestamp="1575140942399" />
+    <state x="172" y="33" key="SettingsEditor" timestamp="1575141013885">
+      <screen x="0" y="28" width="1366" height="740" />
+    </state>
+    <state x="172" y="33" key="SettingsEditor/0.28.1366.740@0.28.1366.740" timestamp="1575141013885" />
+    <state x="339" y="225" key="com.intellij.ide.util.TipDialog" timestamp="1575371444229">
+      <screen x="0" y="28" width="1366" height="740" />
+    </state>
+    <state x="339" y="225" key="com.intellij.ide.util.TipDialog/0.28.1366.740@0.28.1366.740" timestamp="1575371444229" />
+    <state x="0" y="28" width="1356" height="736" key="new project wizard" timestamp="1575372522991">
+      <screen x="0" y="28" width="1366" height="740" />
+    </state>
+    <state x="0" y="28" width="1356" height="736" key="new project wizard/0.28.1366.740@0.28.1366.740" timestamp="1575372522991" />
+  </component>
+</project>

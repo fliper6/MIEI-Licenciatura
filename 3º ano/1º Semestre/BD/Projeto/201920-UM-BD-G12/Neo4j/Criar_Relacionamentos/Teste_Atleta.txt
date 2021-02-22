@@ -1,0 +1,6 @@
+LOAD CSV WITH HEADERS FROM 'file:///Teste.csv' AS line
+MATCH (teste:Teste {idTeste: ToInteger(line.idTeste) })
+MATCH (atleta:Atleta {idAtleta: ToInteger(line.idAtleta) })
+
+CREATE (teste)-[:Feito_a]->(atleta)
+RETURN teste, atleta

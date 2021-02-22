@@ -1,0 +1,78 @@
+% -----------------------------------------------------------------
+% FP5- Exerc. 2
+% Pretendese aproximar o integral I=int(exp(x^2)) dx em [0,1]
+% (a) Usando a regra dos trapézios composta, com o menor número de subintervalos possível,
+%  aproxime I por forma a que o erro de truncatura cometido não exceda, em valor absoluto,
+%  0.5×10^(-2). Sem calcular o valor exacto de I, é possível dizer se o valor aproximado obtido
+%  para I é por excesso ou por defeito? Justifique.
+%  b) Obtenha aproximações para o valor do integral I, usando as fórmulas de quadratura de
+%  Gauss, com 2,3,4 e 5 pontos.
+% --------------------------------------------------------
+
+
+a =
+     0
+b =
+     1
+f =
+     Inline function:
+     f(x) = exp(x.^2)
+tol =
+    5.000000000000000e-003
+
+Passo 1: Calcular máximo de |f''(x)| em [a, b]
+Prima uma tecla para calcular M =  max |f''(x)| em [a, b]
+ 
+df2 =
+2*exp(x^2) + 4*x^2*exp(x^2)
+ 
+O valor maximo, M = 16.306097 de |f''(x)| se atinge em x =0.99993389
+                  
+Outra variante para determinar M é analizar o gráfico de f''(x) em [0,1]
+Por análise do gráfico vemos que a 2ª derivada é crescente e positiva
+em [0,1]. Logo |f''(x)| <=  f''(1)= M 
+     
+Passo 2: Determinar n - número mínimo de subintervalos que garante |e(Itc)| <= tol
+Prima uma tecla para determinar n
+      
+Como |e(Itc)| <= M *(b-a)^3 /(12 n^2) <= tol, então
+o número mínimo de subintervalos n que garante |e(Itc)| <= tol
+ é dado por n >= sqrt(M*(b-a)^3/(12*tol)
+
+n =
+    1.648539630253053e+001
+
+Como n deve ser inteiro temos que aproximar o valor obtido pelo valor inteiro mais próximo por excesso
+                  
+n = 17 é o menor número de subintervalos que garante |e(Itc)| <= tol
+ ----------------------------------------------
+            
+Passo 3: Calcular o valor aproximado do integral usando a regra dos trapezios
+composta com n subintervalos em [a, b]
+                  
+Prima uma tecla para calcular um valor aproximado do integral
+usando a regra dos trapézios composta:
+                  
+-----------------------------------------------------------------
+                  
+O valor aproximado do integral, Itc = 1.46421847958827
+-----------------------------------------------------------------
+Sem conhecer o valor real do integral I podemos concluir que esta
+aproximação é por excesso. Como e(Itc) = - ((b-a)^3 /12 *n^2) * max f''(x)
+e f''(x)> 0 em [0,1], então e(Itc) = I -Itc < 0 <=> I < Itc
+      
+Podemos ainda confirmar se para a aproximação Itc de I o erro não excede em
+valor absoluto o valor da tolerancia dada calculando o valor do integral da função
+      
+
+O valor do integral..................I = 1.46265174590718
+O valor aproximado da integral.....Itc = 1.46421847958827
+O erro absoluto.....|e(Itc)|= |I - Itc|= 0.00156673368108917
+O erro é menor que a tolerancia: 0.005
+      
+Prima um tecla para determinar aproximações para o valor do integral I,
+usando as fórmulas de quadratura de Gauss, com 2,3,4 e 5 pontos
+Com n=2 pontos.....:   IG = 1.4541678892456
+Com n=3 pontos.....:   IG = 1.46240971153464
+Com n=4 pontos.....:   IG = 1.46264681564911
+Com n=5 pontos.....:   IG = 1.46265166791671

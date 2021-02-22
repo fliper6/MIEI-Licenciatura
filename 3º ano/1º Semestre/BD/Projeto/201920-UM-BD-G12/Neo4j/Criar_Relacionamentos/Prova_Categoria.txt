@@ -1,0 +1,6 @@
+LOAD CSV WITH HEADERS FROM 'file:///Prova.csv' AS line
+MATCH (prova:Prova {idProva: ToInteger(line.idProva) })
+MATCH (categoria:Categoria {idCategoria: ToInteger(line.idCategoria) })
+
+CREATE (prova)-[:Possui]->(categoria)
+RETURN prova, categoria

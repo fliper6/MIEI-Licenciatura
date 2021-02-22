@@ -1,0 +1,97 @@
+% -----------------------------------------------------------------
+%   FP4 - Exerc. 1
+% Dada a função 4/(4*x+1) e o seguinte suporte de interpolação
+%             x | 0  0.25  0.5  0.75  1
+%             y | 4  2     4/3  1   0.8
+% (b) Obtenha o polinómio interpolador de Newton de grau menor ou
+%     igual a 4 que interpola f no intervalo [0, 1] .
+%     Calcule, a partir desse polinómio, aproximações para 
+%            f(0.125), f(0.3), f(0.65) e f(0.9). 
+%     Indique majorantes dos erros absolutos de interpolação 
+%     cometidos nas aproximações anteriores.
+% b) Visualize num único gráfico a função e o polinómio interpolador.
+% ------------------------------------------------------------------
+
+f =
+     Inline function:
+     f(x) = 4./(4*x+1)
+a =
+     0
+b =
+     1
+
+Nós de interpolação: 
+
+X =
+         0    0.2500    0.5000    0.7500    1.0000
+
+Valores nodais: 
+
+Y =
+    4.0000    2.0000    1.3333    1.0000    0.8000
+
+Coeficientes do Polinómio de Newton: 
+Tabela das diferenças divididas
+   -8.0000   10.6667  -10.6667    8.5333
+   -2.6667    2.6667   -2.1333         0
+   -1.3333    1.0667         0         0
+   -0.8000         0         0         0
+
+c =
+
+    4.0000   -8.0000   10.6667  -10.6667    8.5333
+
+Prima uma tecla para calcular aproximações para: 
+
+xp =
+
+    0.1250    0.3000    0.6500    0.9000
+
+Valores da função f(x)= 4/4*x+1 em xp:
+
+yf =
+
+   2.666666666666667   1.818181818181818   1.111111111111111   0.869565217391304
+
+Aproximações pelo polinómio de Newton: 
+Tabela das diferenças divididas
+  -8.000000000000000  10.666666666666666 -10.666666666666664   8.533333333333330
+  -2.666666666666667   2.666666666666668  -2.133333333333335                   0
+  -1.333333333333333   1.066666666666666                   0                   0
+  -0.800000000000000                   0                   0                   0
+
+
+yp =
+   2.739583333333334   1.803520000000000   1.124053333333333   0.843520000000000
+
+Erro absoluto das aproximações:
+
+e =
+   0.072916666666667   0.014661818181818   0.012942222222222   0.026045217391304
+
+Prima uma tecla para indicar os majorantes dos erros absolutos de interpolação:
+Espere....
+
+n =
+     4
+ 
+df =
+-491520/(4*x + 1)^6
+ 
+Para determinar M podemos analizar o gráfico de f^{n+1}(x) em [0,1]
+Por análise do gráfico vemos que f^{(n+1)}(x) é crescente e toda negativa em [0,1]
+pelo que o max de |f^{(n+1)}(x)| se atinge em x=0
+
+M =
+     491520
+wn =
+     Inline function:
+     wn(x,X) = (x-X(1)).*(x-X(2)).*(x-X(3)).*(x-X(4)).*(x-X(5))
+
+IM =
+  13.125000000000000   3.870719999999999   5.591040000000000  14.376960000000002
+
+|e(0.125)| <= 13.125000000000000
+| e(0.3) | <=  3.870719999999999
+| e(0.65)| <=  5.591040000000000
+| e(0.9) | <= 14.376960000000002

@@ -1,0 +1,11 @@
+LOAD CSV WITH HEADERS FROM 'file:///Prova.csv' AS line
+CREATE (prova:Prova {idProva: toInteger(line.idProva)})
+SET prova.idModalidade = toInteger(line.idModalidade),
+    prova.idCategoria = toInteger(line.idCategoria),
+    prova.nome = line.nome,
+    prova.flag = toInteger(line.flag),
+    prova.data = line.data,
+    prova.vencedor1 = toInteger(line.vencedor1),
+    prova.vencedor2 = toInteger(line.vencedor2),
+    prova.vencedor3 = toInteger(line.vencedor3)
+RETURN prova;

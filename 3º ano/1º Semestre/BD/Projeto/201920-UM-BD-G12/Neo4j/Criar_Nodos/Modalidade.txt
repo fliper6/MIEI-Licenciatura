@@ -1,0 +1,5 @@
+LOAD CSV WITH HEADERS FROM 'file:///Modalidade.csv' AS line
+CREATE (modalidade:Modalidade {idModalidade: toInteger(line.idModalidade)})
+SET modalidade.designacao = line.designacao,
+    modalidade.genero = line.genero
+RETURN modalidade;

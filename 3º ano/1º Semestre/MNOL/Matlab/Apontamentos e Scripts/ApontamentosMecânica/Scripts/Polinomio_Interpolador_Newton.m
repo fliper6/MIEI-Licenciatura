@@ -1,0 +1,16 @@
+﻿x  1 3  4  7  9  10 11
+f  8 10 10 13 18 20 26
+
+Estimar x=8 com um polinómio interpolador de Newton de grau 3.
+
+
+Grau 3 -> 4 pontos mais próximos de 8 -> 7 9 10 11
+
+>> x = [1 3 4 7 9 10 11];
+>> f = [8 10 10 13 18 20 26];
+>> p3 = polyfit(x(4:7),f(4:7),3) %dá o polinómio
+
+p3(x) = 0.54167x^3 + -14.25000x^2 + 125.95833x - 356.25000
+
+>> polyval(p3,8) %estima f(8)
+ans =  16.750

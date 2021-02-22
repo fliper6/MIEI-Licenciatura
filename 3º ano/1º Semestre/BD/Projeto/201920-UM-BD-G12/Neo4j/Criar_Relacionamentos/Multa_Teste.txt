@@ -1,0 +1,6 @@
+LOAD CSV WITH HEADERS FROM 'file:///Multa.csv' AS line
+MATCH (multa:Multa {idMulta: ToInteger(line.idMulta) })
+MATCH (teste:Teste {idTeste: ToInteger(line.idTeste) })
+
+CREATE (multa)-[:Associada]->(teste)
+RETURN multa, teste

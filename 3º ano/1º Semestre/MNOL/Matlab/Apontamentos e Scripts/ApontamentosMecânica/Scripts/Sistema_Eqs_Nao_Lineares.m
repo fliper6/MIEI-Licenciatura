@@ -1,0 +1,19 @@
+﻿Sistema:
+	(x^6-y^3-0.5)*e^(-x^2-y^2) = 0
+	20(x^2-y^2) = 5
+
+Aproximação inicial (1.5,0.5)
+TolX = 10^-7 e TolFun = 10^-5.
+
+function[F] = teste(x)
+F(1) = (x(1)^6-x(2)^3-0.5)*exp(-x(1)^2-x(2)^2);
+F(2) = 20*(x(1)^2-x(2)^2)-5;
+end
+
+>> op = optimset('TolX', 1.e-7, 'TolFun', 1.e-5);
+>> [x,fval,exitflag,output] = fsolve('teste',[1.5 0.5],op)
+x* = 1.03842841909  y* = 0.9101283325
+
+Número de cálculos da função: funcCount: 15
+
+O processo convergiu? Sim, exitflag = 1.

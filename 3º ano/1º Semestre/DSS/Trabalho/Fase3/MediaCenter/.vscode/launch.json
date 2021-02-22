@@ -1,0 +1,25 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Controller",
+            "request": "launch",
+            "mainClass": "View.Controller",
+            "projectName": "MediaCenter_787b29bc"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - View",
+            "request": "launch",
+            "mainClass": "View.View",
+            "projectName": "MediaCenter_787b29bc"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - App",
+            "request": "launch",
+            "mainClass": "Teste.App",
+            "projectName": "MediaCenter_787b29bc"
+        }
+    ]
+}

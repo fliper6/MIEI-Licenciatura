@@ -1,0 +1,17 @@
+- Terminação quadrática: se tivermos uma funçao quadratica com N variáveis, o algoritmo que tem esta terminação
+termina o processo iterativo no máximo em N iterações.
+
+x1^2 + x2^2 => 2 iteraçoes
+
+- O gradiente aponta sempre para sentido crescente da função. Se esse é o caso, o simétrico dele devia apontar 
+sempre para o sentido de decréscimo da função.
+Porque é que não é usado sempre o simétrico?
+Porque isso daria convergencia linear, ficava muito mais lento se fosse sempre assim. Also, os de newton são 
+quadráticos, que são muito mais rápidos que isso, por isso é que no processo iterativo quando tens "direções más"
+no pior dos casos tens a garantia do (-gradiente) : direção má MAS tens a salvaguarda que vai no sentido de decréscimo.
+
+- Porque é que está tudo ao quadrado e não módulo nos MQ?
+Porque os negativos cortam e podem dar modelos irrealistas  ==> quadrado, o módulo funcionaria MAS traz problemas 
+de diferenciabilidade (nem permite até) por isso não se usa.
+
+

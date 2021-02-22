@@ -1,0 +1,27 @@
+%Considere a equação f(x)= 1 -x tan(x) =0 para x ?0. 
+% Localize graficamente as duas menores raízes positivas. 
+
+x= linspace(0,5)
+y1=1./x
+y2=tan(x)
+figure(1)
+hold on
+axis([0  5 0 5]) 
+plot(x,y1,'r', x, y2, 'b')
+grid on
+
+% podemos determinar as raízes com fzero
+f=inline('1-x.*tan(x)');
+r1=fzero(f, [0.5 1])
+r2=fzero(f, [3, 3.5])
+
+plot(r1, 0, 'or', r2, 0, 'or')
+
+% desenhamos agora os pontos de intersecção
+
+plot(r1, tan(r1), 'or', r2, tan(r2), 'or')
+
+display('A menor raíz positiva encontra-se no interval
+
+
+

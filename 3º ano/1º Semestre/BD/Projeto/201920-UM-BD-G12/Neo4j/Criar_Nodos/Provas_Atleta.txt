@@ -1,0 +1,4 @@
+LOAD CSV WITH HEADERS FROM 'file:///Provas_Atleta.csv' AS line
+CREATE (provas_atleta:Provas_Atleta {idProva: toInteger(line.idProva)})
+SET provas_atleta.idAtleta = toInteger(line.idAtleta)
+RETURN provas_atleta;

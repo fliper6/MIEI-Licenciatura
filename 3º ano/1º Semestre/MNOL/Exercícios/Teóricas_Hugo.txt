@@ -1,0 +1,28 @@
+Perguntas teóricas:
+
+Mínimos quadrados:
+  No modelo polinomial, estamos a calcular o polinomio interpolador se
+	- nr pontos = n+1, n = grau do polinomio
+	- nr parametros = nr pontos
+
+Determinacao da convergencia quadratica:
+  - problema quadratico converge no maximo em n iteracoes
+  - chega a uma aproximacao, nao a um valor exato
+
+Metodo Newton original (Seguranca Newton): 
+Se a direcao ultrapassa todas as barreiras do metodo
+  - obtemos a direcao newton
+  - algoritmo converge em 1 iteracao
+
+Quasi Newton:
+  - para a direcao de procura ser descendente, a matriz hessiana tem de ser simetrica e definida positiva
+  - quando nao e, o metodo de newton falha
+  
+  - comecamos com matriz identidade (aproximacao a matriz hessiana) que e simetrica e definida positiva
+  - vamos atualizar a partir dessa, por isso as formulas deviam dar sempre matrizes simestricas e definidas positivas
+  - pode nao acontecer porque as formulas vao acumulando erros e "apontamentos"(?) e a certo ponto podem deixar de ser simetricas e definidas positivas
+  - se isto acontecer, voltamos ao inicio do algoritmo e a usar a matriz identidade - tecnica do recomeco
+
+  - normalmente a matriz identidade nao e uma boa aproximacao a matriz hessiana
+  - no metodo de seguranca de newton esta implicito que a direcao em descendente
+  - no metodo de quasi-newton temos de verificar porque se nao for da merda

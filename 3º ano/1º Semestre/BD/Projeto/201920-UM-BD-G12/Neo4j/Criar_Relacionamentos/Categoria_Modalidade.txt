@@ -1,0 +1,6 @@
+LOAD CSV WITH HEADERS FROM 'file:///Categoria.csv' AS line
+MATCH (categoria:Categoria {idCategoria: ToInteger(line.idCategoria) })
+MATCH (modalidade:Modalidade {idModalidade: ToInteger(line.idModalidade) })
+
+CREATE (categoria)-[:Pertence]->(modalidade)
+RETURN categoria, modalidade

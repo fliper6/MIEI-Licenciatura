@@ -1,0 +1,8 @@
+LOAD CSV WITH HEADERS FROM 'file:///Teste.csv' AS line
+CREATE (teste:Teste {idTeste: toInteger(line.idTeste)})
+SET teste.idAtleta = toInteger(line.idAtleta),
+    teste.medico = line.medico,
+    teste.data = line.data,
+    teste.flag = toInteger(line.flag),
+    teste.preço = toFloat(line.preço)
+RETURN teste;

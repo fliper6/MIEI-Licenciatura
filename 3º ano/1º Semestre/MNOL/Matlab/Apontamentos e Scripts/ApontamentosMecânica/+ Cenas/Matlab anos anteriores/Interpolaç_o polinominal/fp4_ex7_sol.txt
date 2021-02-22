@@ -1,0 +1,57 @@
+% -----------------------------------------------------------------
+%   FP4 - Exerc. 7
+% Aproxime a raiz da equação exp(-x)-x = 0, utilizando convenientemente
+% interpolação inversa com os seguintes valores, 
+%  tabelados aproximadamente:
+%              x   | 0.4       0.5        0.6
+%          exp(-x) | 0.670320  0.606531   0.548812
+%--------------------------------------------------------------------
+
+Nós de interpolação: 
+
+X =
+
+   0.400000000000000   0.500000000000000   0.600000000000000
+
+Valores nodais para y= exp(-x): 
+
+Y1 =
+
+   0.670320000000000   0.606531000000000   0.548812000000000
+
+Valores nodais para f(x) = exp(-x)-x : 
+
+Y =
+
+   0.270320000000000   0.106531000000000  -0.051188000000000
+
+-----------------------------------------------------------
+Seja g(y) a função inversa de f(x)=exp(-x)-x e 
+r a unica raiz de f(x)=0 em [0.4, 0.6]
+Então como y=f(x) <-> x=g(y) logo f(r)=0 <-> r=g(0).
+Podemos aproximar a raiz r de f(x)=0,
+aproximando g(y) pelo polinómio interpolador de Newton p2(y)
+(basta trocar de posição os valores de X e Y na função newtondifdiv)
+e logo obter a aproximação da raiz xc=p2(0)
+-----------------------------------------------------------
+Prima uma tecla para determinar as diferenças divididas do polinómio
+interpolador de Newton p2(y) que aproxima a inversa de f(x)=exp(-x)-x
+e determina a aproximação xc=p2(0) da raiz r
+                                     
+Tabela das diferenças divididas
+  -0.610541611463529   0.073084984814328
+  -0.634039018761214                   0
+
+
+xc =
+
+   0.567146270331766
+
+ 
+A aproximação da raiz xc usando interpolação inversa.:         xc=p2(0)= 0.56714627033177
+O valor da raiz r de f (usando fzero)................:           r=f(0)= 0.56714329040978
+O erro absoluto......................................: |e(xc)|=|r - xc|= 2.9799219818383e-006
+                                     
+O valor da funçao f na aproximação xc..............:  f(xc) = -4.6699622215929e-006
+O valor da funçao f na raiz r......................:   f(r) = 1.1102230246252e-016
+                                     

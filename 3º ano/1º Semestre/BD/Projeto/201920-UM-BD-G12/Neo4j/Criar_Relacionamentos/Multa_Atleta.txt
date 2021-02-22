@@ -1,0 +1,6 @@
+LOAD CSV WITH HEADERS FROM 'file:///Multa.csv' AS line
+MATCH (multa:Multa {idMulta: ToInteger(line.idMulta) })
+MATCH (atleta:Atleta {idAtleta: ToInteger(line.idAtleta) })
+
+CREATE (multa)-[:Paga_por]->(atleta)
+RETURN multa, atleta

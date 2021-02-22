@@ -1,0 +1,8 @@
+ORDEM NA APRESENTAÇÃO: 
+
+Introdução + Introdução da Evolução das redes wireless: Filipa
+Evolução das redes wireless (parte 2G-5G): Hugo
+Limitações 4G + Visão e Motivação do 5G (até/inclusive 5º ponto): Cunha
+Visão e Motivação do 5G (a partir do 6º ponto) + 1ºs 3 parágrafos da Tecnologia 5G : Hugo 
+Últimos 2 parágrafos da Tecnologia 5G + Arquitetura HetNet: Filipa
+Conclusão: Cunha

@@ -1,0 +1,140 @@
+% -----------------------------------------------------------------
+% FP5- Exerc. 1
+% Calcule um valor aproximado do integral I = int(exp(x)* sin(x)) dx em
+% [0,pi/2] com um erro de truncatura não superior, em valor absoluto, a 0.01,
+% usando:
+% (a) a regra dos Trapézios composta
+% (b) a regra de Simpson composta
+% --------------------------------------------------------
+
+a =  0
+
+
+b = 1.570796326794897e+000
+
+
+f =
+     Inline function:
+     f(x) = exp(x)*sin(x)
+
+
+tol = 1.000000000000000e-002
+
+(a) Prima uma tecla para determinar o menor número de subintervalos, n,
+que aproxima o integral de f(x)=exp(x) * sin(x) em [0, pi/2] usando a regra dos trapézios
+por forma a que |e_T| <= 0.01
+               
+1º: Calcular  M2 - valor máximo do valor absoluto da segunda derivada de f(x) em [a, b]
+Prima uma tecla para calcular M2
+ 
+df2 =
+ 
+2*exp(x)*cos(x)
+ 
+O valor maximo, M2 = 3.1017664 de |f''(x)| se atinge em x =0.78539083
+                  
+Podemos também determinar o valor máximo M2 graficamente...
+Por análise do gráfico vemos que a 2ª derivada é positiva em [0,pi/2] mas
+não é monótona crescente nem descrecente, pelo que
+para determinar o máximo é preciso determinar x: f'''(x)=0
+f'''(x) = 0 <=> cos x = sin x <=> x = pi/4
+Logo, M2=max |f''(x)| = |f''(pi/4)| =3.1017664
+     
+2º: Determinar n - número mínimo de subintervalos que garante |e(Itc)| <= tol
+Prima uma tecla para determinar n
+      
+Como |e(Itc)| <= M2 *(b-a)^3 /(12 n^2) <= tol, então
+o número mínimo de subintervalos n que garante |e(Itc)| <= tol
+é dado pelo menor valor inteiro positivo que garante que
+ n >= sqrt(M2*(b-a)^3/(12*tol)
+
+ n >=  1.000907020946962e+001
+
+Como n deve ser inteiro temos que aproximar o valor obtido pelo valor inteiro mais próximo por excesso
+                  
+n = 11 é o menor número de subintervalos que garante |e(Itc)| <=0.01
+ ----------------------------------------------
+            
+3º: Calcular o valor aproximado do integral usando a regra dos trapezios
+composta com n subintervalos em [a, b]
+                  
+Prima uma tecla para calcular um valor aproximado do integral
+usando a regra dos trapézios composta:
+                  
+-----------------------------------------------------------------
+                  
+O valor aproximado da integral, Itc = 2.91172058781815
+-----------------------------------------------------------------
+                  
+(b) Prima uma tecla para determinar o menor número de subintervalos, n,
+que aproxima o integral de f(x)=exp(x) * sin(x) usando a regra de Simpson
+por forma a que |e(Itc)| <= 0.01
+                  
+ ----------------------------------------------
+               
+1º: Calcular máximo de |f^4(x)| em [a, b]
+Prima uma tecla para calcular M4=  max |f^4(x)| em [a, b]
+ 
+df4 = (-4)*exp(x)*sin(x)
+ 
+O valor maximo, M4 = 19.240675 de |f^4(x)| se atinge em x =1.5707321
+                  
+Por análise do gráfico vemos que f^(4)(x) = - 4 e^x  sin(x) é negativa
+e decrescente em [0, pi/2], pelo que |f^(4)(x)| é uma função positiva e crescente
+e o seu valor máximo se atinge em x=pi/2
+     
+Passo 2: Determinar n - número mínimo de subintervalos que garante |e(Isc)| <= tol
+Prima uma tecla para determinar n
+      
+Como |e(Isc)| <= M4 *(b-a)^5 /(180 n^4) <= tol, então
+o número mínimo de subintervalos n que garante |e(Isc)| <= tol
+é dado pelo menor valor inteiro positivo PAR n que garante que
+  n >= raiz quarta de (M4*(b-a)^4/(180*tol)
+
+  n >= 3.179704737375698e+000
+
+Como n deve ser inteiro e par temos que aproximar o valor obtido
+pelo valor inteiro par mais próximo por excesso
+                  
+n = 4 é o menor número de subintervalos que garante |e(Isc)| <=0.01
+
+ ----------------------------------------------
+            
+Passo 3: Calcular o valor aproximado do integral usando a regra de Simpson
+composta com n subintervalos em [a, b]
+                  
+Prima uma tecla para calcular um valor aproximado do integral
+usando a regra de Simpson composta:
+                  
+                  
+O valor aproximado da integral, Isc = 2.90374209126865
+-----------------------------------------------------------------
+   
+Sem conhecer o valor real do integral I podemos concluir que as
+aproximações determinadas são por excesso ou por defeito?
+Prima uma tecla para continuar
+   
+Para a aproximação Itc determinada pela regra de Trapézio Composta:
+Como e(Itc) = - ((b-a)^3 /12 *n^2) * f''(psi), psi in (a,b)
+e f''(x)> 0 em (0,pi/2), então e(Itc) = I -Itc < 0 <=> I < Itc
+e a aproximação Itc de I é por excesso
+  
+Para a aproximação Isc determinada pela regra de Simpson Composta:
+Como e(Isc) = - ((b-a)^5 /180 *n^4) * f^4(psi), psi in (a, b)
+e f^4(x)< 0 em (0,pi/2), então e(Isc) = I -Isc > 0 <=> I > Isc
+e a aproximação Isc de I é por defeito
+      
+Podemos ainda confirmar o dito anteriormente porque sabemos calcular
+o valor do integral da função dada
+
+O valor do integral....................................I = 2.90523869048268
+O valor aproximado pela regra do trapézio composta...Itc = 2.91172058781815
+O valor aproximado pelo regra de Simpson composta....Isc = 2.90374209126865
+ 
+Também podemos confirmar que para as aproximações Itc e Isc de I calculadas
+o erro não excede em valor absoluto o valor da tolerancia dada
+ 
+O erro absoluto de Itc.....|e(Itc)|= |I - Itc|= 0.00648189733547921
+|e(Itc)| <= 0.01
+O erro absoluto de Isc.....|e(Isc)|= |I - Isc|= 0.00149659921402634
+|e(Isc)| <= 0.01

@@ -1,0 +1,27 @@
+Fase1:
+- Modelo de Domínio
+- Modelo de Use Case
+- Especificação de Use Cases
+- Implementação 
+  - Protótipo da Interface
+
+Fase2: 
+- Especificação de Use Cases (VERSÃO DOS PROFESSORES)
+- Diagramas de Sequência ...
+  - ... de Sistema (simpificados)
+  - ... de Subsistemas 
+- Diagramas de Packages
+- Diagrama de Classe
+- Protótipo de Implementação
+
+Fase3:
+- Diagramas de Sequência de Implementação
+- Diagramas de Máquinas de Estado
+  - Interface Gráfica
+  - Configuração
+- Diagramas de Atividade 
+  - Criar Configuração 
+- Implementação
+   - DAOs
+   - Base de Dados
+

@@ -1,0 +1,22 @@
+Exercício 57 (lei_exerc_1920) ---------------------------------------------------------------------
+a) (MQ polinomial: polyfit) -----------------------------------------------------------------------
+CW:
+x = [1.5, 2.0, 3.0, 4.0];
+y = [4.9, 3.3, 2.0, 1.5];
+[P,S] = polyfit(x,y,1); //1 é o grau
+
+//o resíduo vai ser norm^2
+
+b) (MQ não polinomial: lsqcurvefit) ---------------------------------------------------------------
+Editor:
+function [F] = script (c,x)
+   F = c(1)./x + c(2).*x
+end 
+
+CW:
+x = [1.5, 2.0, 3.0, 4.0];
+y = [4.9, 3.3, 2.0, 1.5];
+[x,y,exitflag,output] = lsqcurvefit ('script',[1 1], x, y) //[1 1] : vetor unitário, sempre
+
+
+//o resíduo vai ser logo norm

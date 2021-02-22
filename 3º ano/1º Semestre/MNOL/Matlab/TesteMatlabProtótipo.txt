@@ -1,0 +1,83 @@
+﻿
+-----------------------------------------------------------------------------Exercício 1:
+Editor:
+function[f] = TesteMatlab(x)
+f = [-5*x(1)+3*sin(x(1))+cos(x(2))
+    4*cos(x(1))+2*sin(x(2))-5*x(2)];
+end
+
+Command Window: 
+>>options = optimset ('tolx',0.01,'tolfun',0.1);
+>>[x,f,e,o] = fsolve ('TesteMatlab',[0,0.1],options);
+
+a) Aproximação à solução (10 casas decimais): x1 = 0.2028684405 x2 = 1.1497305898
+>>format long
+>>x
+
+b) Número de iterações: 2 iterações
+>>o 
+
+-----------------------------------------------------------------------------Exercício 2: 
+Editor:
+function[f] = TesteMatlab(x)
+f = ((1-(1+x)^(-12))/x) - (28/3);
+end
+
+Command Window: 
+>>options = optimset ('tolx',0.1);
+>>[x,f,e,o] = fsolve ('TesteMatlab',0.04,options);
+
+a) O método convergiu? : Sim porque a exitflag é igual a 1
+>>e
+
+b) Quantas iterações? : 2
+>>o 
+
+c) Qual a aproximação à solução (12 casas decimais)?  : x = 0.040954076659
+>>x
+
+-----------------------------------------------------------------------------Exercício 3: 
+a) Estime a resistência para um diâmetro x = 2.8, utilizando um polinómio interpolador de Newton
+de grau 2: fres = 2.220
+
+Command Window: 
+>>x = [2.0 2.2 3.0];
+>>f = [3.3 3.0 2.0];
+>>p2 = polyfit (x,f,2);
+>>fres = polyval (p2,2.8)
+
+b) Escreva o polinómio : p(x) = 0.25x^2 - 2.55x + 7.4
+
+c) Estime f(2.5) usando uma spline cúbica forçando um declive −2 e 3 nos extremos inferior e
+superior, respetivamente: xx = 2.5471
+
+Command Window:
+>>x = [1.5 2.0 2.2 3.0 3.8 4.0];
+>>f = [4.9 3.3 3.0 2.0 1.75 1.5];
+>>xx = spline(x,[-2 f 3], 2.5)
+
+d) Escreva o respetivo segmento da spline: s3(x) = 1.68135*(x-2.2) - 1.33016*(x-2.2) - 1.26193*(x-2.2) + 3
+
+>>pp = spline(x,[-2 f 3])
+>>pp.coefs
+%escolher 3ª linha, sendo que 2.5 está contido no 3º intervalo (de  2.2 a 3.0) 
+ 
+
+e)-j) : NÃO SAI
+
+-----------------------------------------------------------------------------Exercício 4: comp = 2.39250e+03
+Command Window: 
+>>x = [0 10 15 25 30 48 60 70 90];
+>>f = [0 10 30 25 10 28 40 42 30];
+>>comp = trapz(x,f);
+
+-----------------------------------------------------------------------------Exercício 5: ans = 2.54900e+03
+Editor: 
+function[f] = TesteMatlab(x)
+f = x.*(1-exp^(-x))+x.^3 %exp = e.^ 
+end
+
+Command Window: 
+>>quad('TesteMatlab',0,10)
+ou 
+>>quad('TesteMatlab',0,10)

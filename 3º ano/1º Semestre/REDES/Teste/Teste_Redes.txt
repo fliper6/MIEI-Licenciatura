@@ -1,0 +1,28 @@
+1 - V - modelo OSI : Chapter 1
+2 - F - topologia de estrela : Chapter 5
+Topologia de estrela é sempre por meios de transmissão com fios
+3 - V - fibras mono-modo / fibras multi-modo
+4 - ? - protocolo HDLH
+5 - ? - protocolo com controlo de fluxo : Chapter 3 (NÃO SAI)
+6 - ? - método de controlo de fluxo Stop-And-Wait : Chapter 3 (NÃO SAI)
+7 - V - rede local Ethernet, colisões com Switch e cablagem com fios : Chapter 5
+Switches são colision-less
+8 - ? - WAN, tempo de propagação e tempo de transmissão : Chapter ? 
+Packet delivery time = Transmission time + Propagation delay
+9 - V - protocolo RARP (contrário do ARP - Chapter 5)
+10 - F 
+11 - F
+12 - V
+13 - F
+14 - V - Hub só faz broadcast
+15 - V - IPv4 é que varia o tamanho do header
+16 - V  
+17 - V 
+18 - F 
+19 - V - "por defeito" são a última opção
+20 - V - NAT
+21 - F - o alcance não é superior
+22 - V
+23 - V? - Chapter 6 (NÃO ESTUDAMOS)
+24 - V 
+25 - V

@@ -1,0 +1,79 @@
+% -----------------------------------------------------------------
+% FP5- Exerc. 3
+% Calcular o valor aproximado do integral I = int(exp(-x^2)) dx em [0,1]
+% pelas regras dos trapézios e Simpson, usando 20 subintervalos. 
+% Qual a precisão que é possivel garantir em cada uma das aproximações
+% obtidas para I (# de casas decimais correctas)?
+% --------------------------------------------------------
+
+a =
+
+     0
+
+
+b =
+
+     1
+
+
+f =
+
+     Inline function:
+     f(x) = exp(-x.^2)
+
+
+n =
+
+    20
+
+Prima uma tecla para calcular um valor aproximado do integral
+usando a regra dos trapézios e de Simpson compostas:
+                  
+-----------------------------------------------------------------
+                  
+O valor aproximado do integral I usando a regra de trapézios composta: Itc = 0.746670836939874
+O valor aproximado do integral I usando a regra de Simpson composta..: Isc = 0.746824183875915
+-----------------------------------------------------------------
+Para calcular a precisão que é possivel garantir em cada uma das aproximações
+obtidas para I (# de casas decimais correctas) podemos calcular um majorante
+do erro de truncatura para cada aproximação
+Prima uma tecla para continuar
+Para a aproximação Itc obtida pela regra dos trapézios composta
+|e(Itc)| <= M *(b-a)^3 /(12 n^2) , M =  max |f''(x)| em [a, b]
+Calcular máximo de |f''(x)| em [a, b]
+Prima uma tecla para calcular M =  max |f''(x)| em [a, b]
+ 
+df2 =
+ 
+(4*x^2)/exp(x^2) - 2/exp(x^2)
+ 
+Para determinar M podemos analizar o gráfico de f''(x) em [0,1]
+Por análise do gráfico vemos que a função é monótona crescente
+Como |f''(0)|=2 e |f''(1)|=0.7358 então M=max |f''(x)|=|f''(0)| =2
+ Como |e(Itc)| <= 0.00041666667<  0.0005 = 0.5 x 10^-3
+então a aproximação Itc de I tem pelo menos 3 casas decimais correctas
+    
+Para a aproximação Isc obtida pela regra de Simpson composta
+|e(Isc)| <= M *(b-a)^5 /(180 n^4) , M =  max |f^(4)(x)| em [a, b]
+               
+Calcular máximo de |f^4(x)| em [a, b]
+Prima uma tecla para calcular M =  max |f^4(x)| em [a, b]
+ 
+df4 =
+ 
+12/exp(x^2) - (48*x^2)/exp(x^2) + (16*x^4)/exp(x^2)
+ 
+Para determinar M podemos analizar o gráfico de f^4(x) em 0,1]
+Por análise do gráfico vemos que a função é monótona decrescente
+Como |f^4(0)|=12 e |f^4(1)|=7.358 então M =max |f^4(x)|=|f^4(0)| =12
+Como |e(Isc)| <= 4.1666667e-007<  0.5 x 10^(-6)
+então a aproximação Itc de I tem pelo menos 6 casas decimais correctas
+    
+Podemos confirmar a precisão das aproximações porque sabemos calcular
+o valor do integral da função dada
+Prima uma tecla para continuar
+O valor do integral....................................I = 0.746824132812427
+O valor aproximado pela regra do trapézio composta...Itc = 0.746670836939874
+O valor aproximado pelo regra de Simpson composta....Isc = 0.746824183875915
+O erro absoluto de Itc.....|e(Itc)|= |I - Itc|= 0.000153295872553416
+O erro absoluto de Isc.....|e(Isc)|= |I - Isc|= 5.10634876604854e-008

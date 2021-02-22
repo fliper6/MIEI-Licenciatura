@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="2117f795-bf6c-47a9-96be-587c62b07e22" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MediaCenter/Data/MediaDAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MediaCenter/Data/MediaDAO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MediaCenter/Data/database/Fill_teste.sql" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MediaCenter/Data/database/Fill_teste.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MediaCenter/Presentation/View/JRepGen$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MediaCenter/Presentation/View/JRepGen$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MediaCenter/Presentation/View/JRepGen$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MediaCenter/Presentation/View/JRepGen$3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MediaCenter/Presentation/View/JRepGen.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MediaCenter/Presentation/View/JRepGen.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MediaCenter/Presentation/View/MediaCenterGUI.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MediaCenter/Presentation/View/MediaCenterGUI.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Business/Gestor_Contas/Administrador.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Business/Gestor_Contas/Administrador.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Business/Gestor_Contas/Utente.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Business/Gestor_Contas/Utente.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Business/Gestor_Contas/Utilizador.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Business/Gestor_Contas/Utilizador.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Business/Gestor_Media/Media.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Business/Gestor_Media/Media.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Business/Gestor_Media/MediaCenterLN.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Business/Gestor_Media/MediaCenterLN.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Data/Connector.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Data/Connector.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Data/MediaDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Data/MediaDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Data/PlaylistDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Data/PlaylistDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Data/UtilizadorDAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Data/UtilizadorDAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Data/database/Fill_teste.sql" beforeDir="false" afterPath="$PROJECT_DIR$/src/Data/database/Fill_teste.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Data/database/queries.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Presentation/Controller/BooleanChangeObserver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Presentation/Controller/BooleanChangeObserver.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Presentation/Controller/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Presentation/Controller/Controller.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Presentation/View/JAdmin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Presentation/View/JAdmin.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Presentation/View/JMain.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Presentation/View/JMain.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Presentation/View/JRepGen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Presentation/View/JRepGen.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Presentation/View/JRepMus.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Presentation/View/JRepMus.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Presentation/View/JSubMain1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Presentation/View/JSubMain1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Presentation/View/JUpload.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Presentation/View/JUpload.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Presentation/View/MediaCenterGUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Presentation/View/MediaCenterGUI.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="JavaFXApplication" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1UlIHvFiYAtakwqbZzY3cXYRaQL" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1576557920084" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Downloads/mysql-connector-java-8.0.18.jar!/" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="restartRequiresConfirmation" value="false" />
+    <property name="settings.editor.selected.configurable" value="vcs.Git" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\Projetos\MediaCenter\src\Business" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.App (1)">
+    <configuration name="App (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="App" />
+      <module name="MediaCenter" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Teste.App" />
+      <module name="MediaCenter" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Teste.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Main (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Data.Main" />
+      <module name="MediaCenter" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Data.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MediaCenterGUI" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="View.MediaCenterGUI" />
+      <module name="MediaCenter" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="View.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MediaCenterLN" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Business.MediaCenterLN" />
+      <module name="MediaCenter" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Business.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.Main (1)" />
+      <item itemvalue="Application.App" />
+      <item itemvalue="Application.App (1)" />
+      <item itemvalue="Application.MediaCenterGUI" />
+      <item itemvalue="Application.MediaCenterLN" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.App (1)" />
+        <item itemvalue="Application.MediaCenterLN" />
+        <item itemvalue="Application.MediaCenterGUI" />
+        <item itemvalue="Application.App" />
+        <item itemvalue="Application.Main (1)" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="2117f795-bf6c-47a9-96be-587c62b07e22" name="Default Changelist" comment="" />
+      <created>1575393245667</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1575393245667</updated>
+      <workItem from="1575393360353" duration="4473000" />
+      <workItem from="1575401790285" duration="1576000" />
+      <workItem from="1575580511931" duration="18014000" />
+      <workItem from="1575732315034" duration="6892000" />
+      <workItem from="1575758545471" duration="11893000" />
+      <workItem from="1575815564511" duration="9754000" />
+      <workItem from="1575843067551" duration="16454000" />
+      <workItem from="1575994182098" duration="4176000" />
+      <workItem from="1576017617401" duration="14836000" />
+      <workItem from="1576356219730" duration="12903000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="124680000" />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="491" y="110" width="374" height="571" key="#com.intellij.ide.util.MemberChooser" timestamp="1576974719217">
+      <screen x="0" y="28" width="1366" height="740" />
+    </state>
+    <state x="491" y="110" width="374" height="571" key="#com.intellij.ide.util.MemberChooser/0.28.1366.740@0.28.1366.740" timestamp="1576974719217" />
+    <state x="524" y="290" width="308" height="212" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog" timestamp="1576971224268">
+      <screen x="0" y="28" width="1366" height="740" />
+    </state>
+    <state x="524" y="290" width="308" height="212" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/0.28.1366.740@0.28.1366.740" timestamp="1576971224268" />
+    <state x="380" y="28" width="587" height="736" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1576106032149">
+      <screen x="0" y="28" width="1366" height="740" />
+    </state>
+    <state x="380" y="28" width="587" height="736" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.28.1366.740@0.28.1366.740" timestamp="1576106032149" />
+    <state x="416" y="147" width="524" height="498" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1576975870817">
+      <screen x="0" y="28" width="1366" height="740" />
+    </state>
+    <state x="416" y="147" width="524" height="498" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.28.1366.740@0.28.1366.740" timestamp="1576975870817" />
+    <state x="428" y="112" width="489" height="563" key="DetectedRootsChooserDialog" timestamp="1576102818760">
+      <screen x="0" y="28" width="1366" height="740" />
+    </state>
+    <state x="428" y="112" width="489" height="563" key="DetectedRootsChooserDialog/0.28.1366.740@0.28.1366.740" timestamp="1576102818760" />
+    <state x="305" y="139" width="735" height="509" key="FileChooserDialogImpl" timestamp="1576972496296">
+      <screen x="0" y="28" width="1366" height="740" />
+    </state>
+    <state x="305" y="139" width="735" height="509" key="FileChooserDialogImpl/0.28.1366.740@0.28.1366.740" timestamp="1576972496296" />
+    <state width="1320" height="41" key="GridCell.Tab.0.bottom" timestamp="1577047669768">
+      <screen x="0" y="28" width="1366" height="740" />
+    </state>
+    <state width="1320" height="41" key="GridCell.Tab.0.bottom/0.28.1366.740@0.28.1366.740" timestamp="1577047669768" />
+    <state width="1320" height="41" key="GridCell.Tab.0.center" timestamp="1577047669768">
+      <screen x="0" y="28" width="1366" height="740" />
+    </state>
+    <state width="1320" height="41" key="GridCell.Tab.0.center/0.28.1366.740@0.28.1366.740" timestamp="1577047669768" />
+    <state width="1320" height="41" key="GridCell.Tab.0.left" timestamp="1577047669767">
+      <screen x="0" y="28" width="1366" height="740" />
+    </state>
+    <state width="1320" height="41" key="GridCell.Tab.0.left/0.28.1366.740@0.28.1366.740" timestamp="1577047669767" />
+    <state width="1320" height="41" key="GridCell.Tab.0.right" timestamp="1577047669768">
+      <screen x="0" y="28" width="1366" height="740" />
+    </state>
+    <state width="1320" height="41" key="GridCell.Tab.0.right/0.28.1366.740@0.28.1366.740" timestamp="1577047669768" />
+    <state width="1320" height="219" key="GridCell.Tab.1.bottom" timestamp="1576506009145">
+      <screen x="0" y="28" width="1366" height="740" />
+    </state>
+    <state width="1320" height="219" key="GridCell.Tab.1.bottom/0.28.1366.740@0.28.1366.740" timestamp="1576506009145" />
+    <state width="1320" height="219" key="GridCell.Tab.1.center" timestamp="1576506009144">
+      <screen x="0" y="28" width="1366" height="740" />
+    </state>
+    <state width="1320" height="219" key="GridCell.Tab.1.center/0.28.1366.740@0.28.1366.740" timestamp="1576506009144" />
+    <state width="1320" height="219" key="GridCell.Tab.1.left" timestamp="1576506009143">
+      <screen x="0" y="28" width="1366" height="740" />
+    </state>
+    <state width="1320" height="219" key="GridCell.Tab.1.left/0.28.1366.740@0.28.1366.740" timestamp="1576506009143" />
+    <state width="1320" height="219" key="GridCell.Tab.1.right" timestamp="1576506009145">
+      <screen x="0" y="28" width="1366" height="740" />
+    </state>
+    <state width="1320" height="219" key="GridCell.Tab.1.right/0.28.1366.740@0.28.1366.740" timestamp="1576506009145" />
+    <state x="166" y="28" width="1024" height="736" key="SettingsEditor" timestamp="1576972500506">
+      <screen x="0" y="28" width="1366" height="740" />
+    </state>
+    <state x="166" y="28" width="1024" height="736" key="SettingsEditor/0.28.1366.740@0.28.1366.740" timestamp="1576972500506" />
+    <state x="339" y="225" key="com.intellij.ide.util.TipDialog" timestamp="1576099599557">
+      <screen x="0" y="28" width="1366" height="740" />
+    </state>
+    <state x="339" y="225" key="com.intellij.ide.util.TipDialog/0.28.1366.740@0.28.1366.740" timestamp="1576099599557" />
+    <state x="451" y="318" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1576426618165">
+      <screen x="0" y="28" width="1366" height="740" />
+    </state>
+    <state x="451" y="318" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.28.1366.740@0.28.1366.740" timestamp="1576426618165" />
+    <state x="347" y="177" key="run.anything.popup" timestamp="1577031602188">
+      <screen x="0" y="28" width="1366" height="740" />
+    </state>
+    <state x="347" y="177" key="run.anything.popup/0.28.1366.740@0.28.1366.740" timestamp="1577031602188" />
+    <state x="346" y="89" width="672" height="678" key="search.everywhere.popup" timestamp="1576997469427">
+      <screen x="0" y="28" width="1366" height="740" />
+    </state>
+    <state x="346" y="89" width="672" height="678" key="search.everywhere.popup/0.28.1366.740@0.28.1366.740" timestamp="1576997469427" />
+  </component>
+</project>

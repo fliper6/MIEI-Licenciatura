@@ -1,0 +1,26 @@
+3)A captura e análise de tramas Ethernet será efetuada usando a aplicação Wireshark. Assegure-se que utiliza a ligação com fios, i.e., a ligação à rede Ethernet da sala de aula e que a 
+cache do seu browser está vazia e está conetado em rede através da interface Ethernet.
+...
+Responda às perguntas seguintes com base no conteúdo da trama Ethernet que contém a mensagem HTTP GET (sempre que aplicável, deve incluir a impressão dos dados relativa ao
+pacote capturado (ou parte dele) necessária para fundamentar a resposta à questão colocada. Para imprimir um pacote, use File-Print, escolha Selected packet only e Packet summary line, 
+ou use qualquer outro método que lhe pareça adequado para a captura desses dados. Selecione o mínimo detalhe necessário):
+
+3.1) Anote os endereços MAC de origem e de destino da trama capturada.
+*Print "3.EthernetII(1)"*
+Endereço de origem: f4:30:b9:93:4b:2b
+Endereço de destino: 00:0c:29:d2:19:f0
+
+3.2) Identifique a que sistemas se referem. Justifique.
+O source é o nosso computador ("HewlettP") e o destino corresponde à placa de rede "virtual" da sala de aula. 
+
+3.3) Qual o valor hexadecimal do campo Type da trama Ethernet? O que significa?
+*Print "3.EthernetII(1)"*
+O valor hexadecimal do campo Type é 0x0800 que significa que encapsula um pacote IpV4. 
+
+3.4) Quantos bytes são usados desde o início da trama até ao caractere ASCII “G” do método HTTP GET? Calcule e indique, em percentagem, a sobrecarga (overhead) introduzida pela pilha 
+protocolar no envio do HTTP GET.
+
+
+3.5) Através de visualização direta de uma trama capturada, verifique que, possivelmente, o campo FCS (Frame Check Sequence) usado para deteção de erros não está a ser usado. Em sua 
+opinião, porque será?
+

@@ -1,0 +1,5 @@
+LOAD CSV WITH HEADERS FROM 'file:///Provas_Atleta.csv' AS line
+MATCH (prova:Prova {idProva: ToInteger(line.idProva) })
+MATCH (atleta:Atleta {idAtleta: ToInteger(line.idAtleta) })
+
+CREATE (prova)-[:Disputada]->(atleta)

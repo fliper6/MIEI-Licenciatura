@@ -1,0 +1,54 @@
+Lista de Use Case a considerar para a Fase 2:
+
+Utilizadores:
+1. Registar utilizador
+2. Iniciar sessão
+3. Terminar sessão
+4. Editar utilizador (inclui password)
+5. Eliminar utilizador
+
+Media
+6. Fazer upload de conteúdo
+7. Alterar categoria de conteúdo
+8. Remover conteúdo
+9. Reproduzir conteúdo (não é necessário ter sessão iniciada)
+
+Playlists
+10. Criar playlists (devem ser consideradas diferentes possibilidades: aleatória, por género, por artista,..)
+____________________________________________________________________________________________________________________________________________________________________________________________
+AVISO:
+O processo proposto é um processo iterativo de entregas faseadas guiado pelos Use Case (ver slide 55). Assim, em cada iteração são escolhidos alguns Use Case para analisar e/ou implementar.
+Para a Fase 2 do trabalho, tal como explicado nas aulas, é pedida a modelação arquitectural e comportamental de um sistema capaz de suportar os Use Case indicados no slide 23 do conjunto de
+slides DSS-T10-Fase1.pdf. Presume-se que os restantes Use Case seriam tratados em iterações subsequentes do processo de desenvolvimento (que, no caso concreto, já não haverá tempo para 
+realizar). 
+Decidir quais os melhores diagramas para realizar a modelação arquitectural e comportamental faz parte do trabalho e deverá ser discutido dentro do grupo (e com os docentes, se necessário).
+Note-se que esse tem sido o tema das aulas teóricas e práticas nas últimas quatro semanas. Assim, é expectável que utilizem (cf. slide 243) Diagramas de Package, de Classe e de Sequência 
+para representarem desde os Use Case, passando pela divisão do sistema em sub-sistemas, até à arquitectura de cada sub-sistema e as operação da sua API (considerar, por exemplo, os 
+exercícios da Ficha Prática 6). 
+O pedido de uma primeira implementação, a título experimental, de alguns Use Case relevantes tem dois objectivos essenciais: a) ajudar a que percebam a relação entre os modelos e o código;
+b) encorajar a que explorem, desde já, alguma biblioteca ou solução tecnológica que estejam a pensar utilizar (por exemplo para reproduzir media) de modo a avaliarem a sua viabilidade. 
+Neste caso não se fixa nenhum objectivo concreto pois o foco desta fase está nos modelos, alguma implementação que façam deverá derivar completamente das necessidades que cada grupo sinta.
+Em caso de qualquer dúvida não esclarecida acima, devem contactar os docentes. Preferencialmente, nas aulas ou em horário de atendimento.
+___________________________________________________________________________________________________________________________________________________________________________________________
+
+- Apresentar a especificação dos Use Cases novos, dados pelo stores e ao lado, os diagramas de sequência correspondentes
+  (vista mais conceptual do nosso programa)
+
+- Dividir em sub-sistemas (p.e. : "Operações sobre Músicas", "Operações sobre Conta", "Operações sobre Amigos") - DSS-T11-Modelação Comportamental 
+                             e modificar os diagramas de sequência consequentemente                              
+  Assim obtemos reunimos todos os métodos que cada sub-sistema (ter em atenção para não fazer métodos "iguais")
+
+[nos slides 13 temos mais notas sobre duração / distribuição de responsabilidades mas não sei se vai ser necessário]
+
+- Tendo todas estas divisões, podemos construir um Diagrama de Package - DDS-T12 -Diagramas de Package
+
+- De seguida, construimos um Diagrama de Classe - DSS-T13 e T14 - Diagramas de Classe
+ (ver exercício 5.2.1 da aula para ajudar)
+
+ (há certas restrições que não conseguem ser expressas usando apenas UML - se precisarmos de linguagem mais "específica e técnica", 
+  podemos precisar de usar a OCL - DSS-T12-OCL exemplo: "revisores de uma submissão não podem ser da mesma instituição dos autores!")
+
+
+- "Primeira implementação, a título experimental, de alguns Use Case relevantes (por exemplo, testes à capacidade de reproduzir media)"
+  (código com os métodos e classes definidos anteriormente)
+

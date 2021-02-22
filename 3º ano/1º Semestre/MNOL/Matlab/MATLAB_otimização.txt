@@ -1,0 +1,83 @@
+1 --------------------------------------------------------- (Métodos do gradiente - fminunc)
+
+1.1) ---------------------------------------------------------------------------------------
+a) (sem fornecer as 1ªs derivadas) ---------------------------------------------------------
+Editor:
+function [F] = aluffi(x)
+   F = 0.25*x(1)^4 - 0.5*x(1)^2 - 0.1*x(1) + 0.5*x(2)^2;
+end
+
+CW:
+[x,f,exitflag,output] = fminunc('aluffi',[-1 0.5]); 
+
+b) (procura unidimensional, fornecendo as 1ªs derivadas) -----------------------------------
+Editor:
+function [F,G] = aluffi(x)
+   F = 0.25*x(1)^4 - 0.5*x(1)^2 - 0.1*x(1) + 0.5*x(2)^2;
+   G(1) = x(1)^3 - x(1) + 0.1;
+   G(2) = x(2);
+end
+
+CW:
+op = optimset('Gradobj','on');
+[x,f,exitflag,output] = fminunc('aluffi',[-1 0.5],op); 
+
+
+NOTAS: -------------------------------------------------------------------------------------
+--> Sempre que queremos max f(x), temos de fazer o min -(f(x)). Não esquecer que os resultados
+de f no final vão ser negativos, temos de trocar ao responder. 
+
+--> Podem pedir para resolver isto com algoritmos (DFP e BFGS) e nesse caso:
+options = optimset ('HessUpdate','dfp');
+options = optimset ('HessUpdate','bfgs');
+--------------------------------------------------------------------------------------------
+
+1.4) ---------------------------------------------------------------------------------------
+Editor:
+function [F] = epistatic (x,t,m)
+   n = length(x);
+   i = 1:2:n-1;
+   y(i) = x(1)*cos(t)-x(i+1)*sin(t);
+   i = 2:2:n-1;
+   y(i) = x(1)*sin(t)-x(i+1)*cos(t);
+   y(n) = x(n);
+   i = 1:n;
+   f = -sum(sin(y)).*(sin(i.*y.^2/pi).^(2*m)))
+end
+
+CW:
+n = 10;
+i = 1:2:n;
+x1(i) = 2;
+i = 2:2:n;
+x1(i) = 1;
+t = pi/6;
+m = 10;
+[x,f,exitflag,output] = fminunc('epistatic', x1, [], t, m); 
+//o [] é o espaço para ocupar a "slot" das options que, neste caso, não temos
+
+2 --------------------------------------------------------- (Métodos do Nelder-Mead - fminsearch)
+
+2.1) ---------------------------------------------------------------------------------------
+Editor:
+function [F] = nmead(x)
+   u = [abs(x(1)), abs(x(2)-1)];
+   f = max(u);
+end
+
+CW:
+x1 = [1,1];
+op = optimset('Display', 'iter'); //mostra todas as iterações
+[x,f,exitflag,output] = fminsearch('nmead',x1,op); 
+
+2.3) ---------------------------------------------------------------------------------------
+Editor:
+function [F] = nmead(x)
+   f = n*max(x) - sum(x);
+end
+
+CW:
+n = 5; i = 1:n;
+x1 = i - (n/2 + 0.5);
+op = optimset('MaxFunEvals','10000', 'TolX', '10^(-20), 'MaxIter', '10000', Display', 'iter'); 
+[x,f,exitflag,output] = fminsearch('nmead',x1,op); 

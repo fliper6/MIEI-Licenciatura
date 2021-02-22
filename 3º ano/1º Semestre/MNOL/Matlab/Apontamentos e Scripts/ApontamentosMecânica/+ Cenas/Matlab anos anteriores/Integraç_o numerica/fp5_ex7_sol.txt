@@ -1,0 +1,171 @@
+Distância em km: 
+
+x =
+
+         0    1.2500    2.5000    3.7500    5.0000    6.5000    8.0000    9.5000   10.0000
+
+Consumo do carro, em litros/km:
+
+y =
+
+    0.2600    0.2080    0.1720    0.1450    0.1260    0.1130    0.1040    0.0970    0.0920
+
+Prima uma tecla para calcular valores aproximados para o consumo total de
+gasolina, dado por I = int (f(x) dx em [0, 10]
+usando adequadamente as regras de integração numérica que estudou.
+                             
+Vamos a usar 3 regras de integraçao de Newton-Cotes
+por forma a minorar o erro de truncatura.
+Para isto devemos seleccionar para cada subconjunto de pontos
+com igual espaçamento h, a regra mais simples entre aquelas que
+apresentam o maior grau de exactidão.
+Note que as regras de Newton-Cotes se baseiam na aproximação da
+função integranda pelo seu polinómio interpolador Pn de grau<=n:
+ Regra dos trapézios.................. n = 1
+ Regra de Simpson..................... n = 2
+ Regra de 3/8......................... n = 3
+As regras de Newton-Cotes têm grau de exactidão
+           =   n se n é impar
+           = n+1 se n é par
+--------------------------------------------------------
+Vamos considerar:
+no intervalo [0, 5],    h=1.25,  4 subintervalos: regra de Simpson composta (grau 3)
+no intervalo [5, 9.5],  h=1.50,  3 subintervalos: regra de 3/8              (grau 3)
+no intervalo [9.5, 10], h=0.5,   1 subintervalos: regra dos trapezios       (grau 1)
+                  
+Prima uma tecla para calcular um valor aproximado da integral
+no intervalo [0, 10] usando estas 3 regras:
+                  
+O valor aproximado da integral em [0, 5] usando a regra de Simpson composta:
+
+ISC =
+
+   0.892500000000000
+
+O valor aproximado da integral em [5, 9.5] usando a regra de 3/8:
+
+I3_8 =
+
+   0.491625000000000
+
+O valor aproximado da integral em [9.5, 10] usando a regra dos Trapezios:
+
+IT =
+
+   0.047250000000000
+
+-----------------------------------------------------------------------
+O valor aproximado do integral em [0, 10], Iaprox = 1.431375
+-----------------------------------------------------------------------
+    
+Prima uma tecla para determinar uma estimativa para o erro de truncatura
+em valor absoluto, cometido no cálculo de I
+Estimativa do erro de truncatura para a regra de Simpson em [0,5]:
+O erro de truncatura, em valor absoluto, é dado pela fórmula:
+|es| = (b-a)/180 h^4 |f^(4)(zi)|, 0 < zi < 5.00
+Como não conhecemos a função f(x) para determinar uma estimativa
+de f^(4)(xi) usamos as diferença divididas de ordem 4
+           f^(4)(zi) = 4! * f[xi, xi+1, xi+2, xi+3, xi+4]
+                          xi < zi < xi+4
+Para determinar uma estimativa de f^(4)(zi) no intervalo ]0,5[
+podemos usar a diferença dividida f[0.00 1.25 2.50 3.75 5.00]
+ Existe 0 < zi < 5: f^(4)(zi) = 4! * f[0.00 1.25 2.50 3.75 5.00]
+                       
+
+x =
+
+         0    1.2500    2.5000    3.7500    5.0000
+
+
+y =
+
+    0.2600    0.2080    0.1720    0.1450    0.1260
+
+Tabela das diferenças divididas
+  -0.041600000000000   0.005120000000000  -0.000597333333333   0.000102400000000
+  -0.028800000000000   0.002880000000000  -0.000085333333333                   0
+  -0.021600000000000   0.002560000000000                   0                   0
+  -0.015200000000000                   0                   0                   0
+
+Estimativa do erro de truncatura usando a regra de Simpson composta: 
+
+eSC =
+
+    1.666666666666669e-004
+
+               
+Calculando estimativa do erro de truncatura para a regra de 3/8 em [5, 9.5]
+               
+O erro de truncatura, em valor absoluto, é dado pela fórmula:
+|e3/8| = 3/80 h^5 |f^(4)(zi)|, para um zi tal que: 5 < zi < 9.5
+Como não conhecemos a função f(x), podemos usar as diferenças divididas de ordem 4
+              f^(4)(zi) = 4! * f[xi, xi+1, xi+2, xi+3, xi+4]
+                                   xi < zi < xi+4
+    
+Para determinar uma estimativa de f^(4)(zi) no intervalo ]5, 9.5[
+podemos usar a diferença dividida f[5.00 6.50 8.00 9.50 10.00]
+ Existe 5< zi < 10: f^(4)(zi) = 4! * f[5.00 6.50 8.00 9.50 10.00]
+
+x =
+
+    5.0000    6.5000    8.0000    9.5000   10.0000
+
+
+y =
+
+    0.1260    0.1130    0.1040    0.0970    0.0920
+
+Tabela das diferenças divididas
+  -0.008666666666667   0.000888888888889  -0.000098765432099  -0.000158024691358
+  -0.006000000000000   0.000444444444444  -0.000888888888889                   0
+  -0.004666666666667  -0.002666666666667                   0                   0
+  -0.010000000000000                   0                   0                   0
+
+
+absdf4 =
+
+   0.003792592592593
+
+Estimativa do erro de truncatura usando a regra de 3/8 composta
+
+e3_8 =
+
+   0.001080000000000
+
+               
+Calculando estimativa do erro de truncatura para a regra dos trapezios em [9.5, 10]
+               
+O erro de truncatura, em valor absoluto, é dado pela fórmula:
+|et| = (b-a)^3/12 |f^(2)(zi)|, 9.5 < zi < 10
+Como não conhecemos a função f(x), podemos usar as diferenças divididas de ordem 2
+         f^(2)(zi) = 2! * f[xi, xi+1, xi+2], xi < zi < xi+2
+                                  xi < zi < xi+2
+    
+Para determinar uma estimativa de f^(4)(zi) no intervalo ]9.5, 10[
+podemos usar a diferença dividida f[8.00 9.50 10.00]
+ Existe 8 < zi < 10 : f^(2)(zi) = 2! * f[8.00 9.50 10.00]
+                     
+
+x =
+
+    8.0000    9.5000   10.0000
+
+
+y =
+
+    0.1040    0.0970    0.0920
+
+Tabela das diferenças divididas
+  -0.004666666666667  -0.002666666666667
+  -0.010000000000000                   0
+
+Estimativa do erro de truncatura usando a regra dos Trapezios: 
+
+eT =
+
+    5.555555555555570e-005
+
+     
+-----------------------------------------------------------------------
+Estimativa total do erro de truncatura: 0.0013022222222222
+-----------------------------------------------------------------------

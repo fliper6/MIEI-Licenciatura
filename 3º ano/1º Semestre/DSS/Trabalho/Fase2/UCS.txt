@@ -1,0 +1,213 @@
+﻿1.REGISTAR UTILIZADOR
+Use Case: Registar utilizador
+Ator: Utilizador
+Cenário: Utilizador regista-se, utilizador não se consegue registar
+Pré-condição: Utilizador tem acesso ao media center e não tem conta;
+              Administrador está logged in
+Pós-condição: Utilizador é registado no Media Center
+Fluxo normal:
+	1) Utilizador indica que pretende registar-se no media center
+	2) Sistema solicita nome de utilizador e e-mail
+	3) Utilizador introduz nome e e-mail
+	4) Sistema valida o e-mail inserido
+	5) Sistema envia pedido de registo ao admin
+	6) Administrador aceita pedido de registo
+	7) Sistema solicita password da conta
+	8) Utilizador introduz password
+	9) Sistema regista utilizador no media center
+Fluxo de exceção 1: [O e-mail já se encontra registado no sistema] (passo 4)
+	4.1) Sistema informa o utilizador que o e-mail introduzido já está registado no sistema
+	4.2) Sistema cancela operação
+
+
+2.INICIAR SESSÃO
+Use Case: Iniciar sessão numa conta existente
+Ator: Administrador/utilizador
+Cenários: Ator entra no media center, ator não consegue entrar no media center
+Pré-condição: Ator está registado no media center
+Pós-condição: Ator fica logged in no media center
+Fluxo normal:
+	1) Ator indica que pretende dar log in na sua conta
+	2) Sistema solicita e-mail e password
+	3) Ator introduz e-mail e password
+	4) Sistema autentica os dados
+	5) Sistema efetua log in
+Fluxo exceção 1: [Ator introduz nome de utilizador e/ou password errada] (passo 4)
+	4.1) Sistema informa ator da invalidade dos dados
+	4.2) Sistema cancela operação
+
+
+3.TERMINAR SESSÃO
+Use Case: Terminar sessão
+Ator: Administrador/Utilizador
+Cenário: Ator sai do media center
+Pré-condição: Ator está logged in no media center
+Pós-condição: Ator dá log out do media center
+Fluxo normal:
+	1) Ator indica que pretende dar log out do media center
+	2) Sistema efetua log out
+
+
+4. EDITAR UTILIZADOR
+Use Case: Editar uma conta registada no media center
+Ator: Administrador/utilizador
+Cenários: Ator edita a sua conta, ator não consegue editar a sua conta
+Pré-condição: Ator está logged in no media center
+Pós-condição: Conta do ator fica com dados da conta atualizados
+Fluxo normal:
+	1) Ator indica que pretende editar a conta
+	2) Sistema solicita a password da conta
+	3) Ator introduz a password
+	4) Sistema verifica a validade da password
+	5) Sistema apresenta os campos da conta que podem ser alterados
+	6) Ator escolhe o campo que pretende alterar
+	7) Sistema solicita o novo valor do campo
+	8) Ator introduz o novo valor do campo
+	9) Sistema atualiza o campo
+	10) Sistema pergunta se pretende alterar mais algum campo
+	11) Ator indica que não pretende alterar mais nada
+Fluxo de exceção 1: [Ator introduz password errada] (passo 4)
+	4.1) Sistema informa ator da invalidade da password introduzida
+	4.2) Sistema cancela operação
+Fluxo alternativo 1: [Ator pretende editar mais um campo] (passo 11)
+	11.1) Ator indica que pretende alterar mais campos
+	11.2) Voltar a 5)
+
+
+5. ELIMINAR UTILIZADOR
+Use Case: Apagar a conta de um utilizador
+Ator: Utilizador
+Cenário: Ator elimina a sua conta do media center
+Pré-condição: Ator está logged in no media center
+Pós-condição: Conta é apagada do sistema
+Fluxo normal:
+	1) Ator indica que pretende eliminar a sua conta
+	2) Sistema pede confirmação
+	3) Utilizador dá confirmação
+	4) Sistema elimina a conta do utilizador
+
+
+6. FAZER UPLOAD DE CONTEÚDO
+Use Case: Fazer upload de media
+Ator: Utilizador
+Cenário: Ator faz upload de media
+Pré-condição: Ator está logged in no media center
+Pós-condição: Media fica disponível no media center com uma categoria associada;
+	      Biblioteca do ator é atualizada;
+	      Listas de potenciais amigos dos utilizadores ficam atualizadas
+
+Fluxo normal:
+	1) Ator indica que pretende fazer upload de conteúdo
+	2) Sistema solicita o conteúdo a dar upload
+	3) Ator seleciona conteúdo que pretende adicionar ao media center
+	4) Sistema verifica não-existência do conteúdo selecionado
+	5) Sistema efetua upload do conteúdo, gerando uma categoria
+Fluxo Alternativo 1: [O conteúdo já se encontra disponível no media center] (passo 2)
+	4.1) Sistema verifica não-existência dos outros utilizadores com esse conteúdo em comum na lista de amigos do ator
+	4.2) Sistema verifica não-existência dos outros utilizadores com esse conteúdo em comum na lista de potenciais amigos do ator
+	4.3) Sistema adiciona utilizadores com esse conteúdo em comum que não foram desconsiderados à lista de potenciais amigos do ator
+	4.4) Sistema adiciona conteúdo à biblioteca do utilizador
+
+Fluxo alternativo 2: [Pelo menos um dos utilizadores com o conteúdo em comum já se encontra na lista de amigos do ator] (passo 4.1)
+	4.1.1) Sistema desconsidera utilizadores com o conteúdo em comum presentes na lista de amigos do ator
+	4.1.2) Voltar ao passo 4.2)
+Fluxo alternativo 3: [Pelo menos um dos utilizadores com o conteúdo em comum já se encontra na lista de potenciais amigos do ator] (passo 4.2)
+	4.2.1) Sistema desconsidera utilizadores com o conteúdo em comum presentes na lista de potenciais amigos do ator
+	4.2.2) Voltar ao passo 4.3)
+
+
+7. ALTERAR CATEGORIA DO CONTEÚDO
+Use Case: Alterar categoria do conteúdo
+Ator: Utilizador
+Cenário: Ator altera a categoria do conteúdo
+Pré-condição: Ator está logged in no media center;
+	      Existe pelo menos um ficheiro de media;
+Pós-condição: Conteúdo é recategorizado
+Fluxo normal:
+	1) Ator indica que pretende alterar a categoria de um conteúdo
+	2) Sistema seleciona os conteúdos que podem ser alterados
+	3) Sistema apresenta os conteúdos 
+	4) Ator seleciona conteúdo que pretende alterar
+	5) Sistema solicita nova categoria do conteúdo
+	6) Ator introduz nova categoria do conteúdo
+	7) Sistema atribui categoria introduzida ao conteúdo
+
+
+8. REMOVER CONTEÚDO
+Use Case: Remover conteúdo
+Ator: Utilizador
+Cenário: Utilizador remove conteúdo do media center
+Pré-condição: Utilizador está logged in no media center;
+              Existe media na sua biblioteca
+Pós-condição: Media deixa de estar disponível no media center
+Fluxo normal:
+	1) Ator indica que pretende remover um conteúdo
+	2) Sistema seleciona conteúdos do ator
+	3) Sistema apresenta conteúdos que o ator pode remover
+	4) Ator seleciona conteúdo que pretende eliminar
+	5) Sistema solicita confirmação
+	6) Ator confirma a eliminação
+	7) Sistema elimina conteúdo
+
+
+9. REPRODUZIR CONTEÚDO
+Use Case: Utente reproduz conteúdo de media
+Ator: Utente
+Cenário: Utente reproduz um ficheiro de media do media center
+Pré-condição: Existe pelo menos um ficheiro de media no media center
+Pós-condição: Conteúdo é reproduzido
+Fluxo Normal:
+	1) Ator indica que pretende reproduzir da biblioteca geral
+	2) Sistema apresenta media disponível para reproduzir
+	3) Ator seleciona media que pretende reproduzir
+	4) Sistema apresenta formas possíveis de reproduçao
+	5) Ator seleciona reprodução na ordem por defeito
+	6) Sistema reproduz os ficheiros de media selecionados pela ordem pretendida
+Fluxo alternativo 1: [Ator indica que quer reproduzir da biblioteca pessoal] (passo 1)
+	1.1) Ator indica que pretende reproduzir da biblioteca pessoal
+	1.2) Sistema verifica que utente é utilizador
+	1.3) Sistema seleciona os ficheiros de media da biblioteca do utilizador
+	1.4) Voltar a 2)
+Fluxo alternativo 2: [Ator é convidado] (passo 1.2)
+	1.2.1) Sistema informa só pode reproduzir da biblioteca global
+	1.2.2) Voltar a 2)
+Fluxo de exceção 3: [Ator não possui ficheiros de media na sua biblioteca pessoal] (passo 1.3)
+	1.3.1) Sistema informa que só pode reproduzir da biblioteca global
+Fluxo alternativo 4: [Ator seleciona reprodução por ordem aleatória] (passo 5)
+	5.1) Ator indica que pretende reprodução por ordem aleatória 
+	5.2) Sistema ordena os ficheiros de media selecionados aleatoriamente
+	5.3) Voltar a 6)
+
+
+10. CRIAR PLAYLIST
+Use Case: Criar uma playlist
+Ator: Utilizador
+Cenário: Ator cria uma playlist
+Pré-condição: Ator está logged in no sistema
+Pós-condição: Nova playlist é criada
+Fluxo Normal:
+	1) Ator indica que pretende criar uma playlist
+	2) Sistema seleciona ficheiros de media da biblioteca geral
+	3) Sistema apresenta ficheiros de media
+	4) Ator indica os ficheiros que pretende inserir na playlist
+        5) Sistema solicita nome da playlist
+	6) Ator indica o nome da playlist
+	7) Sistema regista a nova playlist
+Fluxo Alternativo 1: [Ator pretende criar uma playlist por artista] (passo 1)
+	1.1.a) Ator indica que pretende criar uma playlist por artista
+	1.2.a) Sistema seleciona todos os artistas existentes
+	1.3.a) Sistema apresenta os artistas existentes
+	1.4.a) Ator seleciona o artista que pretende
+	1.5.a) Sistema seleciona o conteúdo do artista
+	1.6.a) Voltar a 5)
+Fluxo Alternativo 2: [Ator pretende criar uma playlist por género] (passo 1)
+	1.1.b) Ator indica que pretende criar uma playlist por género
+	1.2.b) Sistema seleciona todos os géneros existentes
+	1.3.b) Sistema apresenta os géneros existentes
+	1.4.b) Ator seleciona o género que pretende
+	1.5.b) Sistema seleciona os ficheiros com esse género
+	1.6.b) Voltar a 5)
+Fluxo Alternativo 3: [Ator pretende criar uma playlist aleatória] (passo 1)
+	1.1.c) Ator indica que pretende criar uma playlist aleatória
+	1.2.c) Sistema seleciona os ficheiros aleatoriamente
+	1.3.c) Voltar a 5)

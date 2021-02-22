@@ -1,0 +1,138 @@
+
+%Exemplo 1
+%Aproxime o integral da função f(x) = 1 + e-x sin (4x)  em [0, 1] usando
+%adequadamente as diferentes regras de Newton-Cotes simples. Determine um
+%majorante para o valor absoluto do erro de truncatura cometido
+%no cálculo de cada uma das aproximações encontradas.
+
+
+
+f =
+
+     Inline function:
+     f(x) = 1+exp(-x).*sin(4*x)
+
+
+a =
+
+     0
+
+
+b =
+
+     1
+
+Aproximação pela regra do Trapézio
+
+ht =
+
+     1
+
+
+It =
+
+   0.860793960474483
+
+Aproximação pela regra de Simpson
+
+n =
+
+     2
+
+
+hs =
+
+   0.500000000000000
+
+
+x =
+
+                   0   0.500000000000000   1.000000000000000
+
+
+y =
+
+   1.000000000000000   1.551516768167581   0.721587920948966
+
+
+Is =
+
+   1.321275832269881
+
+
+Aproximação pela regra de 3/8:
+
+n =
+
+     3
+
+
+h3_8 =
+
+   0.333333333333333
+
+
+x =
+
+                   0   0.333333333333333   0.666666666666667   1.000000000000000
+
+
+y =
+
+   1.000000000000000   1.696423938260193   1.234771594579825   0.721587920948966
+
+
+I3_8 =
+
+   1.314396814933627
+
+   
+Podemos encontrar majorantes para o erro de cada uma das aproximações obtidas
+Prima uma tecla para continuar
+Para a aproximação It determinada pela regra do Trapézio:
+     |e(It)|=|I - It| <= ((b-a)^3 /12)* M2, onde M2 = max |f''(x)|, x in (0,1)
+ 
+df2 =
+ 
+- (8*cos(4*x))/exp(x) - (15*sin(4*x))/exp(x)
+ 
+O valor maximo, M2 = 13.38234 de |f''(x)| se atinge em x =0.20896319
+
+M_eIt =
+
+   1.115195023935050
+
+Para a aproximação Is determinada pela regra de Simpson:
+    |e(Is)|=|I - Is| <= h^5 /90 * M4, M4= max |f^{4}(x)|, x in (0, 1)
+ 
+df4 =
+ 
+(240*cos(4*x))/exp(x) + (161*sin(4*x))/exp(x)
+ 
+O valor maximo, M4 = 257.14461 de |f^{4}(x)| se atinge em x =0.086478682
+
+M_eIs =
+
+   0.089286324065673
+
+Para a aproximação I3/8 determinada pela regra de 3/8:
+    |e(I3/8)|=|I - Is|= 3/80 h^5 * M4, M4= max |f^{4}(x)|, x in (0, 1)
+
+M_eI3_8 =
+
+   0.039682810695855
+
+      
+Podemos confirmar os majorantes anteriores porque sabemos calcular
+o valor do integral da função dada e o erro absoluto de cada aproximação
+Prima uma tecla para continuar
+O valor do integral...................... ....I = 1.30825060464267
+O valor aproximado pela regra do trapézio....It = 0.860793960474483
+O valor aproximado pelo regra de Simpson.....Is = 1.32127583226988
+O valor aproximado pelo regra de 3/8.......I3/8 = 1.31439681493363
+O erro absoluto de It:
+|e(It)|= |I - Itc|= 0.447456644168186<= 1.11519502393505
+O erro absoluto de Is:
+|e(Is)|= |I - Is|= 0.0130252276272127<= 0.0892863240656732
+O erro absoluto de I3/8:
+|e(It3_8)|= |I - I3_8|= 0.00614621029095863 <= 0.0396828106958547
