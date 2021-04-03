@@ -4,7 +4,7 @@
 </p>
 <h1 align="center">MIEI-Licenciatura</h1>
 <h3 align="center">Universidade do Minho</h3>
-<p  align="center"> Conteúdo das unidades curriculares da lincenciatura do curso Mestrado Integrado em Engenharia Informática (2017-2020) </p>
+<p  align="center"> Conteúdo das UCs da lincenciatura do curso Mestrado Integrado em Engenharia Informática (2017-2020) </p>
 
 ---
 
