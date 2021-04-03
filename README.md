@@ -48,7 +48,7 @@ Conteúdos das cadeiras da lincenciatura do curso Mestrado Integrado em Engenhar
 
 #### 2º SEMESTRE: <br/>
  - [Comunicações por Computador](https://github.com/fliper6/MIEI-Licenciatura/tree/main/3%C2%BA%20ano/2%C2%BA%20Semestre/CC) <br/>
- - [Laboratórios de Informática IV](https://github.com/fliper6/MIEI-Licenciatura/tree/main/3%C2%BA%20ano/2%C2%BA%20Semestre/DSS) <br/>
+ - [Laboratórios de Informática IV](https://github.com/fliper6/MIEI-Licenciatura/tree/main/3%C2%BA%20ano/2%C2%BA%20Semestre/LI4) <br/>
  - [Computação Gráfica](https://github.com/fliper6/MIEI-Licenciatura/tree/main/3%C2%BA%20ano/2%C2%BA%20Semestre/CG) <br/>
  - [Modelos Estocásticos de Investigação Operacional](https://github.com/fliper6/MIEI-Licenciatura/tree/main/3%C2%BA%20ano/2%C2%BA%20Semestre/MEIO) <br/>
  - [Processamento de Linguagens](https://github.com/fliper6/MIEI-Licenciatura/tree/main/3%C2%BA%20ano/2%C2%BA%20Semestre/PL) <br/>
