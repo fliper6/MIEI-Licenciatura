@@ -6,10 +6,9 @@
 <h3 align="center">Universidade do Minho</h3>
 <p  align="center"> Conteúdo das unidades curriculares da lincenciatura do curso Mestrado Integrado em Engenharia Informática (2017-2020) </p>
 
-
 ---
 
-### 1º ANO: ----------------------------------------------------------------- <br/>
+### 1º ANO: <br/>
 
 #### 1º SEMESTRE: <br/>
  - [Programação Funcional](https://github.com/fliper6/MIEI-Licenciatura/tree/main/1%C2%BA%20ano/1%C2%BA%20Semestre/PF) <br/>
@@ -27,7 +26,9 @@
  - [Tópicos de Física Moderna](https://github.com/fliper6/MIEI-Licenciatura/tree/main/1%C2%BA%20ano/2%C2%BA%20Semestre/TFM) <br/>
  - [Análise](https://github.com/fliper6/MIEI-Licenciatura/tree/main/1%C2%BA%20ano/2%C2%BA%20Semestre/ANALISE) <br/>
 
-### 2º ANO: ----------------------------------------------------------------- <br/>
+---
+
+### 2º ANO: <br/>
 
 #### 1º SEMESTRE: <br/>
  - [Algoritmos e Complexidade](https://github.com/fliper6/MIEI-Licenciatura/tree/main/2%C2%BA%20ano/1%C2%BA%20Semestre/ALGC) <br/>
@@ -45,7 +46,9 @@
  - [Sistemas Operativos](https://github.com/fliper6/MIEI-Licenciatura/tree/main/2%C2%BA%20ano/2%C2%BA%20Semestre/SO) <br/>
  - [Computação com R](https://github.com/fliper6/MIEI-Licenciatura/tree/main/2%C2%BA%20ano/2%C2%BA%20Semestre/R) <br/>
 
-### 3º ANO: ----------------------------------------------------------------- <br/>
+---
+
+### 3º ANO: <br/>
 
 #### 1º SEMESTRE: <br/>
  - [Bases de Dados](https://github.com/fliper6/MIEI-Licenciatura/tree/main/3%C2%BA%20ano/1%C2%BA%20Semestre/BD) <br/>
