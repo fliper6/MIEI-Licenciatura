@@ -7,9 +7,9 @@
 <p  align="center"> Conteúdo das unidades curriculares da lincenciatura do curso Mestrado Integrado em Engenharia Informática (2017-2020) </p>
 ---
 
-```
-### 1º ANO: ----------------------------------------------------------------- <br/>
 
+### 1º ANO: ----------------------------------------------------------------- <br/>
+```
 #### 1º SEMESTRE: <br/>
  - [Programação Funcional](https://github.com/fliper6/MIEI-Licenciatura/tree/main/1%C2%BA%20ano/1%C2%BA%20Semestre/PF) <br/>
  - [Laboratórios de Informática I](https://github.com/fliper6/MIEI-Licenciatura/tree/main/1%C2%BA%20ano/1%C2%BA%20Semestre/LI1) <br/>
@@ -25,7 +25,7 @@
  - [Sistemas de Computação](https://github.com/fliper6/MIEI-Licenciatura/tree/main/1%C2%BA%20ano/2%C2%BA%20Semestre/SC) <br/>
  - [Tópicos de Física Moderna](https://github.com/fliper6/MIEI-Licenciatura/tree/main/1%C2%BA%20ano/2%C2%BA%20Semestre/TFM) <br/>
  - [Análise](https://github.com/fliper6/MIEI-Licenciatura/tree/main/1%C2%BA%20ano/2%C2%BA%20Semestre/ANALISE) <br/>
-
+```
 ### 2º ANO: ----------------------------------------------------------------- <br/>
 
 #### 1º SEMESTRE: <br/>
