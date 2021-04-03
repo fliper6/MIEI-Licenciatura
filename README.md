@@ -1,7 +1,7 @@
 # MIEI-Licenciatura
-<a href="url"><img src="https://facs2017.di.uminho.pt/sites/default/files/logo_UMEENG_sem_nome.jpg" height="125"></a> <br/>
-Conteúdos das cadeiras da lincenciatura do curso Mestrado Integrado em Engenharia Informática (2017-2020)
 
+Conteúdos das cadeiras da lincenciatura do curso Mestrado Integrado em Engenharia Informática (2017-2020)
+<a href="url"><img src="https://facs2017.di.uminho.pt/sites/default/files/logo_UMEENG_sem_nome.jpg" height="125"></a> <br/>
 ### 1º ANO: ----------------------------------------------------------------- <br/>
 
 #### 1º SEMESTRE: <br/>
