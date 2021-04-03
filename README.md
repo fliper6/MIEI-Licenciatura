@@ -1,4 +1,4 @@
-<p style="align: center; text-size: 20px;"> MIEI-Licenciatura </p>
+# MIEI-Licenciatura
 <p align="center">
  <img src="https://facs2017.di.uminho.pt/sites/default/files/logo_UMEENG_sem_nome.jpg" align="center" height="125"> <br/>
 </p>
