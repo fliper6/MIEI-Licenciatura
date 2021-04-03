@@ -1,0 +1,34 @@
+%{
+#define INIC 5
+#define FIM 6
+#define Virg 7
+#define pal 8
+#define num 9
+void erro();
+%}
+%option noyywrap yylineno
+%%
+
+[ \n]        {}
+#.*          {}
+
+[,] 		 { return(yytext[0]); }
+(?i:inicio)  { return(INIC); }
+(?i:fim) 	 { return(FIM); }
+[a-zA-Z]+	 { return(pal); }
+[0-9]+		 { return(num); }
+
+.            { erro (); }
+%%
+
+int main (){
+    int c;
+    while ( c = yylex() ) {
+        printf("Cod: %d, (%s)\n", c, yytext);
+    }
+    return 0;
+}
+
+void erro() {
+    fprintf(stderr, "Linha %d: Símbolo desconhecido (%s)\n", yylineno, yytext);
+}

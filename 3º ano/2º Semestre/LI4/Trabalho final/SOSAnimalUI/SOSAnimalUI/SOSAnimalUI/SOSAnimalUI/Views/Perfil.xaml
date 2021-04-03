@@ -1,0 +1,138 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="SOSAnimalUI.Views.Perfil"
+             BackgroundColor="#8ab1bc">
+
+    <StackLayout >
+        <ImageButton Source="back.png"
+                     HeightRequest="50"
+                     HorizontalOptions="Start"
+                     BorderColor="Transparent"
+                     BackgroundColor="Transparent"
+                     Clicked="Clicked_BackPerfil"
+                     />
+
+        <Label x:Name="lbl_titulo" 
+               TextColor="Black"
+               XAlign="Center"
+               YAlign="Center"
+               FontSize="Large" 
+               BackgroundColor="#E0E0E0"
+               WidthRequest="200"
+               HeightRequest="50"
+               HorizontalOptions="Center"
+               VerticalOptions="End"
+               Text="O MEU PERFIL"
+               />
+
+        <Image Margin="0,30,0,0" VerticalOptions="Start" HeightRequest="150" Source="avatar.png" ></Image>
+
+        <Grid Margin="0,0,0,0" VerticalOptions="Start">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="50"></RowDefinition>
+                <RowDefinition Height="50"></RowDefinition>
+                <RowDefinition Height="50"></RowDefinition>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="200"></ColumnDefinition>
+                <ColumnDefinition Width="100"></ColumnDefinition>
+                <ColumnDefinition Width="40"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+
+            <Label x:Name="lbl_email"
+                   HorizontalOptions="End" VerticalOptions="Center"
+                   Grid.Row="0" Grid.Column="0" 
+                   Margin="0,20,0,0"
+                   TextColor="Black"
+                   FontAttributes="Bold"
+                   FontSize="Medium"
+                   Text="Email:"
+                   />
+
+            <Label x:Name="lbl_email_dado"
+                   HorizontalOptions="Start" VerticalOptions="Center"
+                   Grid.Row="0" Grid.Column="1" 
+                   Margin="0,20,0,0"
+                   TextColor="Black"
+                   FontSize="Medium"
+                   Text="{Binding Emut}"
+                   />
+
+            <Label x:Name="lbl_nome" 
+                   HorizontalOptions="End" VerticalOptions="Center"
+                   Grid.Row="1" Grid.Column="0" 
+                   TextColor="Black"
+                   FontAttributes="Bold"
+                   FontSize="Medium" 
+                   Text="Username:" 
+                   />
+
+            <Label x:Name="lbl_nome_dado" 
+                   HorizontalOptions="Start" VerticalOptions="Center"
+                   Grid.Row="1" Grid.Column="1" 
+                   TextColor="Black"
+                   FontSize="Medium" 
+                   Text="{Binding Nomeut}" 
+                   />
+
+            <ImageButton Source="edit.png"
+                     HeightRequest="30"
+                     HorizontalOptions="Start"
+                     Grid.Row="1" Grid.Column="2" 
+                     BorderColor="Transparent"
+                     BackgroundColor="Transparent"
+                     Clicked="Clicked_Editar_Nome"
+                     />
+
+            <Label x:Name="lbl_password" VerticalOptions="Center"
+                   HorizontalOptions="End"
+                   Grid.Row="2" Grid.Column="0" 
+                   TextColor="Black"
+                   FontAttributes="Bold"
+                   FontSize="Medium" 
+                   Text="Password:" 
+                   />
+
+            <Entry x:Name="lbl_password_dado" VerticalOptions="Center"
+                   HorizontalOptions="Start"
+                   Grid.Row="2" Grid.Column="1" 
+                   TextColor="Black"
+                   FontSize="Medium" 
+                   IsPassword="True"
+                   IsReadOnly="True"
+                   Text="{Binding Pwut}" 
+                   />
+
+            <ImageButton Source="edit.png"
+                     HeightRequest="30"
+                     HorizontalOptions="Start"
+                     Grid.Row="2" Grid.Column="2" 
+                     BorderColor="Transparent"
+                     BackgroundColor="Transparent"
+                     Clicked="Clicked_Editar_Passe"
+                     />
+        </Grid>
+        <Grid Margin="0,0,0,0" VerticalOptions="Start">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="50"></RowDefinition>
+                <RowDefinition Height="50"></RowDefinition>
+                <RowDefinition Height="50"></RowDefinition>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+
+            <Button Text="Histórico" x:Name="btn_historico"
+                HorizontalOptions="Center"
+                Grid.Row="1" Grid.Column="0" 
+                WidthRequest="200"
+                HeightRequest="50"
+                Clicked="Clicked_Historico"
+                />
+        </Grid>
+    </StackLayout>
+</ContentPage>

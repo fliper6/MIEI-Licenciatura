@@ -1,0 +1,27 @@
+SLIDE 1: Nesta apresentação final, eu vou começar por explicar o que fizemos de forma mais geral
+e depois o meu colega João vai mostrar o código, a aplicação a correr e o backoffice.
+
+SLIDE 2: Como já devem saber a este ponto, é uma aplicação Android para sinalizar animais perdidos, abandonados,
+em situações críticas de saúde e está associado a um estabelecimento que hipoteticamente existiria onde os 
+os animais ficariam e os funcionários teriam acesso ao nosso backoffice.
+
+SLIDE 3: Como fase inicial, depois da proposta de projeto, começamos por criar diagramas e mockups de modo a 
+tornar o desenvolvimento mais eficaz porque nos lembrou um bocado das funcionalidades e objetivos que 
+queriamos implementar ao longo do projeto. 
+
+SLIDE 4: Também atualizamos o cronograma da proposta para se adequar melhor ao projeto. Obviamente que 
+com a mudança do semestre devido ao confinamento, já não se aplica muito em termos de datas, mas a ordem
+das tarefas permaneceu igual. 
+
+SLIDE 5: Podemos considerar que fizemos 3 programas, um para a backend, utilizando SQL para a base de
+dados e asp.net e C# para a api; depois, um para a front end, em que usamos xamarin forms e c# parava construirmos
+a nossa aplicação android; e por fim outro asp.net para o nosso backoffice.
+
+SLIDE 6: Tanto a base de dados e a api ficaram hosted pelo Azure. Nesta imagem temos uma imagem da nossa api,
+em que dá para ver, p.e., dois utilizadores registados.
+
+SLIDE 7: E aqui temos o esquema final da nossa base de dados. Relativamente ao conceito inicial, tivemos que
+adicionar varios parametros para algumas das funcionalidades e retiramos tudo relativo aos veiculos, 
+decidimos não tratar desse aspeto. 
+
+SLIDE 8:

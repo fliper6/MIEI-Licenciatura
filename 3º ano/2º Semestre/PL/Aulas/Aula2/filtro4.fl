@@ -1,0 +1,9 @@
+%option noyywrap
+%%
+
+::\ .*     {printf("PT: %s\n\n", yytext+2);}
+
+^[^:\n]+   {printf("AR: %s\n", yytext);}
+.|\n       {}
+
+%%

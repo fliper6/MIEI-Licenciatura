@@ -1,0 +1,5 @@
+R=Joao
+E=Manuel
+
+R: Eu acho que está a chover, e tu?
+E: Eu não diria o mesmo, não acho que estejas correto.

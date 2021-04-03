@@ -1,0 +1,23 @@
+doctype html
+html(lang="en")
+  head
+    cabeca
+      title= pageTitle
+        script(type="text/javascript").
+          if (foo) bar(1 + 5) 
+          asd
+  body
+    h1 Pug - node template engine
+    cabeca
+      title= pageTitle
+        script(type="text/javassscript").
+          if (foo) bar(1 + 5) 
+          asd
+    h1 Pug - node template engine
+    cabeca
+      title= pageTitle
+        script(type="text/javassscript").
+          if (foo) bar(1 + 5) 
+          asd
+  conclusion
+    h1 Pug - node template engine

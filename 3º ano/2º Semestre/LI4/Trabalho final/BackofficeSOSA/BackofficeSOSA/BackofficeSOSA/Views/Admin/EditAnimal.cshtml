@@ -1,0 +1,85 @@
+﻿@model BackofficeSOSA.Models.Animal
+
+@{
+    ViewBag.Title = "EditAnimal";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+
+    <div class="form-horizontal" style="font-size:25px">
+        <div class="col-md-offset-2 col-md-10">
+            <h2>Editar Animal</h2>
+        </div>
+        <hr />
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+        @Html.HiddenFor(model => model.Id)
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Nome, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.Nome, new { htmlAttributes = new { @placeholder = "Nome", @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.Nome, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Especie, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.Especie, new { htmlAttributes = new { @placeholder = "Espécie", @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.Especie, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Idade, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.Idade, new { htmlAttributes = new { @placeholder = "Idade", @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.Idade, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Peso, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.Peso, new { htmlAttributes = new { @placeholder = "Peso", @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.Peso, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.HistoricoClinico, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.HistoricoClinico, new { htmlAttributes = new { @placeholder = "Histórico clínico", @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.HistoricoClinico, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Raca, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.Raca, new { htmlAttributes = new { @placeholder = "Raça", @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.Raca, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Status, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.Status, new { htmlAttributes = new { @type = "number", @min = "0", max = "1", @placeholder = "Estado", @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.Status, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="Guardar" class="btn btn-info" />
+                <a onclick="window.history.back()" class="btn btn-danger text-white">Cancelar</a>
+            </div>
+        </div>
+    </div>
+}
+

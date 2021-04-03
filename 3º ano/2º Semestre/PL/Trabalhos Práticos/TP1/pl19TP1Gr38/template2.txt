@@ -1,0 +1,52 @@
+=== meta
+
+email: jj@di.uminho.pt
+author: J.João
+data: 14/1/2022
+
+# "name" é dado por argumento de linha de comando (argv[1])
+
+=== tree
+
+{%name%}/
+- doc/
+-- {%name%}.md
+- exemplo/
+-- Teste1
+- README
+- Makefile
+Ex2/
+- {%name%}
+
+
+=== Makefile
+
+{%name%}: {%name%}.fl
+	flex {%name%}.fl
+	cc -o {%name%} lex.yy.c
+
+install: {%name%}
+	cp {%name%} /usr/local/bin/
+
+=== {%name%}.md
+# NAME
+
+{%name%} - o nosso fabuloso filtro ...FIXME
+
+## Synopsis
+
+   {%name%} file*
+
+## Description
+
+## See also
+
+## Author
+
+Comments and bug reports to {%author%}, {%email%}.
+
+=== README
+
+FIXME: descrição sumária do filtro
+
+

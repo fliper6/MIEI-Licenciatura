@@ -1,0 +1,135 @@
+	// inicio declaracao da variavel "q"
+pushi 1
+pushi 22
+pushi 333
+pushi 4444
+	// fim declaracao da variavel "q"
+	// inicio declaracao da variavel "res"
+pushi 5555
+	// fim declaracao da variavel "res"
+	// inicio declaracao da variavel "i"
+pushi 66666
+	// fim declaracao da variavel "i"
+start
+	// atribuicoes iniciais for
+pushi 7
+storeg 5
+FOR0:               
+	// cond de permanencia
+	// inicio de get variavel "i"
+pushg 5	// fim de get variavel "i"
+pushi 4
+inf
+jz ENDFOR0          
+	// inicio de bloco do ciclo
+pushgp
+pushi 0    
+pushi 0
+	// inicio de get variavel "i"
+pushg 5	// fim de get variavel "i"
+add
+add         
+read            
+atoi           
+storen      
+	// incremento das variaveis
+	// inicio de get variavel "i"
+pushg 5	// fim de get variavel "i"
+pushi 1
+add
+storeg 5
+jump FOR0
+ENDFOR0:            
+	// preparar funcao
+pushi 0 // return  
+	// args da fucao  
+	// inicio de get variavel "q"
+pushgp
+pushi 0    
+pushi 0
+pushi 3
+add
+add         
+loadn       
+	// fim de get variavel "q"
+	// inicio de get variavel "q"
+pushgp
+pushi 0    
+pushi 0
+pushi 2
+add
+add         
+loadn       
+	// fim de get variavel "q"
+	// inicio de get variavel "q"
+pushgp
+pushi 0    
+pushi 0
+pushi 1
+add
+add         
+loadn       
+	// fim de get variavel "q"
+	// inicio de get variavel "q"
+pushgp
+pushi 0    
+pushi 0
+pushi 0
+add
+add         
+loadn       
+	// fim de get variavel "q"
+                  
+	// chamar a funcao
+pusha isquare            
+call                
+nop                 
+	//retira da stack os argumentos
+pop 4             
+storeg 4
+	// incicio de ite     
+	// inicio de get variavel "res"
+pushg 4	// fim de get variavel "res"
+pushi 1
+equal
+	// comeca bloco THEN  
+jz ELSE0
+pushs "pode ser quadrado\n"        
+writes
+jump ENDIF0
+	// comeca bloco ELSE  
+ELSE0:
+pushs "nao pode ser quadrado\n"         
+writes             
+ENDIF0:
+	// fim de ite         
+stop
+	// declaracao funcao
+isquare: nop         
+              
+              
+	// inicio de get variavel "x1"
+pushl -1	// fim de get variavel "x1"
+	// inicio de get variavel "x2"
+pushl -2	// fim de get variavel "x2"
+equal
+	// inicio de get variavel "x2"
+pushl -2	// fim de get variavel "x2"
+	// inicio de get variavel "x3"
+pushl -3	// fim de get variavel "x3"
+equal
+	// inicio de get variavel "x3"
+pushl -3	// fim de get variavel "x3"
+	// inicio de get variavel "x4"
+pushl -4	// fim de get variavel "x4"
+equal
+add
+pushi 2
+equal
+add
+pushi 2
+equal
+          
+pushi 0
+storel -1 
+return          

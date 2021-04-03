@@ -1,0 +1,83 @@
+﻿@model BackofficeSOSA.Models.Sinalizacao
+
+@{
+    ViewBag.Title = "DetailsSinalizacao";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+
+    <div class="form-horizontal" style="font-size:22px">
+
+        <div class="col-md-offset-2 col-md-10">
+            <h2>Detalhes Sinalização</h2>
+        </div>
+        <hr />
+        <dl class="dl-horizontal col-md-offset-2 col-md-10">
+            <dt>
+                @Html.DisplayNameFor(model => model.IdUser):
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.IdUser)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.Data):
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.Data)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.Nota):
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.Nota)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.Status):
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.Status)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.Lat):
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.Lat)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.Long):
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.Long)
+            </dd>
+
+            <dt>
+                Imagens:
+            </dt>
+            @foreach (var item in ViewData["imagens"] as IList<String>)
+            {
+                <img src="@item" style="width: 10%; height: auto;" />
+            }
+
+
+        </dl>
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <a href="/Admin/EditSinalizacao/@Model.Id" class="btn btn-info">Editar sinalização</a>
+                <a href="/Admin/AddImagem/@Model.Id" class="btn btn-info">Adicionar imagens</a>
+                <a onclick="window.history.back()" class="btn btn-warning text-white">Voltar</a>
+                <a class="btn btn-primary text-white" href="https://www.google.pt/maps/place/@Model.Lat.ToString().Replace(',','.'),@Model.Long.ToString().Replace(',','.')">Ir para o mapa</a>
+            </div>
+        </div>
+        
+    </div>

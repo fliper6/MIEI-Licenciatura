@@ -1,0 +1,22 @@
+%{
+#include "y.tab.h"
+void yyerror(char* s);
+%}
+%option noyywrap  yylineno
+%%
+
+\<!--.*--\>         {}   // comentários
+
+[<>]         return(yytext[0]); 
+\<\/         return BB;
+
+[^<>/]+/\>   return TAG;
+[^<>]+/\<    return TXT;
+
+[ \t\n]      {}
+
+.            yyerror("inválido");
+
+%%
+// <x></x>\nEOF
+//     > TXT="\n" EOF

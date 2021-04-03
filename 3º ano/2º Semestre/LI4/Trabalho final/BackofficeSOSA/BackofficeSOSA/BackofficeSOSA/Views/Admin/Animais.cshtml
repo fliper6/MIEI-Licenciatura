@@ -1,0 +1,120 @@
+﻿@model IEnumerable<BackofficeSOSA.Models.Animal>
+
+@{
+    ViewBag.Title = "Animais";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<div class="container-fluid">
+    @if (TempData["Success"] != null)
+    {
+        <p class="alert alert-success" id="successMessage">@TempData["Success"]</p>
+    }
+    <ol class="breadcrumb">
+        <li class="breadcrumb-item">
+            <a href="/Admin/Dashboard">Dashboard</a>
+        </li>
+        <li class="breadcrumb-item active">Animais</li>
+
+    </ol>
+
+    <div class="card shadow mb-4">
+        <div class="card-header py-3">
+            <i class="fas fa-table"></i>
+            Animais
+            <a href="/Admin/AddAnimal" class="btn btn-info fa-pull-right">Adicionar animal</a>
+        </div>
+        <div class="card-body">
+            <div class="table-responsive">
+                <table class="table table-bordered" id="datatable" width="100%" cellspacing="0">
+                    <thead>
+                        <tr>
+                            <th>Id</th>
+                            <th>Nome</th>
+                            <th>Especie</th>
+                            <th>Raca</th>
+                            <th>Idade</th>
+                            <th>Peso</th>
+                            <th>HistoricoClinico</th>
+                            <th>Status</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tfoot>
+                        <tr>
+                            <th>Id</th>
+                            <th>Nome</th>
+                            <th>Especie</th>
+                            <th>Raca</th>
+                            <th>Idade</th>
+                            <th>Peso</th>
+                            <th>HistoricoClinico</th>
+                            <th>Status</th>
+                            <th>Action</th>
+                        </tr>
+                    </tfoot>
+                    <tbody>
+                        @foreach (var item in Model)
+                        {
+                            <tr>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.Id)
+                                </td>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.Nome)
+                                </td>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.Especie)
+                                </td>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.Raca)
+                                </td>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.Idade)
+                                </td>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.Peso)
+                                </td>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.HistoricoClinico)
+                                </td>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.Status)
+                                </td>
+                                <td>
+                                    @Html.ActionLink("Editar", "EditAnimal", new { id = item.Id }) |
+                                    @Html.ActionLink("Detalhes", "DetailsAnimal", new { id = item.Id }) |
+                                    @Html.ActionLink("Remover", "DeleteAnimal", new { id = item.Id })
+                                </td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section scripts{
+    <script type="text/javascript" charset="utf8" src="https:////cdn.datatables.net/plug-ins/1.10.21/sorting/formatted-numbers.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $("#datatable").DataTable({
+                "language": {
+                    "decimal": ","
+                },
+                "order": [[0, "asc"]],
+                'rowCallback': function (row, data, index) {
+                    if (data[7] == 1) {
+                        $(row).find('td:eq(7)').css('background-color', '#fa6464');
+                    }
+                    if (data[7] == 0) {
+                        $(row).find('td:eq(7)').css('background-color', '#82cf65');
+                    }
+                }
+
+            });
+        });
+    </script>>
+}

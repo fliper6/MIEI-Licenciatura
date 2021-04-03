@@ -1,0 +1,47 @@
+﻿@model BackofficeSOSA.Models.Adocao
+
+@{
+    ViewBag.Title = "DetailsAdocao";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+
+    <div class="form-horizontal" style="font-size:22px">
+        <div class="col-md-offset-2 col-md-10">
+            <h2>Detalhes Adoção</h2>
+        </div>
+        <hr />
+        <dl class="dl-horizontal col-md-offset-2 col-md-10">
+            <dt>
+                @Html.DisplayNameFor(model => model.IdUser)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.IdUser)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.IdAnimal)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.IdAnimal)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.Data)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.Data)
+            </dd>
+
+        </dl>
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <a href="/Admin/EditAdocao/@Model.Id" class="btn btn-info">Editar adoção</a>
+                <a onclick="window.history.back()" class="btn btn-warning text-white">Voltar</a>
+            </div>
+        </div>
+    </div>
+

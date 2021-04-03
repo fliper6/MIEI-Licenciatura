@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="SOSAnimalUI.Views.Editar_Nome"
+             BackgroundColor="#8ab1bc">
+    <StackLayout>
+
+        <ImageButton Source="back.png"
+                     HeightRequest="50"
+                     HorizontalOptions="Start"
+                     BorderColor="Transparent"
+                     BackgroundColor="Transparent"
+                     Clicked="Clicked_BackEditarN"
+                     />
+
+        <Label x:Name="lbl_titulo" 
+               TextColor="Black"
+               XAlign="Center"
+               YAlign="Center"
+               FontSize="Large" 
+               BackgroundColor="#E0E0E0"
+               WidthRequest="200"
+               HeightRequest="50"
+               Margin="0,0,0,30" 
+               HorizontalOptions="Center"
+               VerticalOptions="End"
+               Text="EDITAR PERFIL"
+               />
+
+        <Grid Margin="0,0,0,0" VerticalOptions="Start">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"></RowDefinition>
+                <RowDefinition Height="*"></RowDefinition>
+                <RowDefinition Height="*"></RowDefinition>
+                <RowDefinition Height="*"></RowDefinition>
+                <RowDefinition Height="*"></RowDefinition>
+                <RowDefinition Height="*"></RowDefinition>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+
+            <Label x:Name="lbl_novoNome" 
+               TextColor="Black" FontSize="Medium"  
+               Grid.Row="0" Grid.Column="0" 
+               Margin="50,30,50,0" 
+               Text="Novo nome:">
+            </Label>
+
+            <Entry Text="{Binding Nome}"
+               Grid.Row="1" Grid.Column="0" 
+               Margin="50,0,50,0" 
+               Placeholder="Inserir novo nome de utilizador">
+            </Entry>
+
+            <Label x:Name="lbl_passeAtual" 
+               TextColor="Black" FontSize="Medium"  
+               Grid.Row="2" Grid.Column="0" 
+               Margin="50,30,50,0" 
+               Text="Password atual:">
+            </Label>
+
+            <Entry Text="{Binding Password}"
+               Grid.Row="3" Grid.Column="0" 
+               Margin="50,0,50,0" 
+               Placeholder="Inserir password atual"
+               IsPassword="True">
+            </Entry>
+
+            <Button Text="Guardar Alterações" Command="{Binding GuardarCommand}"
+                HorizontalOptions="Center"
+                Grid.Row="5" Grid.Column="0" 
+                WidthRequest="300"
+                HeightRequest="50"
+             />
+        </Grid>
+
+    </StackLayout>
+</ContentPage>

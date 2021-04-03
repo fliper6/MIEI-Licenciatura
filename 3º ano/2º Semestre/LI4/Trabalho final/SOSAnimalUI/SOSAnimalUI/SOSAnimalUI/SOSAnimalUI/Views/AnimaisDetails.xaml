@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+              BackgroundColor="#8ab1bc"
+             x:Class="SOSAnimalUI.Views.AnimaisDetails">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="0.1*"></RowDefinition>
+            <RowDefinition Height="0.07*"></RowDefinition>
+            <RowDefinition Height="0.02*"></RowDefinition>
+            <RowDefinition Height="0.9*"></RowDefinition>
+            <RowDefinition Height="0.3*"></RowDefinition>
+            <RowDefinition Height="0.02*"></RowDefinition>
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="0.27*"></ColumnDefinition>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+            <ColumnDefinition Width="0.27*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+
+        <ImageButton Grid.Row="0" Grid.Column="0" Source="back.png"
+                     HeightRequest="50"
+                     HorizontalOptions="Start"
+                     BorderColor="Transparent"
+                     BackgroundColor="Transparent"
+                     Clicked="Clicked_BackHDetails"
+                     />
+
+        <Label Grid.Row="1" Grid.Column="1" x:Name="lbl_titulo" 
+               TextColor="Black"
+               XAlign="Center"
+               YAlign="Center"
+               FontSize="Large" 
+               BackgroundColor="#E0E0E0"
+               WidthRequest="200"
+               HeightRequest="50"
+               HorizontalOptions="Center"
+               VerticalOptions="End"
+               Text="DETALHES"
+               />
+
+        <StackLayout Grid.Column="1" Grid.Row="3" >
+            <Label BackgroundColor="Transparent" FontSize="Medium" FontAttributes="Bold" Text="NOME:" Style="{StaticResource labelStyle}"></Label>
+            <Label BackgroundColor="Transparent" FontSize="Medium" x:Name="nome" Style="{StaticResource labelStyle}" Margin="0,0,0,10"></Label>
+
+            <Label BackgroundColor="Transparent" FontSize="Medium" FontAttributes="Bold" Text="ESPÉCIE:" Style="{StaticResource labelStyle}"></Label>
+            <Label BackgroundColor="Transparent" FontSize="Medium" x:Name="espec"  Style="{StaticResource labelStyle}" Margin="0,0,0,10"></Label>
+
+            <Label BackgroundColor="Transparent" FontSize="Medium" FontAttributes="Bold" Text="RAÇA:" Style="{StaticResource labelStyle}"></Label>
+            <Label BackgroundColor="Transparent" FontSize="Medium" x:Name="raca"  Style="{StaticResource labelStyle}" Margin="0,0,0,10"></Label>
+
+            <Label BackgroundColor="Transparent" FontSize="Medium" FontAttributes="Bold" Text="PESO:" Style="{StaticResource labelStyle}"></Label>
+            <Label BackgroundColor="Transparent" FontSize="Medium" x:Name="peso"  Style="{StaticResource labelStyle}" Margin="0,0,0,10"></Label>
+
+            <Label BackgroundColor="Transparent" FontSize="Medium" FontAttributes="Bold" Text="ESTADO:" Style="{StaticResource labelStyle}"></Label>
+            <Label BackgroundColor="Transparent" FontSize="Medium" x:Name="stat"  Style="{StaticResource labelStyle}" Margin="0,0,0,10"></Label>
+
+            <Label BackgroundColor="Transparent" FontSize="Medium" FontAttributes="Bold" Text="HISTÓRICO:" Style="{StaticResource labelStyle}"></Label>
+            <Label BackgroundColor="Transparent" FontSize="Medium" x:Name="historic"  Style="{StaticResource labelStyle}" Margin="0,0,0,10"></Label>
+        </StackLayout>
+
+        <CarouselView Scale="0.9" Grid.Row="4" Grid.Column="1"  ItemsSource="{Binding Items}" PeekAreaInsets="50">
+            <CarouselView.ItemTemplate>
+                <DataTemplate>
+                    <Image Source="{Binding .}" />
+                </DataTemplate>
+            </CarouselView.ItemTemplate>
+        </CarouselView>
+
+    </Grid>
+</ContentPage>

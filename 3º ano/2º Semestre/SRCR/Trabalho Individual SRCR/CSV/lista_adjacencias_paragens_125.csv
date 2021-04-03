@@ -1,0 +1,46 @@
+gid,latitude,longitude,Estado de Conservacao,Tipo de Abrigo,Abrigo com Publicidade?,Operadora,Carreira,Codigo de Rua,Nome da Rua,Freguesia
+97,-101959.47,-101795.46,Bom,Sem Abrigo,No,LT,125,1667,Avenida Professor Dr. Cavaco Silva,Porto Salvo
+98,-101970.18,-101783.3,Bom,Sem Abrigo,No,LT,125,1667,Avenida Professor Dr. Cavaco Silva,Porto Salvo
+717,-102227.22,-101894.71,Bom,Fechado dos Lados,Yes,LT,125,1667,Avenida Professor Dr. Cavaco Silva,Porto Salvo
+716,-102227.55,-101920.36,Bom,Fechado dos Lados,Yes,LT,125,1667,Avenida Professor Dr. Cavaco Silva,Porto Salvo
+726,-102509.72,-101859.8,Bom,Fechado dos Lados,Yes,LT,125,1667,Avenida Professor Dr. Cavaco Silva,Porto Salvo
+727,-102515.87,-101878.09,Bom,Fechado dos Lados,Yes,LT,125,1667,Avenida Professor Dr. Cavaco Silva,Porto Salvo
+730,-102764.70414054944,-102345.36371072767,Bom,Sem Abrigo,No,LT,125,1634,Estrada de Talaíde,Porto Salvo
+133,-102770.03,-102362.19,Bom,Fechado dos Lados,No,LT,125,1634,Estrada de Talaíde,Porto Salvo
+722,-102849.51,-101421.76,Bom,Fechado dos Lados,Yes,LT,125,1667,Avenida Professor Dr. Cavaco Silva,Porto Salvo
+723,-102865.58,-101399.39,Bom,Fechado dos Lados,Yes,LT,125,1667,Avenida Professor Dr. Cavaco Silva,Porto Salvo
+721,-103007.51,-102085.97,Bom,Fechado dos Lados,Yes,LT,125,1634,Estrada de Talaíde,Porto Salvo
+753,-103040.03,-102067.93,Bom,Fechado dos Lados,Yes,LT,125,1634,Estrada de Talaíde,Porto Salvo
+749,-103174.51,-101870.25,Bom,Sem Abrigo,No,LT,125,1634,Estrada de Talaíde,Porto Salvo
+750,-103210.92,-101837,Bom,Fechado dos Lados,No,LT,125,1634,Estrada de Talaíde,Porto Salvo
+748,-103481.37,-101650.92,Bom,Fechado dos Lados,No,LT,125,1634,Estrada de Talaíde,Porto Salvo
+757,-103529.69,-101634.82,Bom,Sem Abrigo,No,LT,125,1661,Rua Henrique Marques,Porto Salvo
+761,-103589.75,-102328.21,Bom,Sem Abrigo,No,LT,125,1651,Avenida Lopo Soares de Albergaria,Porto Salvo
+760,-103595.2,-102342.08,Bom,Fechado dos Lados,No,LT,125,1651,Avenida Lopo Soares de Albergaria,Porto Salvo
+759,-103754.86,-102383.62,Bom,Sem Abrigo,No,LT,125,1692,Rua Augusta,Porto Salvo
+758,-103782.6,-102354.54,Bom,Fechado dos Lados,No,LT,125,1692,Rua Augusta,Porto Salvo
+166,-104013.89,-102412.58,Bom,Sem Abrigo,No,LT,125,1698,Rua de São José,Porto Salvo
+204,-104054.48,-102333.36,Bom,Fechado dos Lados,No,LT,125,1692,Rua Augusta,Porto Salvo
+203,-104060.31,-102343.26,Bom,Sem Abrigo,No,LT,125,1692,Rua Augusta,Porto Salvo
+198,-104273.72,-102318.75,Bom,Sem Abrigo,No,LT,125,695,Avenida Dom Pedro V,Porto Salvo
+199,-104309.46,-102333.17,Bom,Fechado dos Lados,No,LT,125,705,Avenida Engenheiro Arantes e Oliveira,Porto Salvo
+209,-104318.74,-101876.43,Bom,Aberto dos Lados,No,LT,125,705,Avenida Engenheiro Arantes e Oliveira,Porto Salvo
+210,-104329.45,-101849.83,Bom,Sem Abrigo,No,LT,125,705,Avenida Engenheiro Arantes e Oliveira,Porto Salvo
+207,-104333.51,-102157.13,Bom,Aberto dos Lados,No,LT,125,705,Avenida Engenheiro Arantes e Oliveira,Porto Salvo
+797,-104431.06,-101723.48,Bom,Fechado dos Lados,Yes,LT,125,692,Rua Conde de Rio Maior,Porto Salvo
+191,-104731,-101677.86,Bom,Sem Abrigo,No,LT,125,692,Rua Conde de Rio Maior,Porto Salvo
+795,-104741.4,-101691.52,Bom,Fechado dos Lados,Yes,LT,125,692,Rua Conde de Rio Maior,Porto Salvo
+796,-104911.86,-101688.38,Bom,Fechado dos Lados,Yes,LT,125,692,Rua Conde de Rio Maior,Porto Salvo
+828,-105046.86,-101627.86,Bom,Fechado dos Lados,Yes,LT,125,1540,Estrada de Paço de Arcos,Porto Salvo
+287,-105447.82,-101232.23,Bom,Fechado dos Lados,Yes,LT,125,1540,Estrada de Paço de Arcos,"Oeiras e São Julião da Barra, Paço de Arcos e Caxias"
+1004,-105463.93407291333,-101208.08123805858,Bom,Fechado dos Lados,Yes,LT,125,1540,Estrada de Paço de Arcos,"Oeiras e São Julião da Barra, Paço de Arcos e Caxias"
+290,-105761.18,-101097.27,Bom,Fechado dos Lados,Yes,LT,125,1540,Estrada de Paço de Arcos,"Oeiras e São Julião da Barra, Paço de Arcos e Caxias"
+289,-105894.4,-101171.62,Bom,Fechado dos Lados,Yes,LT,125,1596,Rua Shegundo Galarza,"Oeiras e São Julião da Barra, Paço de Arcos e Caxias"
+288,-106033.78,-101107.92,Bom,Fechado dos Lados,Yes,LT,125,1540,Estrada de Paço de Arcos,"Oeiras e São Julião da Barra, Paço de Arcos e Caxias"
+388,-106176.2,-101085.06,Bom,Fechado dos Lados,Yes,LT,125,1540,Estrada de Paço de Arcos,"Oeiras e São Julião da Barra, Paço de Arcos e Caxias"
+387,-106378.14,-101089.06,Bom,Fechado dos Lados,Yes,LT,125,1540,Estrada de Paço de Arcos,"Oeiras e São Julião da Barra, Paço de Arcos e Caxias"
+386,-106385.21,-101073.57,Bom,Sem Abrigo,No,LT,125,1540,Estrada de Paço de Arcos,"Oeiras e São Julião da Barra, Paço de Arcos e Caxias"
+385,-106674.29,-100994.88,Bom,Fechado dos Lados,Yes,LT,125,1540,Estrada de Paço de Arcos,"Oeiras e São Julião da Barra, Paço de Arcos e Caxias"
+389,-106757.03,-100945.88,Bom,Fechado dos Lados,Yes,LT,125,1540,Estrada de Paço de Arcos,"Oeiras e São Julião da Barra, Paço de Arcos e Caxias"
+440,-106999.56,-100744.24,Bom,Fechado dos Lados,Yes,LT,125,605,Rua Conde das Alcáçovas,"Oeiras e São Julião da Barra, Paço de Arcos e Caxias"
+558,-107118.74,-101197.15,Bom,Fechado dos Lados,No,LT,125,1527,Rua Manuel Pinhanços,"Oeiras e São Julião da Barra, Paço de Arcos e Caxias"

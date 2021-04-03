@@ -1,0 +1,37 @@
+gid,latitude,longitude,Estado de Conservacao,Tipo de Abrigo,Abrigo com Publicidade?,Operadora,Carreira,Codigo de Rua,Nome da Rua,Freguesia
+198,-104273.72,-102318.75,Bom,Sem Abrigo,No,LT,129,695,Avenida Dom Pedro V,Porto Salvo
+209,-104318.74,-101876.43,Bom,Aberto dos Lados,No,LT,129,705,Avenida Engenheiro Arantes e Oliveira,Porto Salvo
+210,-104329.45,-101849.83,Bom,Sem Abrigo,No,LT,129,705,Avenida Engenheiro Arantes e Oliveira,Porto Salvo
+207,-104333.51,-102157.13,Bom,Aberto dos Lados,No,LT,129,705,Avenida Engenheiro Arantes e Oliveira,Porto Salvo
+206,-104352.88,-102155.61,Bom,Fechado dos Lados,No,LT,129,690,Rua do Comércio,Porto Salvo
+200,-104420.26,-102140.16,Bom,Sem Abrigo,No,LT,129,1631,Rua Sete de Junho,Porto Salvo
+797,-104431.06,-101723.48,Bom,Fechado dos Lados,Yes,LT,129,692,Rua Conde de Rio Maior,Porto Salvo
+202,-104559.73,-102074.01,Bom,Fechado dos Lados,No,LT,129,1611,Rua das Portelas,Porto Salvo
+211,-104613.4385006046,-102059.62741233375,Bom,Sem Abrigo,No,LT,129,1611,Rua das Portelas,Porto Salvo
+191,-104731,-101677.86,Bom,Sem Abrigo,No,LT,129,692,Rua Conde de Rio Maior,Porto Salvo
+795,-104741.4,-101691.52,Bom,Fechado dos Lados,Yes,LT,129,692,Rua Conde de Rio Maior,Porto Salvo
+194,-104887.93,-101935.17,Bom,Sem Abrigo,No,LT,129,1611,Rua das Portelas,Porto Salvo
+195,-104888.12,-101925.58,Bom,Sem Abrigo,No,LT,129,1611,Rua das Portelas,Porto Salvo
+197,-104911.17,-102075.08,Bom,Sem Abrigo,No,LT,129,687,Rua do Casal do Deserto,Porto Salvo
+796,-104911.86,-101688.38,Bom,Fechado dos Lados,Yes,LT,129,692,Rua Conde de Rio Maior,Porto Salvo
+196,-104948.14,-102024.5,Bom,Sem Abrigo,No,LT,129,687,Rua do Casal do Deserto,Porto Salvo
+189,-104980,-102444.39,Bom,Sem Abrigo,No,LT,129,755,Rua Oliveira Martins,Porto Salvo
+188,-104998.59,-102447.95,Bom,Sem Abrigo,No,LT,129,755,Rua Oliveira Martins,Porto Salvo
+828,-105046.86,-101627.86,Bom,Fechado dos Lados,Yes,LT,129,1540,Estrada de Paço de Arcos,Porto Salvo
+269,-105203.57,-102507.02,Bom,Sem Abrigo,No,LT,129,755,Rua Oliveira Martins,Porto Salvo
+268,-105213.17,-102489.26,Bom,Fechado dos Lados,Yes,LT,129,755,Rua Oliveira Martins,Porto Salvo
+827,-105268.41,-102428.49,Bom,Fechado dos Lados,Yes,LT,129,1680,Rua Encosta das Lagoas,Porto Salvo
+266,-105280.44,-102478.21,Bom,Fechado dos Lados,Yes,LT,129,1680,Rua Encosta das Lagoas,Porto Salvo
+287,-105447.82,-101232.23,Bom,Fechado dos Lados,Yes,LT,129,1540,Estrada de Paço de Arcos,"Oeiras e São Julião da Barra, Paço de Arcos e Caxias"
+1004,-105463.93407291333,-101208.08123805858,Bom,Fechado dos Lados,Yes,LT,129,1540,Estrada de Paço de Arcos,"Oeiras e São Julião da Barra, Paço de Arcos e Caxias"
+290,-105761.18,-101097.27,Bom,Fechado dos Lados,Yes,LT,129,1540,Estrada de Paço de Arcos,"Oeiras e São Julião da Barra, Paço de Arcos e Caxias"
+279,-105866.72,-100896.59,Bom,Fechado dos Lados,Yes,LT,129,858,Rua Calvet de Magalhães,"Oeiras e São Julião da Barra, Paço de Arcos e Caxias"
+289,-105894.4,-101171.62,Bom,Fechado dos Lados,Yes,LT,129,1596,Rua Shegundo Galarza,"Oeiras e São Julião da Barra, Paço de Arcos e Caxias"
+288,-106033.78,-101107.92,Bom,Fechado dos Lados,Yes,LT,129,1540,Estrada de Paço de Arcos,"Oeiras e São Julião da Barra, Paço de Arcos e Caxias"
+388,-106176.2,-101085.06,Bom,Fechado dos Lados,Yes,LT,129,1540,Estrada de Paço de Arcos,"Oeiras e São Julião da Barra, Paço de Arcos e Caxias"
+387,-106378.14,-101089.06,Bom,Fechado dos Lados,Yes,LT,129,1540,Estrada de Paço de Arcos,"Oeiras e São Julião da Barra, Paço de Arcos e Caxias"
+386,-106385.21,-101073.57,Bom,Sem Abrigo,No,LT,129,1540,Estrada de Paço de Arcos,"Oeiras e São Julião da Barra, Paço de Arcos e Caxias"
+385,-106674.29,-100994.88,Bom,Fechado dos Lados,Yes,LT,129,1540,Estrada de Paço de Arcos,"Oeiras e São Julião da Barra, Paço de Arcos e Caxias"
+389,-106757.03,-100945.88,Bom,Fechado dos Lados,Yes,LT,129,1540,Estrada de Paço de Arcos,"Oeiras e São Julião da Barra, Paço de Arcos e Caxias"
+440,-106999.56,-100744.24,Bom,Fechado dos Lados,Yes,LT,129,605,Rua Conde das Alcáçovas,"Oeiras e São Julião da Barra, Paço de Arcos e Caxias"
+558,-107118.74,-101197.15,Bom,Fechado dos Lados,No,LT,129,1527,Rua Manuel Pinhanços,"Oeiras e São Julião da Barra, Paço de Arcos e Caxias"

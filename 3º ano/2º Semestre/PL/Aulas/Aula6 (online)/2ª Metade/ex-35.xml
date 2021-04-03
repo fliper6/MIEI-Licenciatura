@@ -1,0 +1,32 @@
+elem       <x> ...... </x>
+tag        x
+abreelem   <x> 
+fechaelem  </x>
+txt
+
+EXEMPLOS:
+<x> txt <y> txt </y> txt <z> txt </z> </x>
+<x> </x>
+<x> t1 </x> <x> t2 </x> XM INVALIDO (tem que haver um tag global)
+
+interior  txt elementos  ...
+
+
+T = { < </ < TAG TXT}
+
+xml : elem
+
+eleme : abreelem txt fechaelem 
+
+filhos : TXT filhos           // (TXT | elem)*
+       | elem filhos
+       |
+       ;
+      
+
+abreelem : '<' TAG '>'
+
+fechaelem : '</' TAG '>'
+
+
+elems :: elem elems | ;

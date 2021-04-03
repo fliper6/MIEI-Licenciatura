@@ -1,0 +1,91 @@
+﻿@model IEnumerable<BackofficeSOSA.Models.Adocao>
+
+@{
+    ViewBag.Title = "Adocoes";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<div class="container-fluid">
+    @if (TempData["Success"] != null)
+    {
+        <p class="alert alert-success" id="successMessage">@TempData["Success"]</p>
+    }
+    <ol class="breadcrumb">
+        <li class="breadcrumb-item">
+            <a href="/Admin/Dashboard">Dashboard</a>
+        </li>
+        <li class="breadcrumb-item active">Adoções</li>
+
+    </ol>
+    <!-- DataTales Example -->
+    <div class="card shadow mb-4">
+        <div class="card-header py-3">
+            <i class="fas fa-table"></i>
+            Adoções
+            <a href="/Admin/AddAdocao" class="btn btn-info fa-pull-right">Adicionar adoção</a>
+        </div>
+        <div class="card-body">
+            <div class="table-responsive">
+                <table class="table table-bordered" id="sinstable" width="100%" cellspacing="0">
+                    <thead>
+                        <tr>
+                            <th>Id</th>
+                            <th>IdUser</th>
+                            <th>IdAnimal</th>
+                            <th>Data</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tfoot>
+                        <tr>
+                            <th>Id</th>
+                            <th>IdUser</th>
+                            <th>IdAnimal</th>
+                            <th>Data</th>
+                            <th>Action</th>
+                        </tr>
+                    </tfoot>
+                    <tbody>
+                        @foreach (var item in Model)
+                        {
+                            <tr>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.Id)
+                                </td>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.IdUser)
+                                </td>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.IdAnimal)
+                                </td>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.Data)
+                                </td>
+                                <td>
+                                    @Html.ActionLink("Editar", "EditAdocao", new { id = item.Id }) |
+                                    @Html.ActionLink("Detalhes", "DetailsAdocao", new { id = item.Id }) |
+                                    @Html.ActionLink("Remover", "DeleteAdocao", new { id = item.Id })
+                                </td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section scripts{
+    <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/plug-ins/1.10.21/sorting/date-euro.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $("#sinstable").DataTable({
+                "columnDefs": [
+                    { "type": "date-euro", targets: 3 }
+                ],
+                "order": [[0, "asc"]]
+            });
+        });
+    </script>>
+}

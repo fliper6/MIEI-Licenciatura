@@ -1,0 +1,77 @@
+gid,latitude,longitude,Estado de Conservacao,Tipo de Abrigo,Abrigo com Publicidade?,Operadora,Carreira,Codigo de Rua,Nome da Rua,Freguesia
+745,-102136.13485160771,-98663.30880207638,Bom,Fechado dos Lados,No,Vimeca,02,216,Estrada Consiglieri Pedroso,Barcarena
+736,-102231.41,-98789.31,Bom,Fechado dos Lados,Yes,Vimeca,02,216,Estrada Consiglieri Pedroso,Barcarena
+147,-102381.73,-98965.83,Bom,Sem Abrigo,No,Vimeca,02,950,Estrada das Palmeiras,Barcarena
+156,-102400.99,-98945.23,Bom,Sem Abrigo,No,Vimeca,02,950,Estrada das Palmeiras,Barcarena
+734,-102676.09,-98810.3,Bom,Sem Abrigo,No,Vimeca,02,950,Estrada das Palmeiras,Barcarena
+161,-102932.36,-98676.69,Bom,Fechado dos Lados,Yes,Vimeca,02,830,Estrada Militar,Barcarena
+162,-102962.16,-98672.14,Bom,Sem Abrigo,No,Vimeca,02,830,Estrada Militar,Barcarena
+172,-103411.08,-99046.23,Bom,Sem Abrigo,No,SCoTTURB,02,830,Estrada Militar,Barcarena
+171,-103417.17,-99041.11,Bom,Sem Abrigo,No,Vimeca,02,830,Estrada Militar,Barcarena
+595,-103725.69,-95975.2,Bom,Fechado dos Lados,Yes,Vimeca,02,354,Rua Manuel Teixeira Gomes,Carnaxide e Queijas
+594,-103879.91,-95751.23,Bom,Fechado dos Lados,No,Vimeca,02,1116,Avenida Professor Dr. Reinaldo dos Santos,Carnaxide e Queijas
+185,-103922.82,-96235.62,Bom,Fechado dos Lados,Yes,SCoTTURB,02,354,Rua Manuel Teixeira Gomes,Carnaxide e Queijas
+107,-103972.32,-95981.88,Bom,Fechado dos Lados,Yes,Vimeca,02,1113,Avenida de Portugal,Carnaxide e Queijas
+237,-104003.78,-96559.17,Bom,Fechado dos Lados,Yes,Vimeca,02,1113,Avenida de Portugal,Carnaxide e Queijas
+250,-104031.08,-96173.83,Bom,Fechado dos Lados,Yes,Vimeca,02,1113,Avenida de Portugal,Carnaxide e Queijas
+261,-104032.88,-96536.98,Bom,Fechado dos Lados,Yes,Vimeca,02,1113,Avenida de Portugal,Carnaxide e Queijas
+597,-104058.98,-95839.14,Bom,Fechado dos Lados,Yes,Vimeca,02,1137,Rua Tenente-General Zeferino Sequeira,Carnaxide e Queijas
+953,-104075.89,-95771.82,Bom,Fechado dos Lados,Yes,Vimeca,02,1116,Avenida Professor Dr. Reinaldo dos Santos,Carnaxide e Queijas
+248,-104091.69,-96778.69,Bom,Fechado dos Lados,No,Vimeca,02,362,Largo da Pátria Nova,Carnaxide e Queijas
+244,-104101.68,-97408.6,Bom,Fechado dos Lados,Yes,Vimeca,02,1214,Estrada de Queluz,Carnaxide e Queijas
+245,-104114.84,-97401.12,Bom,Fechado dos Lados,Yes,Vimeca,02,1214,Estrada de Queluz,Carnaxide e Queijas
+243,-104117.95,-97049.09,Bom,Fechado dos Lados,Yes,Vimeca,02,303,Rua Cinco de Outubro,Carnaxide e Queijas
+247,-104200.64,-96833.39,Bom,Fechado dos Lados,Yes,Vimeca,02,1279,Avenida Tomás Ribeiro,Carnaxide e Queijas
+609,-104226.49,-95797.22,Bom,Fechado dos Lados,Yes,Vimeca,02,327,Avenida do Forte,Carnaxide e Queijas
+799,-104280.83,-98312.61,Bom,Fechado dos Lados,No,Vimeca,02,1766,Praceta Antonio Leal de Oliveira,Carnaxide e Queijas
+599,-104296.72,-95828.26,Bom,Fechado dos Lados,Yes,Vimeca,02,327,Avenida do Forte,Carnaxide e Queijas
+1010,-104303.63612383853,-98554.77838335252,Bom,Sem Abrigo,No,Vimeca,02,79,Rua dos Açores,Carnaxide e Queijas
+246,-104328.14,-96988.84,Bom,Sem Abrigo,No,Vimeca,02,1279,Avenida Tomás Ribeiro,Carnaxide e Queijas
+260,-104345.95,-97003.12,Bom,Sem Abrigo,No,Vimeca,02,1279,Avenida Tomás Ribeiro,Carnaxide e Queijas
+227,-104412.8,-98632.87,Bom,Sem Abrigo,No,Vimeca,02,805,Rua Ilha de São Jorge,Carnaxide e Queijas
+230,-104447.68,-98306.88,Bom,Sem Abrigo,No,Vimeca,02,833,Rua Mouzinho da Silveira,Carnaxide e Queijas
+234,-104471.99,-98565.73,Bom,Fechado dos Lados,No,Vimeca,02,83,Rua Angra do Heroísmo,Carnaxide e Queijas
+224,-104563.77,-98320.53,Bom,Sem Abrigo,No,Vimeca,02,833,Rua Mouzinho da Silveira,Carnaxide e Queijas
+239,-104604.14,-97197.81,Bom,Fechado dos Lados,Yes,Vimeca,02,1279,Avenida Tomás Ribeiro,Carnaxide e Queijas
+238,-104609.35,-97210.07,Bom,Sem Abrigo,No,SCoTTURB,02,1279,Avenida Tomás Ribeiro,Carnaxide e Queijas
+226,-104618.82,-98507.86,Bom,Fechado dos Lados,No,Vimeca,02,846,Rua da Quinta do Bonfim,Carnaxide e Queijas
+1001,-104675.71,-95821.42,Bom,Fechado dos Lados,Yes,Vimeca,02,327,Avenida do Forte,Carnaxide e Queijas
+607,-104700.62,-95803.69,Bom,Fechado dos Lados,Yes,Vimeca,02,327,Avenida do Forte,Carnaxide e Queijas
+232,-104768.69,-98266.88,Bom,Fechado dos Lados,No,SCoTTURB,02,813,Rua João XXI,Carnaxide e Queijas
+52,-104801.2,-98279.24,Bom,Fechado dos Lados,Yes,Vimeca,02,813,Rua João XXI,Carnaxide e Queijas
+233,-104935.73,-98290.43,Bom,Fechado dos Lados,Yes,Vimeca,02,813,Rua João XXI,Carnaxide e Queijas
+231,-104942.78,-98303.15,Bom,Fechado dos Lados,Yes,Vimeca,02,813,Rua João XXI,Carnaxide e Queijas
+241,-104957.37,-97342.73,Bom,Fechado dos Lados,Yes,Vimeca,02,1279,Avenida Tomás Ribeiro,Carnaxide e Queijas
+240,-104965.93,-97337.63,Bom,Sem Abrigo,No,Vimeca,02,1279,Avenida Tomás Ribeiro,Carnaxide e Queijas
+859,-105043.39,-96109.56,Bom,Fechado dos Lados,Yes,Vimeca,02,1283,Avenida Vinte e Cinco de Abril de 1974,"Algés, Linda-a-Velha e Cruz Quebrada-Dafundo"
+858,-105062.32,-96107.23,Bom,Fechado dos Lados,Yes,Vimeca,02,1283,Avenida Vinte e Cinco de Abril de 1974,"Algés, Linda-a-Velha e Cruz Quebrada-Dafundo"
+332,-105119.12,-97474.49,Bom,Fechado dos Lados,Yes,Vimeca,02,1279,Avenida Tomás Ribeiro,Carnaxide e Queijas
+331,-105122.88,-97490.88,Bom,Fechado dos Lados,Yes,Vimeca,02,1279,Avenida Tomás Ribeiro,Carnaxide e Queijas
+315,-105155.04,-98252.49,Bom,Fechado dos Lados,Yes,Vimeca,02,1279,Avenida Tomás Ribeiro,Carnaxide e Queijas
+312,-105181.29,-98229.14,Bom,Fechado dos Lados,No,SCoTTURB,02,1279,Avenida Tomás Ribeiro,Carnaxide e Queijas
+360,-105210.86,-96382.34,Bom,Fechado dos Lados,Yes,Vimeca,02,1283,Avenida Vinte e Cinco de Abril de 1974,"Algés, Linda-a-Velha e Cruz Quebrada-Dafundo"
+313,-105254.68,-97686.43,Bom,Sem Abrigo,No,Vimeca,02,1763,Rua Visconde Moreira de Rey,Carnaxide e Queijas
+323,-105277.7,-97707.8,Bom,Fechado dos Lados,Yes,Vimeca,02,1279,Avenida Tomás Ribeiro,Carnaxide e Queijas
+351,-105287.42,-96454.4,Bom,Fechado dos Lados,Yes,Vimeca,02,1283,Avenida Vinte e Cinco de Abril de 1974,"Algés, Linda-a-Velha e Cruz Quebrada-Dafundo"
+352,-105326.62,-96569.43,Bom,Fechado dos Lados,Yes,Vimeca,02,1283,Avenida Vinte e Cinco de Abril de 1974,"Algés, Linda-a-Velha e Cruz Quebrada-Dafundo"
+339,-105452.81,-96732.86,Bom,Fechado dos Lados,Yes,Vimeca,02,432,Calçada do Chafariz,"Algés, Linda-a-Velha e Cruz Quebrada-Dafundo"
+347,-105493.13,-96785.72,Bom,Fechado dos Lados,Yes,Vimeca,02,432,Calçada do Chafariz,"Algés, Linda-a-Velha e Cruz Quebrada-Dafundo"
+86,-105637.56,-96808.45,Bom,Fechado dos Lados,Yes,Vimeca,02,411,Avenida Dom Pedro V,"Algés, Linda-a-Velha e Cruz Quebrada-Dafundo"
+85,-105653.28,-96814.42,Bom,Fechado dos Lados,Yes,Vimeca,02,411,Avenida Dom Pedro V,"Algés, Linda-a-Velha e Cruz Quebrada-Dafundo"
+341,-105797.42,-96746.57,Bom,Fechado dos Lados,Yes,Vimeca,02,411,Avenida Dom Pedro V,"Algés, Linda-a-Velha e Cruz Quebrada-Dafundo"
+342,-105815.99,-96725.14,Bom,Fechado dos Lados,Yes,Vimeca,02,411,Avenida Dom Pedro V,"Algés, Linda-a-Velha e Cruz Quebrada-Dafundo"
+346,-105840.49,-96519.72,Bom,Fechado dos Lados,Yes,Vimeca,02,457,Rua Francisco José Victorino,"Algés, Linda-a-Velha e Cruz Quebrada-Dafundo"
+343,-105860.11,-96563.44,Bom,Fechado dos Lados,Yes,Vimeca,02,457,Rua Francisco José Victorino,"Algés, Linda-a-Velha e Cruz Quebrada-Dafundo"
+345,-105900.6,-96673.99,Bom,Fechado dos Lados,Yes,Vimeca,02,457,Rua Francisco José Victorino,"Algés, Linda-a-Velha e Cruz Quebrada-Dafundo"
+344,-105906.64,-96635.59,Bom,Fechado dos Lados,Yes,Vimeca,02,457,Rua Francisco José Victorino,"Algés, Linda-a-Velha e Cruz Quebrada-Dafundo"
+363,-106012.76,-96367.98,Bom,Fechado dos Lados,Yes,Vimeca,02,121,Rua João Chagas,"Algés, Linda-a-Velha e Cruz Quebrada-Dafundo"
+335,-106015.21,-96351.32,Bom,Fechado dos Lados,Yes,Vimeca,02,121,Rua João Chagas,"Algés, Linda-a-Velha e Cruz Quebrada-Dafundo"
+457,-106251.29,-96169.58,Bom,Fechado dos Lados,Yes,Vimeca,02,121,Rua João Chagas,"Algés, Linda-a-Velha e Cruz Quebrada-Dafundo"
+458,-106344.84,-96171.5,Bom,Fechado dos Lados,Yes,Vimeca,02,121,Rua João Chagas,"Algés, Linda-a-Velha e Cruz Quebrada-Dafundo"
+490,-106724.64,-96023.19,Bom,Fechado dos Lados,Yes,Vimeca,02,121,Rua João Chagas,"Algés, Linda-a-Velha e Cruz Quebrada-Dafundo"
+491,-106752.7,-95980.67,Bom,Fechado dos Lados,Yes,Vimeca,02,121,Rua João Chagas,"Algés, Linda-a-Velha e Cruz Quebrada-Dafundo"
+56,-106877.17,-95698.23,Bom,Sem Abrigo,No,Vimeca,02,121,Rua João Chagas,"Algés, Linda-a-Velha e Cruz Quebrada-Dafundo"
+655,-106885.28346821875,-95700.604683315,Bom,Sem Abrigo,No,Vimeca,02,121,Rua João Chagas,"Algés, Linda-a-Velha e Cruz Quebrada-Dafundo"
+654,-106946.7,-95556.57,Bom,Aberto dos Lados,No,Vimeca,02,121,Rua João Chagas,"Algés, Linda-a-Velha e Cruz Quebrada-Dafundo"
+78,-107008.56,-95490.23,Bom,Fechado dos Lados,Yes,Vimeca,02,118,Alameda Hermano Patrone,"Algés, Linda-a-Velha e Cruz Quebrada-Dafundo"
+80,-107020.11,-95212.99,Bom,Fechado dos Lados,Yes,Vimeca,02,103,Rua Damião de Góis,"Algés, Linda-a-Velha e Cruz Quebrada-Dafundo"

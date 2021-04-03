@@ -1,0 +1,143 @@
+	pushi 0
+	pushi 0
+	pushn 50
+	pushi 0
+start
+	pushi 6
+	pushi 12
+	add
+	storeg 0
+	pushi 5
+	storeg 1
+	pushi 3
+	pushi 2
+	pushg 0
+	dup 1
+	pushi 0
+	equal
+	jz valid1
+	err "divisão por zero."
+	stop
+valid1: nop
+	div
+	add
+	pushg 1
+	pushi 9
+	add
+	sub
+	storeg 52
+	pushgp
+	pushi 2
+	padd
+	pushi 10
+	dup 1
+	pushi 0
+	supeq
+	jz valid2
+	err "índice menor que 0."
+	stop
+valid2: nop
+	dup 1
+	pushi 50
+	infeq
+	jz valid3
+	err "índice maior que tamanho do array."
+	stop
+valid3: nop
+	loadn
+	pushg 1
+	sup
+	jz else1
+	pushgp
+	pushi 2
+	padd
+	pushi 4
+	dup 1
+	pushi 0
+	supeq
+	jz valid4
+	err "índice menor que 0."
+	stop
+valid4: nop
+	dup 1
+	pushi 50
+	infeq
+	jz valid5
+	err "índice maior que tamanho do array."
+	stop
+valid5: nop
+	loadn
+	pushg 1
+	add
+	storeg 0
+	pushgp
+	pushi 2
+	padd
+	pushg 0
+	pushi 1
+	pushi 2
+	mul
+	add
+	dup 1
+	pushi 0
+	supeq
+	jz valid6
+	err "índice menor que 0."
+	stop
+valid6: nop
+	dup 1
+	pushi 50
+	infeq
+	jz valid7
+	err "índice maior que tamanho do array."
+	stop
+valid7: nop
+	pushgp
+	pushi 2
+	padd
+	pushg 0
+	dup 1
+	pushi 0
+	supeq
+	jz valid8
+	err "índice menor que 0."
+	stop
+valid8: nop
+	dup 1
+	pushi 50
+	infeq
+	jz valid9
+	err "índice maior que tamanho do array."
+	stop
+valid9: nop
+	loadn
+	storen
+else1: nop
+endif1: nop
+iniw2: nop
+	pushg 0
+	pushi 1000
+	infeq
+	pushg 1
+	pushi 20
+	sup
+	add
+	pushg 52
+	pushg 0
+	not equal
+	mul
+	jz endw2
+	pushg 0
+	pushg 1
+	mul
+	pushi 1
+	add
+	writei
+	pushs "fim"
+	writes
+	read
+	atoi
+	storeg 0
+	jump iniw2
+endw2: nop
+stop

@@ -1,0 +1,47 @@
+SLIDE 1: Para relembrar qual é o nosso projeto, é o SOS Animal, uma aplicação para sinalizar animais
+perdidos ou abandonados, e até mesmo animais domésticos que necessitem de ajuda médica urgente.
+	 Nesta última quinzena completamos as funcionalidades da app android, só precisamos de alguns 
+refinamentos em alguns sítios, bem como aperfeiçoar o design da nossa interface.
+
+SLIDE 2: Para implementarmos a funcionalidade de agendar visita, tivemos que fazer umas alterações à 
+tabela visita, pois adicionamos mais dois parâmetros, o status (isto é, se a visita foi aceite por um 
+funcionário ou não) e o motivo da visita.
+
+SLIDE 3: Para a mesma funcionalidade, também apresentamos aqui um bocado do código da backend, do controller
+correspondente às visitas. Mais especificamente, conseguimos ver as funções que vão buscar as visitas
+de um utilizador à nossa base de dados, com simples queries. Estes pedidos de visitas são depois displayed
+ao utilizador - mostraremos isto com a aplicação a correr no final da apresentação. 
+
+SLIDE 4: Temos aqui o nosso novo menu para agendar uma visita, que pede ao user o dia, a hora e motivo de 
+tal visita. As horas estarão restringidas às normais horas de funcionamento. 
+
+SLIDE 5: Como podemos observar aqui, o utilizador consegue consultar as visitas pedidas por ele.
+A vermelho temos as canceladas ou recusadas (por qualquer motivo) por um funcionário, a amarelo temos 
+as que estão por confirmar por um funcionário e a verde temos as aceites, prestes a ocorrer. Ao clicar
+em cada uma delas, obtemos os detalhes de cada.
+
+SLIDE 6: A sinalização já está disponível com inputs da localização, que utiliza o API do Google Maps, e 
+com a opção de adicionar fotos da galeria do telemóvel. 
+
+SLIDE 7: O histórico de sinalizações já tinhamos mostrado na última apresentação, mas agora o upload de 
+fotos dos animais já conseguimos ver as fotos uploaded, bem como a localização selecionada. Novamente, 
+já iremos mostrar isto a funcionar para ser mais claro.
+
+SLIDE 8: A última coisa que falta implementar é a opção de sinalizar um animal anonimamente. Achamos que
+para utilizar este serviço de urgência, seria descabido obrigar alguém a criar uma conta primeiro, por 
+isso, esta opção de sinalização também será possível. Estas sinalizações irão ser guardados na base de 
+dados com um id específico, correspondente a utilizadores anónimos.
+
+SLIDE 9: Só por curiosidade, temos aqui a API do Google Maps, que simplesmente mostra algumas estatísticas
+das sinalizações feitas pelos utilizadores, na nossa aplicação.
+
+SLIDE 10: Estas 2 semanas começamos também a conceptualizar o nosso back office, um simples site que irá
+ter todas estas funcionalidades. As mais básicas são apenas remover e adicionar funcionários e novos 
+animais abrigados, depois de recolhidos. Também temos de mostrar em tempo real os pedidos de visitas feitos
+para poderem ser aceites ou recusados tal como as sinalizações feitas, para os transportes serem enviados.
+
+SLIDE 11: Para as próximas semanas, pretendemos continuar a desenvolver o Back Office e, quando à 
+aplicação Android, só necessitamos de corrigir alguns pequenos erros, pôr funcional a opção de sinalizar
+anonimamente e melhor a estética da interface.
+
+SLIDE 12: Vou agora mostrar a aplicação a correr, só para mostrar estas últimas alterações: 

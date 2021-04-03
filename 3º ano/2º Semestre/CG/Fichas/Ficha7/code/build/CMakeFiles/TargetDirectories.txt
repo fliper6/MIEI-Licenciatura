@@ -1,0 +1,3 @@
+C:/Users/Filipa/Desktop/UNI/CG/Fichas/Ficha7/code/build/CMakeFiles/class7.dir
+C:/Users/Filipa/Desktop/UNI/CG/Fichas/Ficha7/code/build/CMakeFiles/ALL_BUILD.dir
+C:/Users/Filipa/Desktop/UNI/CG/Fichas/Ficha7/code/build/CMakeFiles/ZERO_CHECK.dir

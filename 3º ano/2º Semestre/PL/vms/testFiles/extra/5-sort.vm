@@ -1,0 +1,181 @@
+	// inicio declaracao da variavel "v"
+pushi 0
+pushi 0
+pushi 0
+pushi 0
+pushi 0
+	// fim declaracao da variavel "v"
+	// inicio declaracao da variavel "n"
+read            
+atoi           
+	// fim declaracao da variavel "n"
+	// inicio declaracao da variavel "i"
+pushi 0
+	// fim declaracao da variavel "i"
+	// inicio declaracao da variavel "l"
+pushi 0
+	// fim declaracao da variavel "l"
+	// inicio declaracao da variavel "trocado"
+pushi 1
+	// fim declaracao da variavel "trocado"
+	// inicio declaracao da variavel "aux"
+pushi 0
+	// fim declaracao da variavel "aux"
+start
+	// incicio de ite     
+	// inicio de get variavel "i"
+pushg 6	// fim de get variavel "i"
+pushi 5
+sup
+	// comeca bloco THEN  
+jz ELSE1
+pushs "demasiados numeros"            
+writes
+jump ENDIF1
+	// comeca bloco ELSE  
+ELSE1:
+	// atribuicoes iniciais for
+pushi 0
+storeg 6
+FOR0:               
+	// cond de permanencia
+	// inicio de get variavel "i"
+pushg 6	// fim de get variavel "i"
+	// inicio de get variavel "n"
+pushg 5	// fim de get variavel "n"
+inf
+jz ENDFOR0          
+	// inicio de bloco do ciclo
+pushgp
+pushi 0    
+pushi 0
+	// inicio de get variavel "i"
+pushg 6	// fim de get variavel "i"
+add
+add         
+read            
+atoi           
+storen      
+	// incremento das variaveis
+	// inicio de get variavel "i"
+pushg 6	// fim de get variavel "i"
+pushi 1
+add
+storeg 6
+jump FOR0
+ENDFOR0:            
+
+	// inicio do ciclo while
+WHILE1:             
+	//condicao de permanencia no ciclo   
+	// inicio de get variavel "trocado"
+pushg 8	// fim de get variavel "trocado"
+pushi 1
+equal
+jz ENDWHILE1        
+pushi 0
+storeg 8
+
+	// inicio do ciclo while
+WHILE0:             
+	//condicao de permanencia no ciclo   
+	// inicio de get variavel "l"
+pushg 7	// fim de get variavel "l"
+	// inicio de get variavel "n"
+pushg 5	// fim de get variavel "n"
+pushi 1
+sub
+inf
+jz ENDWHILE0        
+	// incicio de ite     
+	// inicio de get variavel "v"
+pushgp
+pushi 0    
+pushi 0
+	// inicio de get variavel "l"
+pushg 7	// fim de get variavel "l"
+add
+add         
+loadn       
+	// fim de get variavel "v"
+	// inicio de get variavel "v"
+pushgp
+pushi 0    
+pushi 0
+	// inicio de get variavel "l"
+pushg 7	// fim de get variavel "l"
+pushi 1
+add
+add
+add         
+loadn       
+	// fim de get variavel "v"
+inf
+	// comeca bloco THEN  
+jz ELSE0
+	// inicio de get variavel "v"
+pushgp
+pushi 0    
+pushi 0
+	// inicio de get variavel "l"
+pushg 7	// fim de get variavel "l"
+add
+add         
+loadn       
+	// fim de get variavel "v"
+storeg 9
+pushgp
+pushi 0    
+pushi 0
+	// inicio de get variavel "l"
+pushg 7	// fim de get variavel "l"
+add
+add         
+	// inicio de get variavel "v"
+pushgp
+pushi 0    
+pushi 0
+	// inicio de get variavel "l"
+pushg 7	// fim de get variavel "l"
+pushi 1
+add
+add
+add         
+loadn       
+	// fim de get variavel "v"
+storen      
+pushgp
+pushi 0    
+pushi 0
+	// inicio de get variavel "l"
+pushg 7	// fim de get variavel "l"
+pushi 1
+add
+add
+add         
+	// inicio de get variavel "aux"
+pushg 9	// fim de get variavel "aux"
+storen      
+pushi 1
+storeg 8
+jump ENDIF0
+	// comeca bloco ELSE  
+ELSE0:
+ENDIF0:
+	// fim de ite         
+	// inicio de get variavel "l"
+pushg 7	// fim de get variavel "l"
+pushi 1
+add
+storeg 7
+jump WHILE0         
+ENDWHILE0:          
+	// fim do ciclo while
+
+jump WHILE1         
+ENDWHILE1:          
+	// fim do ciclo while
+
+ENDIF1:
+	// fim de ite         
+stop

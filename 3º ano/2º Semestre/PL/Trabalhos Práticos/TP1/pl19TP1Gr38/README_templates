@@ -1,0 +1,30 @@
+****** TEMPLATE1.TXT *******
+
+Template de teste dado pela equipa docente.
+
+
+****** TEMPLATE2.TXT *******
+
+Template de teste mais focado no funcionamento da "tree", 
+nomeadamente na criação de pastas e ficheiros.
+
+
+****** TEMPLATE3.TXT *******
+
+Template de teste que demonstra o "erro" dado na consola, 
+quando existe um template de um ficheiro que não está 
+contido na "tree".
+
+
+****** TEMPLATE4.TXT *******
+
+Template de teste com foco nos meta-dados substituindo-os 
+quando estes são referidos nos ficheiros, através de "{%xxxx%}"
+mas apenas aqueles que estão contidos na "meta".
+
+
+****** TEMPLATE5.TXT *******
+
+Template de teste virado para o uso do símbolo "=" nos 
+templates dos ficheiros, de modo a evitar conflitos com 
+a divisão de templates já pré-definida "===".

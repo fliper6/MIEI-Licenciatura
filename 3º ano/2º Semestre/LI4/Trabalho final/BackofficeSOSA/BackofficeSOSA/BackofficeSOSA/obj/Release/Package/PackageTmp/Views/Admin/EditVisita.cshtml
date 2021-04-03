@@ -1,0 +1,61 @@
+﻿@model BackofficeSOSA.Models.Visita
+
+@{
+    ViewBag.Title = "EditVisita";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+    
+    <div class="form-horizontal" style="font-size:25px">
+        <div class="col-md-offset-2 col-md-10">
+            <h2>Editar Visita</h2>
+        </div>
+        <hr />
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+        @Html.HiddenFor(model => model.Id)
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.IdUser, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.IdUser, new { htmlAttributes = new { @type = "number", @placeholder = "Id do utilizador", @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.IdUser, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.DataVisita, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.DataVisita, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.DataVisita, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Motivo, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.Motivo, new { htmlAttributes = new { @placeholder = "Motivo", @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.Motivo, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Status, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.Status, new { htmlAttributes = new { @placeholder = "Estado(W ou C ou A)", @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.Status, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+          <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="Guardar" class="btn btn-info" />
+                <a onclick="window.history.back()" class="btn btn-danger text-white">Cancelar</a>
+            </div>
+        </div>
+    </div>
+}

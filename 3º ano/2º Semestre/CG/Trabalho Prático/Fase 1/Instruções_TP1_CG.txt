@@ -1,0 +1,8 @@
+> Fazer build (não correr) Generator.sln no VS com Release 
+> Abrir a consola na pasta do Release
+> Correr comandos para criar a esfera / plano / cone / cubo
+e.g. (para a esfera): .\Generator.exe sphere 3 10 10 esfera.3d
+> Abrir o Motor normalmente, com o CMake
+> Mover os ficheiros criados (e.g. esfera.3d) para o build do Motor
+> Correr o Motor no VS para ver os sólidos
+> Para carregar outros sólidos, alterar o config.xml

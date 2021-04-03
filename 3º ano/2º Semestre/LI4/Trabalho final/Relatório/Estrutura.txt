@@ -1,0 +1,28 @@
+Introdução
+ - Contexto ---------------------x
+ - Motivação --------------------x
+ - Objetivos --------------------x
+ - Estrutura --------------------x
+
+Pesquisa 
+ - Competição -------------------x
+ - Financiamento 
+
+Proposta
+ - Objetivos --------------------x
+ - Requerimentos ----------------x
+ - Datagrama --------------------x
+ - Mockups ----------------------x
+ - Diagramas --------------------x
+
+Desenvolvimento
+ - Decisões 
+ - Implementação
+   - Backend
+   - Frontend
+   - Funcionalidades 
+   - BackOffice
+
+Conclusão
+ - Conclusões
+ - Trabalho Futuro

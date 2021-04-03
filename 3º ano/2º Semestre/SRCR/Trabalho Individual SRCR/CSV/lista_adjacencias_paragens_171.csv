@@ -1,0 +1,46 @@
+gid,latitude,longitude,Estado de Conservacao,Tipo de Abrigo,Abrigo com Publicidade?,Operadora,Carreira,Codigo de Rua,Nome da Rua,Freguesia
+116,-101520.29,-100001.26,Bom,Fechado dos Lados,Yes,Carris,171,252,Avenida Infante Dom Henrique,Barcarena
+119,-101709.63,-100014.88,Bom,Fechado dos Lados,Yes,LT,171,978,Avenida de Santo António de Tercena,Barcarena
+118,-101728.86,-100021.08,Bom,Fechado dos Lados,No,LT,171,978,Avenida de Santo António de Tercena,Barcarena
+104,-101753.46,-99755.19,Bom,Fechado dos Lados,Yes,LT,171,261,Rua da Juventude,Barcarena
+711,-101764.30649856283,-98424.15159847475,Bom,Sem Abrigo,No,LT,171,216,Estrada Consiglieri Pedroso,Barcarena
+105,-101764.82,-99761.18,Bom,Fechado dos Lados,Yes,LT,171,261,Rua da Juventude,Barcarena
+125,-101787.42,-98423.54,Bom,Fechado dos Lados,Yes,LT,171,216,Estrada Consiglieri Pedroso,Barcarena
+115,-101877.84,-99707.56,Bom,Sem Abrigo,No,LT,171,1006,Rua António Quadros,Barcarena
+120,-101884.83,-100069.82,Bom,Fechado dos Lados,Yes,LT,171,978,Avenida de Santo António de Tercena,Barcarena
+121,-101894.85,-100053.16,Bom,Sem Abrigo,No,LT,171,978,Avenida de Santo António de Tercena,Barcarena
+1012,-101927.83891266519,-99709.84354381096,Bom,Sem Abrigo,No,LT,171,1006,Rua António Quadros,Barcarena
+127,-101949.9,-98542.91,Bom,Fechado dos Lados,Yes,LT,171,216,Estrada Consiglieri Pedroso,Barcarena
+715,-101966.52,-98573.78,Bom,Fechado dos Lados,Yes,LT,171,216,Estrada Consiglieri Pedroso,Barcarena
+134,-102017.79,-99652.24,Bom,Fechado dos Lados,Yes,LT,171,219,Estrada da Cruz dos Cavalinhos,Barcarena
+122,-102021.07,-99964.5,Bom,Sem Abrigo,No,LT,171,978,Avenida de Santo António de Tercena,Barcarena
+141,-102028.47,-99961.71,Bom,Sem Abrigo,No,LT,171,978,Avenida de Santo António de Tercena,Barcarena
+143,-102122.63,-99975.95,Bom,Sem Abrigo,No,LT,171,241,Estrada das Fontainhas,Barcarena
+744,-102136.13485160771,-98663.30880207638,Bom,Fechado dos Lados,No,LT,171,216,Estrada Consiglieri Pedroso,Barcarena
+142,-102137.2,-99979.69,Bom,Sem Abrigo,No,LT,171,241,Estrada das Fontainhas,Barcarena
+135,-102185.42,-99474.62,Bom,Sem Abrigo,No,LT,171,219,Estrada da Cruz dos Cavalinhos,Barcarena
+136,-102207.02,-99467.54,Bom,Sem Abrigo,No,LT,171,219,Estrada da Cruz dos Cavalinhos,Barcarena
+152,-102231.41,-98789.31,Bom,Fechado dos Lados,Yes,LT,171,216,Estrada Consiglieri Pedroso,Barcarena
+139,-102277.41,-100088.41,Bom,Sem Abrigo,No,LT,171,241,Estrada das Fontainhas,Barcarena
+140,-102285.58,-100095.76,Bom,Sem Abrigo,No,LT,171,241,Estrada das Fontainhas,Barcarena
+732,-102381.73,-98965.83,Bom,Sem Abrigo,No,LT,171,950,Estrada das Palmeiras,Barcarena
+740,-102400.99,-98945.23,Bom,Sem Abrigo,No,LT,171,950,Estrada das Palmeiras,Barcarena
+146,-102407.34,-99102.68,Bom,Sem Abrigo,No,LT,171,216,Estrada Consiglieri Pedroso,Barcarena
+737,-102409.39,-98701.67,Bom,Fechado dos Lados,Yes,LT,171,269,Rua Mário Castelhano,Barcarena
+145,-102412.85,-99137.94,Bom,Fechado dos Lados,Yes,LT,171,216,Estrada Consiglieri Pedroso,Barcarena
+160,-102467.21,-98683.45,Bom,Sem Abrigo,No,LT,171,269,Rua Mário Castelhano,Barcarena
+148,-102630.81,-98782.18,Bom,Sem Abrigo,No,LT,171,993,Rua do Trabalho,Barcarena
+733,-102638.72,-98781.31,Bom,Sem Abrigo,No,LT,171,993,Rua do Trabalho,Barcarena
+137,-102792.58,-99921.93,Bom,Sem Abrigo,No,LT,171,201,Estrada do Cacém,Barcarena
+138,-102814.25,-99907.47,Mau,Fechado dos Lados,No,LT,171,201,Estrada do Cacém,Barcarena
+770,-103163.15,-99786.4,Bom,Fechado dos Lados,Yes,LT,171,201,Estrada do Cacém,Barcarena
+767,-103244.97,-99729.51,Bom,Fechado dos Lados,Yes,LT,171,235,Rua Felner Duarte,Barcarena
+766,-103346.29,-99565.78,Bom,Fechado dos Lados,Yes,LT,171,210,Largo Cinco de Outubro,Barcarena
+691,-103349.27,-99588.57,Bom,Sem Abrigo,No,LT,171,964,Jardim Público,Barcarena
+765,-103522.68,-99425.21,Bom,Fechado dos Lados,Yes,LT,171,230,Rua Elias Garcia,Barcarena
+764,-103545.91,-99424.63,Bom,Sem Abrigo,No,LT,171,230,Rua Elias Garcia,Barcarena
+228,-104460.75,-98562.29,Bom,Sem Abrigo,No,LT,171,83,Rua Angra do Heroísmo,Carnaxide e Queijas
+805,-104471.99,-98565.73,Bom,Fechado dos Lados,No,LT,171,83,Rua Angra do Heroísmo,Carnaxide e Queijas
+225,-104591.62,-98511.89,Bom,Sem Abrigo,No,LT,171,846,Rua da Quinta do Bonfim,Carnaxide e Queijas
+800,-104618.82,-98507.86,Bom,Fechado dos Lados,No,LT,171,846,Rua da Quinta do Bonfim,Carnaxide e Queijas
+229,-104718.77,-97838.97,Bom,Fechado dos Lados,No,LT,171,1767,Rua Augusto Fraga,Carnaxide e Queijas

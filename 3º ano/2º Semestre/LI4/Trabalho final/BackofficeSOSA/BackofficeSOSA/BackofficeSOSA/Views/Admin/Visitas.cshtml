@@ -1,0 +1,110 @@
+﻿@model List<BackofficeSOSA.Models.Visita>
+
+@{
+    ViewBag.Title = "Visitas";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<div class="container-fluid">
+    @if (TempData["Success"] != null)
+    {
+        <p class="alert alert-success" id="successMessage">@TempData["Success"]</p>
+    }
+    <ol class="breadcrumb">
+        <li class="breadcrumb-item">
+            <a href="/Admin/Dashboard">Dashboard</a>
+        </li>
+        <li class="breadcrumb-item active">Visitas</li>
+
+    </ol>
+
+    <div class="card shadow mb-4">
+        <div class="card-header py-3">
+            <i class="fas fa-table"></i>
+            Visitas
+            <a href="/Admin/AddVisita" class="btn btn-info fa-pull-right">Adicionar visita</a>
+        </div>
+        <div class="card-body">
+            <div class="table-responsive">
+                <table class="table table-bordered" id="datatable" width="100%" cellspacing="0">
+                    <thead>
+                        <tr>
+                            <th>Data</th>
+                            <th>Id</th>
+                            <th>IdUser</th>
+                            <th>Motivo</th>
+                            <th>Status</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tfoot>
+                        <tr>
+                            <th>Data</th>
+                            <th>Id</th>
+                            <th>IdUser</th>
+                            <th>Motivo</th>
+                            <th>Status</th>
+                            <th>Action</th>
+                        </tr>
+                    </tfoot>
+                    <tbody>
+                        @foreach (var item in Model)
+                        {
+                            <tr>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.DataVisita)
+                                </td>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.Id)
+                                </td>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.IdUser)
+                                </td>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.Motivo)
+                                </td>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.Status)
+                                </td>
+                                <td>
+                                    @Html.ActionLink("Editar", "EditVisita", new { id = item.Id }) |
+                                    @Html.ActionLink("Detalhes", "DetailsVisita", new { id = item.Id }) |
+                                    @Html.ActionLink("Remover", "DeleteVisita", new { id = item.Id })
+                                </td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+@section scripts{
+    <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/plug-ins/1.10.21/sorting/date-euro.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $("#datatable").DataTable({
+
+                "columnDefs": [
+                    { "type": "date-euro", targets: 0 }
+                ],
+                "order": [[0, "desc"]],
+                'rowCallback': function (row, data, index) {
+                    if (data[4] == 'W') {
+                        $(row).find('td:eq(4)').css('background-color', '#e5e81e');
+                    }
+                    if (data[4] == 'C') {
+                        $(row).find('td:eq(4)').css('background-color', '#fa6464');
+                    }
+                    if (data[4] == 'A') {
+                        $(row).find('td:eq(4)').css('background-color', '#82cf65');
+                    }
+                }
+
+            });
+        });
+    </script>>
+}

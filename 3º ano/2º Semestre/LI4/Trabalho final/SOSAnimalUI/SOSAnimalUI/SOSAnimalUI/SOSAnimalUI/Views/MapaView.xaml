@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:maps="clr-namespace:Xamarin.Forms.Maps;assembly=Xamarin.Forms.Maps"
+             mc:Ignorable="d"
+             x:Class="SOSAnimalUI.Views.MapaView"
+             BackgroundColor="#8ab1bc">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="0.3*" />
+            <RowDefinition Height="1.5*" />
+            <RowDefinition Height="1.5*" />
+        </Grid.RowDefinitions>
+
+        <ImageButton Source="back.png"
+                     Grid.Row="0"
+                     HeightRequest="50"
+                     TranslationY="10"
+                     TranslationX="5"
+                     HorizontalOptions="Start"
+                     BorderColor="Transparent"
+                     BackgroundColor="Transparent"
+                     Clicked="Clicked_BackPerfil"
+                     />
+        <ContentView Grid.Row="1" Content="{Binding Mapa}"/>
+        <ScrollView Grid.Row="2">
+            <StackLayout Margin="16">
+                <Entry x:Name="Street"
+                       Placeholder="Street"
+                       Text="{Binding Street}" />
+                <Entry x:Name="City"
+                       Placeholder="City"
+                       Text="{Binding City}" />
+                <Entry x:Name="Country"
+                       Placeholder="Country"
+                       Text="{Binding Country}" />
+                <Button Text="Pesquisar localização"
+                        Margin="16,0"
+                        Command="{Binding ExecuteSetPosition}" />
+                <Button Text="Guardar posição atual"
+                        Margin="16,0"
+                        Command="{Binding ExecuteGuardarPos}" />
+            </StackLayout>
+        </ScrollView>
+    </Grid>
+</ContentPage>

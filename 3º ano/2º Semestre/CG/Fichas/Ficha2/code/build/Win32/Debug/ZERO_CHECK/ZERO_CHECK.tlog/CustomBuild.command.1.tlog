@@ -1,0 +1,10 @@
+^C:\USERS\FILIPA\DESKTOP\UNI\CG\AULAS PRÁTICAS\AULA 2\CODE\BUILD\CMAKEFILES\41E4A0A50F026F86B61DAEA733E50778\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" "-SC:/Users/Filipa/Desktop/UNI/CG/Aulas Práticas/Aula 2/code" "-BC:/Users/Filipa/Desktop/UNI/CG/Aulas Práticas/Aula 2/code/build" --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file "C:/Users/Filipa/Desktop/UNI/CG/Aulas Práticas/Aula 2/code/build/class2.sln"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

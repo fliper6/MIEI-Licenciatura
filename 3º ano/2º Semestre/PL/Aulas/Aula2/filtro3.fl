@@ -1,0 +1,7 @@
+%option noyywrap
+%%
+
+.*::+    yytext[strlen(yytext)-2]='\0'; {printf("%s\n", yytext);printf("\n");}
+.|\n     {}
+
+%%

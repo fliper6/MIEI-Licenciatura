@@ -1,0 +1,120 @@
+Matéria: Conhecimento Imperfeito 
+         (Excessões, dados que não sabemos / temos a certeza, ...)
+
+---------------------------------------------------------------------
+Explicação de "discontiguous": (não sei para que é que o dynamic serve)
+
+Predicado, p.e., filho(F,P).
+
+Se NÃO o declararmos como "discontiguous", entao a sua definição 
+tem de estar seguida, ou seja, todos os filhos têm de tar exatamente 
+seguidos:
+
+filho(1,1).
+filho(1,2).
+filho(1,3).
+
+Se declararmos como "discontiguous", podemos ter outros predicados 
+pelo meio: 
+
+filho(1,1).
+data(1,2).
+data(1,2).
+filho(1,2).
+
+---------------------------------------------------------------------
+Diferentes "tipos" de excessões:
+
+Tipo 1: ao perguntar sobre o determinado campo, dá desconhecido (pois
+não consegue provar que termo é verdadeiro nem que -termo é verdadeiro)
+
+Ex: O pai do danilo é o daniel e a mãe é desconhecida:
+pai(daniel,danilo).
+pai(desconhecido,danilo).
+excecao(pai(P,F)):- pai(desconhecido,F).
+
+('si' é o comando usado para perguntar)
+si(pai(rita,paulo),R)?  R: desconhecido.
+
+--------------
+Tipo 2: ao perguntar num campo dentro dum intervalo, dá desconhecido, 
+fora dele, dá falso
+
+Ex: A mãe do crispim é a catia, o pai é o celso ou o caio:
+pai(catia,crispim).
+excecao(pai(celso,crispim)).
+excecao(pai(caio,crispim)).
+
+si(pai(celso,crispim),R)? R: desconhecido.
+si(pai(caio,crispim),R)?  R: desconhecido.
+si(pai(rui,crispim),R)?   R: não.
+
+--------------
+Tipo 3: não deixa perguntar sobre o campo (nada vai dar 'verdadeiro')
+
+---------------------------------------------------------------------
+Para que estes tipos funcionem como deve ser, temos que definir que 
+definir o que é o contrário de pai, isto é, -pai. Se não fizermos isto, 
+o 'si' vai dar como resposta 'desconhecido' sempre que o input não for o
+'verdadeiro'.
+
+I.e. : -pai(P,F):- nao(pai(P,F)), nao(excecao(pai(P,F))).
+
+---------------------------------------------------------------------
+[------------------Esta parte o exercício não pede-------------------]
+
+Usar invariantes / evolução para que, ao inserir mais informação, esteja 
+de acordo com o que já temos. P.e., não deixar inserir mais um pai para 
+um filho que já tenha registado 2 pais.  
+
+!! CÓDIGO: !!
+
+%--------------------------------- - - - - - - - - - -  -  -  -  -   -
+% Invariantes
++pai(_,F):: (solucoes( (Ps), pai( Ps,F),R),
+            comprimento(R,N),
+            N =< 2).
+
+%--------------------------------- - - - - - - - - - -  -  -  -  -   -
+% Extensao do predicado que permite a evolucao do conhecimento
+
+evolucao( Termo ) :-
+    solucoes( Invariante, +Termo::Invariante,Lista ),  
+    insercao( Termo ), 
+    teste( Lista ).  
+
+insercao( Termo ) :-
+    assert( Termo ). 
+insercao( Termo ) :-
+    retract( Termo ), !,fail. 
+	
+teste( [] ).
+teste( [R|LR] ) :-  
+    R,   
+    teste( LR ).
+
+%--------------------------------- - - - - - - - - - -  -  -  -  -   -
+% Extensao do predicado que permite a involucao do conhecimento
+
+involucao( Termo ) :-
+    solucoes( Invariante,-Termo::Invariante,Lista ),
+    remocao( Termo ),
+    teste( Lista ).
+
+remocao( Termo ) :-
+    retract( Termo ).
+remocao( Termo ) :- 
+    assert( Termo ),!,fail.
+
+%--------------------------------- - - - - - - - - - -  -  -  -  -   -
+
+solucoes( X,Y,Z ) :-
+    findall( X,Y,Z ).
+
+comprimento( S,N ) :-
+    length( S,N ).
+
+
+
+
+

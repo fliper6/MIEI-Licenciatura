@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="SOSAnimalUI.Views.Login"
+             BackgroundColor="#8ab1bc">
+
+    <StackLayout >
+        <Image Margin="0,60,0,30"  VerticalOptions="Start" HeightRequest="150" Source="pata12.png" ></Image>
+        <Label x:Name="lbl_email" 
+               TextColor="Black"
+               FontSize="Large"  
+               Margin="32,0,0,0" 
+               Text="E-mail:"></Label>
+        <Entry Text="{Binding Email}" Margin="30,0,30,10" HorizontalOptions="Center" WidthRequest="400" Placeholder="Inserir o nome de utilizador"></Entry>
+        <Label x:Name="lbl_pw" 
+               Margin="32,0,0,0"
+               TextColor="Black"
+               FontSize="Large" 
+               Text="Password:"></Label>
+        <Entry Text="{Binding Password}" Margin="30,0,30,20" HorizontalOptions="Center" WidthRequest="400" Placeholder="Inserir a palavra-passe" IsPassword="True"></Entry>
+        <Grid Margin="30,20,30,0" VerticalOptions="Start">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"></RowDefinition>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+
+            <Button Command="{Binding LoginCommand}" Text="Entrar" 
+                HorizontalOptions="Center"
+                WidthRequest="170"
+                HeightRequest="50"
+                VerticalOptions="Fill" Grid.Row="0" Grid.Column="0"
+                />
+            <Button Text="Registar" x:Name="btn_reg"
+                HorizontalOptions="Center"
+                WidthRequest="170"
+                Clicked= "Registar_Clicked"
+                VerticalOptions="FillAndExpand" Grid.Row="0" Grid.Column="1" 
+                />
+        </Grid>
+        <Button 
+            Margin="0,30,0,0"
+            BorderWidth="2"
+            BorderColor="Red"            
+            TextColor="White"
+            BackgroundColor="#ff5050"
+            HorizontalOptions="Center"
+            HeightRequest="50"
+            WidthRequest="200"
+            Clicked= "Emergencia_Clicked"
+            Text="Sinalizar Emergência">
+        </Button>
+    </StackLayout>
+</ContentPage>

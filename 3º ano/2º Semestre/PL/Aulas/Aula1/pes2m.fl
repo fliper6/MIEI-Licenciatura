@@ -1,0 +1,6 @@
+%option main
+%%
+pes                  printf("metros");
+[0-9]+               printf("%.2f",atoi(yytext)*0.307);
+[0-9]+\.[0-9]+       printf("%.2f",atof(yytext)*0.307);
+%%     

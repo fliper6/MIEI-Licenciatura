@@ -1,0 +1,80 @@
+	// inicio declaracao da variavel "v"
+pushi 0
+pushi 0
+pushi 0
+pushi 0
+pushi 0
+	// fim declaracao da variavel "v"
+	// inicio declaracao da variavel "n"
+read            
+atoi           
+	// fim declaracao da variavel "n"
+	// inicio declaracao da variavel "i"
+pushi 0
+	// fim declaracao da variavel "i"
+start
+	// atribuicoes iniciais for
+pushi 0
+storeg 6
+FOR0:               
+	// cond de permanencia
+	// inicio de get variavel "i"
+pushg 6	// fim de get variavel "i"
+	// inicio de get variavel "n"
+pushg 5	// fim de get variavel "n"
+inf
+jz ENDFOR0          
+	// inicio de bloco do ciclo
+pushgp
+pushi 0    
+pushi 0
+	// inicio de get variavel "i"
+pushg 6	// fim de get variavel "i"
+add
+add         
+read            
+atoi           
+storen      
+	// incremento das variaveis
+	// inicio de get variavel "i"
+pushg 6	// fim de get variavel "i"
+pushi 1
+add
+storeg 6
+jump FOR0
+ENDFOR0:            
+	// atribuicoes iniciais for
+	// inicio de get variavel "n"
+pushg 5	// fim de get variavel "n"
+pushi 1
+sub
+storeg 6
+FOR1:               
+	// cond de permanencia
+	// inicio de get variavel "i"
+pushg 6	// fim de get variavel "i"
+pushi 0
+supeq
+jz ENDFOR1          
+	// inicio de bloco do ciclo
+	// inicio de get variavel "v"
+pushgp
+pushi 0    
+pushi 0
+	// inicio de get variavel "i"
+pushg 6	// fim de get variavel "i"
+add
+add         
+loadn       
+	// fim de get variavel "v"
+                  
+writei
+	// incremento das variaveis
+	// inicio de get variavel "i"
+pushg 6	// fim de get variavel "i"
+pushi 1
+sub
+storeg 6
+jump FOR1
+ENDFOR1:            
+stop

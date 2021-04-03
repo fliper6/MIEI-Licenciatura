@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="SOSAnimalUI.Views.VisitaDetail"
+             BackgroundColor="#8ab1bc">
+    <StackLayout>
+
+        <ImageButton Source="back.png"
+                     HeightRequest="50"
+                     HorizontalOptions="Start"
+                     BorderColor="Transparent"
+                     BackgroundColor="Transparent"
+                     Clicked="Clicked_BackHDetails"
+                     />
+
+        <Label x:Name="lbl_titulo" 
+               TextColor="Black"
+               XAlign="Center"
+               YAlign="Center"
+               FontSize="Large" 
+               BackgroundColor="#E0E0E0"
+               WidthRequest="200"
+               HeightRequest="50"
+               HorizontalOptions="Center"
+               VerticalOptions="End"
+               Text="DETALHES"
+               />
+
+        <StackLayout WidthRequest="300" HeightRequest="60" Margin="0,20,0,0" HorizontalOptions="Center">
+            <Label BackgroundColor="Transparent" FontSize="Medium" FontAttributes="Bold" Text="Data da visita:" Style="{StaticResource labelStyle}"></Label>
+            <Label BackgroundColor="Transparent" FontSize="Medium" x:Name="dat" Style="{StaticResource labelStyle}" Margin="0,0,0,10"></Label>
+
+            <Label BackgroundColor="Transparent" FontSize="Medium" FontAttributes="Bold" Text="Motivo:" Style="{StaticResource labelStyle}"></Label>
+            <Label BackgroundColor="Transparent" FontSize="Medium" x:Name="moti"  Style="{StaticResource labelStyle}" Margin="0,0,0,10"></Label>
+
+            <Label BackgroundColor="Transparent" FontSize="Medium" FontAttributes="Bold" Text="Estado:" Style="{StaticResource labelStyle}"></Label>
+            <Label BackgroundColor="Transparent" FontSize="Medium" x:Name="stat"  Style="{StaticResource labelStyle}" Margin="0,0,0,10"></Label>
+        </StackLayout>
+
+    </StackLayout>
+</ContentPage>

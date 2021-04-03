@@ -1,0 +1,20 @@
+cobertura:
+    -doctype
+    -tag c/s atributos
+    -tag com conteudo
+    -block in tag
+    -# tag especial
+    -tag com =
+
+
+erro:
+    - só pode ter uma tag encostada à esquerda no inicio do ficheiro
+    - depois do block in tag a linha seguinte é obrigatoriamente texto e tem de ter um numero de espaçamentos superior á linha anterior
+
+
+exemplos:
+    -pug1  demonstração simples que funciona 
+    -pug2  demonstração simples que funciona
+    -pug3  demonstração que informa erro ao utilizador quando tag não tem identação que necessita
+    -pug4  demonstração que informa erro ao utilizador quando tag não tem identação nenhuma
+    -pug5  demonstração completa que funciona

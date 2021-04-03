@@ -1,0 +1,74 @@
+﻿@model BackofficeSOSA.Models.Empregado
+
+@{
+    ViewBag.Title = "DeleteEmpregado";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+
+    <div class="form-horizontal" style="font-size:22px">
+        <div class="col-md-offset-2 col-md-10">
+            <h2>Remover Utilizador</h2>
+        </div>
+        <hr />
+        <dl class="dl-horizontal col-md-offset-2 col-md-10">
+            <dt>
+                @Html.DisplayNameFor(model => model.Nome)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.Nome)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.Email)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.Email)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.Password)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.Password)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.NrTelemovel)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.NrTelemovel)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.DataNascimento)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.DataNascimento)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.Status)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.Status)
+            </dd>
+
+        </dl>
+
+        @using (Html.BeginForm())
+        {
+            @Html.AntiForgeryToken()
+
+            <div class="col-md-offset-2 col-md-10">
+                <input onclick="return confirm('Tem a certeza que pretende remover o empregado: @Model.Email?')" type="submit" value="Remover" class="btn btn-danger" /> |
+                <a onclick="window.history.back()" class="btn btn-warning text-white">Voltar</a>
+            </div>
+        }
+    </div>

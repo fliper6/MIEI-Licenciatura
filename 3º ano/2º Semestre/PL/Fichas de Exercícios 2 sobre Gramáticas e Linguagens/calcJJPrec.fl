@@ -1,0 +1,23 @@
+%{
+#include "y.tab.h"
+#include <math.h>
+void yyerror(char* s);
+%}
+%option noyywrap  yylineno
+
+%%
+
+[0-9]+(\.[0-9]+)?       {yylval.n = atof(yytext); return NUM;}
+pi|π                    {yylval.n = M_PI; return NUM;}
+[ ]                     ;
+[a-zA-Z]                {yylval.v = yytext[0]; return VAR;}
+sin                     {yylval.f = sin ; return FUN1;}
+sqrt                    {yylval.f = sqrt ; return FUN1;}
+exp                     {yylval.f = exp ; return FUN1;}
+log                     {yylval.f = log ; return FUN1;}
+ans|\.                  {return ANS;}
+[()+\-*\/\n^=]          {return yytext[0];}
+#.*                     ;
+.                       {yyerror("Carater inválido.");}                      
+
+%%

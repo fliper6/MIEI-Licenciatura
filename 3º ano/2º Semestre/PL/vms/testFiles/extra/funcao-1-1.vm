@@ -1,0 +1,40 @@
+// exemplo de como invocar uma função by JJ
+//
+
+pushi 10  // a                variáveis locais
+pushi 10  // b
+pushi 10  // c
+pushi 10  // d
+pushi 10  // e
+start
+
+// escrever "a função devolveu", fun1(66)
+
+  pushi 0  // guardar um sítio em cima do qual a função vai escrever o resultado
+  pushi 66 // arg1=66
+
+  pusha fun1
+  call
+  nop     //nop é crucial: o return falha o calculo do endereço de retorno por 1
+  pop  1    // retira da stack os argumentos(1 parametro)
+
+  pushs "\n a funcao devolveu:"
+  writes
+
+  writei // escrever fun1(66);
+
+  pushs "\ndebug: FIM\n"
+  writes
+
+stop
+
+fun1: nop // nop é crucial: o call falha por um
+  //---  fun1(arg1)=arg1 + 5 
+
+  pushl  -1   // get arg1
+  pushi   5 
+  add
+  storel -2  // return arg1+1
+
+  return
+

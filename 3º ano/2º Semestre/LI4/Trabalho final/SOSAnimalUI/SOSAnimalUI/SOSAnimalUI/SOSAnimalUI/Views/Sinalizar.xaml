@@ -1,0 +1,85 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             xmlns:maps="clr-namespace:Xamarin.Forms.Maps;assembly=Xamarin.Forms.Maps"
+             mc:Ignorable="d"
+             x:Class="SOSAnimalUI.Views.Sinalizar"
+             BackgroundColor="#8ab1bc">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="0.6*"></RowDefinition>
+            <RowDefinition Height="0.70*"></RowDefinition>
+            <RowDefinition Height="0.70*"></RowDefinition>
+            <RowDefinition Height="1.5*"></RowDefinition>
+            <RowDefinition Height="0.033*"></RowDefinition>
+            <RowDefinition Height="2.0*"></RowDefinition>
+            <RowDefinition Height="0.60*"></RowDefinition>
+            <RowDefinition Height="1.333*"></RowDefinition>
+
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="0.27*"></ColumnDefinition>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+            <ColumnDefinition Width="0.27*"></ColumnDefinition>
+
+        </Grid.ColumnDefinitions>
+
+        <ImageButton Source="back.png"
+                     Grid.Row="0"
+                     Grid.Column="0"
+                     HeightRequest="50"
+                     TranslationY="10"
+                     TranslationX="5"
+                     HorizontalOptions="Start"
+                     BorderColor="Transparent"
+                     BackgroundColor="Transparent"
+                     Clicked="Clicked_BackPerfil"
+                     />
+        <Label x:Name="lbl_titulo" 
+               Grid.Row="1"
+               Grid.Column="1"
+               TextColor="Black"
+               XAlign="Center"
+               YAlign="Center"
+               WidthRequest="200"
+               HeightRequest="50"
+               FontSize="Large" 
+               BackgroundColor="#E0E0E0"
+               HorizontalOptions="Center"
+               VerticalOptions="End"
+               Text="SINALIZAR"
+               />
+        <Label Grid.Row="2"
+               Grid.Column="1"
+               TextColor="Black"
+               XAlign="Start"
+               YAlign="End"       
+               FontSize="19"
+               FontAttributes="Bold"
+               Text="Descrição:"
+               />
+        <Editor Grid.Column="1" Grid.Row="3" Placeholder="Escreva aqui uma descrição..."  IsSpellCheckEnabled="False" Text="{Binding Desc}" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" MaxLength="50"  AutoSize="TextChanges" BackgroundColor="White" ></Editor>
+
+        <CarouselView Grid.Row="5" Grid.Column="1" ItemsSource="{Binding Items}">
+            <CarouselView.ItemTemplate>
+                <DataTemplate>
+                    <Image Source="{Binding .}"/>
+                </DataTemplate>
+            </CarouselView.ItemTemplate>
+        </CarouselView>
+
+
+        <Button Grid.Row="6" Grid.Column="1" Text="Pick Photo"  Command="{Binding PickPhoto}" />
+
+
+        <StackLayout Grid.Row="7" Grid.Column="1">
+            <Button Clicked="Clicked_Mapa" Text="Atribuir localização"></Button>
+            <Button Command="{Binding EndSinalizar}" Text="Sinalizar" ></Button>
+
+        </StackLayout>
+
+    </Grid>
+</ContentPage>

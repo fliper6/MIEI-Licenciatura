@@ -1,0 +1,6 @@
+﻿  Building Custom Rule C:/Users/Filipa/Desktop/UNI/CG/Fichas/Ficha7/code/CMakeLists.txt
+  main.cpp
+C:\Users\Filipa\Desktop\UNI\CG\Fichas\Ficha7\code\main.cpp(81,20): warning C4018: '<': signed/unsigned mismatch
+C:\Users\Filipa\Desktop\UNI\CG\Fichas\Ficha7\code\main.cpp(82,21): warning C4018: '<': signed/unsigned mismatch
+C:\Users\Filipa\Desktop\UNI\CG\Fichas\Ficha7\code\main.cpp(120,20): warning C4018: '<': signed/unsigned mismatch
+  class7.vcxproj -> C:\Users\Filipa\Desktop\UNI\CG\Fichas\Ficha7\code\build\Release\class7.exe

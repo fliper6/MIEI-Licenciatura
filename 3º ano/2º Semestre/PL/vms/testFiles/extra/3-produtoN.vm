@@ -1,0 +1,35 @@
+	// inicio declaracao da variavel "n"
+pushi 5
+	// fim declaracao da variavel "n"
+	// inicio declaracao da variavel "res"
+pushi 1
+	// fim declaracao da variavel "res"
+start
+
+	// inicio do ciclo while
+WHILE0:
+	//condicao de permanencia no ciclo
+	// inicio de get variavel "n"
+pushg 0	// fim de get variavel "n"
+pushi 0
+sup
+jz ENDWHILE0
+	// inicio de get variavel "res"
+pushg 1	// fim de get variavel "res"
+read
+atoi
+mul
+storeg 1
+pushg 0
+pushi 1
+sub
+storeg 0
+jump WHILE0
+ENDWHILE0:
+	// fim do ciclo while
+
+	// inicio de get variavel "res"
+pushg 1	// fim de get variavel "res"
+
+writei          
+stop

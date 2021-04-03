@@ -1,0 +1,191 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="Models.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012.Azure" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Adocao">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="IdUser" Type="int" Nullable="false" />
+    <Property Name="IdAnimal" Type="int" Nullable="false" />
+    <Property Name="Data" Type="date" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Animal">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Nome" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Especie" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Raca" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Idade" Type="int" Nullable="false" />
+    <Property Name="Peso" Type="float" Nullable="false" />
+    <Property Name="HistoricoClinico" Type="nvarchar" MaxLength="100" />
+    <Property Name="Status" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Empregado">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Nome" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="DataNascimento" Type="date" Nullable="false" />
+    <Property Name="NrTelemovel" Type="int" Nullable="false" />
+    <Property Name="Status" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Password" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Email" Type="nvarchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Imagem">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="IdSinalizacao" Type="int" Nullable="false" />
+    <Property Name="img" Type="varbinary(max)" Nullable="false" />
+  </EntityType>
+  <EntityType Name="ImagemAnimal">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="IdAnimal" Type="int" Nullable="false" />
+    <Property Name="img" Type="varbinary(max)" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Sinalizacao">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="IdUser" Type="int" Nullable="false" />
+    <Property Name="Data" Type="datetime" Nullable="false" />
+    <Property Name="Nota" Type="nvarchar" MaxLength="50" />
+    <Property Name="Status" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Lat" Type="float" />
+    <Property Name="Long" Type="float" />
+  </EntityType>
+  <EntityType Name="Utilizador">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Nome" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="Email" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="NrTelemovel" Type="int" Nullable="false" />
+    <Property Name="Password" Type="nvarchar" MaxLength="50" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Visita">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="IdUser" Type="int" Nullable="false" />
+    <Property Name="DataVisita" Type="datetime" Nullable="false" />
+    <Property Name="Motivo" Type="nvarchar" MaxLength="50" />
+    <Property Name="Status" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <Association Name="FK_Adocao_Animal">
+    <End Role="Animal" Type="Self.Animal" Multiplicity="1" />
+    <End Role="Adocao" Type="Self.Adocao" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Animal">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Adocao">
+        <PropertyRef Name="IdAnimal" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Adocao_Utilizador">
+    <End Role="Utilizador" Type="Self.Utilizador" Multiplicity="1" />
+    <End Role="Adocao" Type="Self.Adocao" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Utilizador">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Adocao">
+        <PropertyRef Name="IdUser" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ImagemAnimal_Animal">
+    <End Role="Animal" Type="Self.Animal" Multiplicity="1" />
+    <End Role="ImagemAnimal" Type="Self.ImagemAnimal" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Animal">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="ImagemAnimal">
+        <PropertyRef Name="IdAnimal" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Imagens_Sinalizacao">
+    <End Role="Sinalizacao" Type="Self.Sinalizacao" Multiplicity="1" />
+    <End Role="Imagem" Type="Self.Imagem" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Sinalizacao">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Imagem">
+        <PropertyRef Name="IdSinalizacao" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Sinalizacao_Utilizador">
+    <End Role="Utilizador" Type="Self.Utilizador" Multiplicity="1" />
+    <End Role="Sinalizacao" Type="Self.Sinalizacao" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Utilizador">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Sinalizacao">
+        <PropertyRef Name="IdUser" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Visita_Utilizador">
+    <End Role="Utilizador" Type="Self.Utilizador" Multiplicity="1" />
+    <End Role="Visita" Type="Self.Visita" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Utilizador">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Visita">
+        <PropertyRef Name="IdUser" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="ModelsStoreContainer">
+    <EntitySet Name="Adocao" EntityType="Self.Adocao" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Animal" EntityType="Self.Animal" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Empregado" EntityType="Self.Empregado" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Imagem" EntityType="Self.Imagem" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ImagemAnimal" EntityType="Self.ImagemAnimal" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Sinalizacao" EntityType="Self.Sinalizacao" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Utilizador" EntityType="Self.Utilizador" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Visita" EntityType="Self.Visita" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK_Adocao_Animal" Association="Self.FK_Adocao_Animal">
+      <End Role="Animal" EntitySet="Animal" />
+      <End Role="Adocao" EntitySet="Adocao" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Adocao_Utilizador" Association="Self.FK_Adocao_Utilizador">
+      <End Role="Utilizador" EntitySet="Utilizador" />
+      <End Role="Adocao" EntitySet="Adocao" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ImagemAnimal_Animal" Association="Self.FK_ImagemAnimal_Animal">
+      <End Role="Animal" EntitySet="Animal" />
+      <End Role="ImagemAnimal" EntitySet="ImagemAnimal" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Imagens_Sinalizacao" Association="Self.FK_Imagens_Sinalizacao">
+      <End Role="Sinalizacao" EntitySet="Sinalizacao" />
+      <End Role="Imagem" EntitySet="Imagem" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Sinalizacao_Utilizador" Association="Self.FK_Sinalizacao_Utilizador">
+      <End Role="Utilizador" EntitySet="Utilizador" />
+      <End Role="Sinalizacao" EntitySet="Sinalizacao" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Visita_Utilizador" Association="Self.FK_Visita_Utilizador">
+      <End Role="Utilizador" EntitySet="Utilizador" />
+      <End Role="Visita" EntitySet="Visita" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

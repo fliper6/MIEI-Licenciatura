@@ -1,0 +1,22 @@
+// FUNCIONAL:
+// -> Código "C":
+//   int x[3];
+//   x[1] = 10;
+// -> Código Assembly
+start
+pushn 3
+pushgp
+pushi 0
+padd
+pushi 1
+pushi 10
+storeg 1
+pushs "x[1]="
+writes 
+pushgp
+pushi 0
+padd
+pushg 1
+writei
+stop
+

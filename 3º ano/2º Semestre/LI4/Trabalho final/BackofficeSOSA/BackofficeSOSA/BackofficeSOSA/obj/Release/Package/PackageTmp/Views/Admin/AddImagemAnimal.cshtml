@@ -1,0 +1,26 @@
+﻿@model BackofficeSOSA.Models.ImagemAnimal
+
+@{
+    ViewBag.Title = "AddImagemAnimal";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+
+@using (Html.BeginForm("AddImagemAnimal", "Admin", FormMethod.Post, new { enctype = "multipart/form-data" }))
+{
+    @Html.AntiForgeryToken()
+
+    <div class="form-horizontal">
+        <h2 class="form-horizontal  col-md-offset-2 col-md-10">Adicionar Imagem</h2>
+        <p></p>
+
+        <div class="form-group">
+            <div class=" col-md-offset-2 col-md-10">
+                <input class="btn btn-secondary" type="file" name="postedFile" />
+                <input class="btn btn-success" type="submit" id="btnUpload" value="Upload" />
+                <a onclick="window.history.back()" class="btn btn-warning text-white">Voltar</a>
+
+            </div>
+        </div>
+    </div>
+}

@@ -1,0 +1,55 @@
+=== meta
+
+email: jj@di.uminho.pt
+author: J.João
+
+creator: luis
+date: 18/07/2020
+
+# "name" é dado por argumento de linha de comando (argv[1])
+
+=== tree
+
+{%name%}/
+- {%name%}.fl
+- doc/
+-- {%name%}.md
+- README
+
+
+=== {%name%}.md
+# NAME
+
+{%name%} - o nosso fabuloso filtro ...FIXME
+
+## Synopsis
+
+   {%name%} file*
+
+## Description
+
+## See also
+
+## Author
+
+Comments and bug reports to {%author%}, {%email%}.
+
+Send review to {%creator%}.
+
+=== {%name%}.fl
+%option noyywrap yylineno
+%%
+
+%%
+int main(){
+  yylex();
+  return 0;
+}
+
+=== README
+
+FIXME: Ficheiro criado em {%date%}.
+
+Ficheiro feito em {%software%}.
+
+

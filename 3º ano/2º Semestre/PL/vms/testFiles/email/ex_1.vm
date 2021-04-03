@@ -1,0 +1,34 @@
+	pushi 0
+	pushn 2
+start
+	pushi 5
+	storeg 0
+	pushg 0
+	pushi 4
+	equal
+	jz else1
+	pushgp
+	pushi 1
+	padd
+	pushi 1
+	dup 1
+	pushi 0
+	supeq
+	jz valid1
+	err "índice menor que 0."
+	stop
+valid1: nop
+	dup 1
+	pushi 2
+	infeq
+	jz valid2
+	err "índice maior que tamanho do array."
+	stop
+valid2: nop
+	pushg 0
+	pushi 1
+	sub
+	storen
+else1: nop
+endif1: nop
+stop

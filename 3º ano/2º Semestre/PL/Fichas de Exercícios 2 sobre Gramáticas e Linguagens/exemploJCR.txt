@@ -1,0 +1,11 @@
+print 3+4*2
+g = 45/9 + 7*(2+1)
+read a
+show
+read b
+c = a*b
+show
+print a+g
+d = a*2+g
+show
+halt 

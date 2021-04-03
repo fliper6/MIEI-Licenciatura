@@ -1,0 +1,18 @@
+pushi 1
+pushi 2
+pushi 3
+pushi 4
+pushi 5
+start
+pushi 1 
+pushi 2
+equal
+jz FIM
+pushi 7
+pushg 1
+FIM:
+pushi 1
+pushi 1
+add
+stop
+pushi 1234

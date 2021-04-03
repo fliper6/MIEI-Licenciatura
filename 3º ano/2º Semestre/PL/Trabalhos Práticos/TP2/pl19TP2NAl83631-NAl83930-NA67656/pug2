@@ -1,0 +1,10 @@
+doctype html
+html(lang="pt")
+  head
+    title= pageTitle
+    script(type="text/javascript").
+      if (foo) bar(1 + 5) 
+      else bar(1 + 2)
+  body
+    h1 Pug - node template engine
+      #container.col

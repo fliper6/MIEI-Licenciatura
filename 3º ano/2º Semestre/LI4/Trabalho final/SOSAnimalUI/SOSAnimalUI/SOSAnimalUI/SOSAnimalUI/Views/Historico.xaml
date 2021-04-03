@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             x:Class="SOSAnimalUI.Views.Historico"
+             mc:Ignorable="d"
+             BackgroundColor="#8ab1bc">
+    <StackLayout>
+
+        <ImageButton Source="back.png"
+                     HeightRequest="50"
+                     HorizontalOptions="Start"
+                     BorderColor="Transparent"
+                     BackgroundColor="Transparent"
+                     Clicked="Clicked_BackHistorico"
+                     />
+
+        <Label x:Name="lbl_titulo" 
+               TextColor="Black"
+               XAlign="Center"
+               YAlign="Center"
+               FontSize="Large" 
+               BackgroundColor="#E0E0E0"
+               WidthRequest="200"
+               HeightRequest="50"
+               HorizontalOptions="Center"
+               VerticalOptions="End"
+               Text="HISTÓRICO"
+               />
+
+        <ListView ItemsSource="{Binding Items}"
+              CachingStrategy="RecycleElement"
+              RowHeight="70"
+              Margin="0,20,0,0"
+              SeparatorVisibility="None"
+              ItemTapped="OnItemSelected">
+
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <StackLayout WidthRequest="300" HeightRequest="60" Margin="0,20,0,0" HorizontalOptions="Center">
+
+                            <StackLayout.Triggers>
+                                <DataTrigger TargetType="StackLayout" Binding="{Binding Status}" Value="1">
+                                    <Setter Property="BackgroundColor" Value="#4ea379" />
+                                </DataTrigger>
+                                <DataTrigger TargetType="StackLayout" Binding="{Binding Status}" Value="0">
+                                    <Setter Property="BackgroundColor" Value="#a69a9a" />
+                                </DataTrigger>
+                            </StackLayout.Triggers>
+
+
+                            <Label Grid.Row="0" 
+                                   Grid.Column="0"
+                                   Style="{StaticResource labelStyle}"
+                                   BackgroundColor="Transparent"
+                                   Padding="5">
+
+                                <Label.FormattedText>
+                                    <FormattedString>
+                                        <Span Text="Sinalização" />
+                                        <Span Text="{x:Static x:Environment.NewLine}" />
+                                        <Span Text="{Binding Data ,StringFormat='{0:d MMMM yyyy, HH:mm}'}"/>
+                                    </FormattedString>
+                                </Label.FormattedText>
+                            </Label>
+
+                        </StackLayout>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+
+        </ListView>
+
+    </StackLayout>
+</ContentPage>

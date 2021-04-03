@@ -1,0 +1,49 @@
+﻿@model BackofficeSOSA.Models.Adocao
+
+@{
+    ViewBag.Title = "DeleteAdocao";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<div class="form-horizontal" style="font-size:22px">
+    <div class="col-md-offset-2 col-md-10">
+        <h2>Remover Utilizador</h2>
+    </div>
+    <hr />
+    <dl class="dl-horizontal col-md-offset-2 col-md-10">
+        <dt>
+            @Html.DisplayNameFor(model => model.IdUser)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.IdUser)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.IdAnimal)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.IdAnimal)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Data)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Data)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm())
+    {
+        @Html.AntiForgeryToken()
+
+         <div class="col-md-offset-2 col-md-10">
+                <input onclick="return confirm('Tem a certeza que pretende remover esta adoção?')" type="submit" value="Remover" class="btn btn-danger" /> |
+                <a onclick="window.history.back()" class="btn btn-warning text-white">Voltar</a>
+         </div>
+    }
+</div>

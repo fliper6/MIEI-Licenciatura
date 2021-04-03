@@ -1,0 +1,10 @@
+^C:\USERS\FILIPA\DESKTOP\UNI\CG\FICHAS\FICHA7\CODE\BUILD\CMAKEFILES\1C02080EB42DCE180C80339A25B6AACA\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/Filipa/Desktop/UNI/CG/Fichas/Ficha7/code -BC:/Users/Filipa/Desktop/UNI/CG/Fichas/Ficha7/code/build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file C:/Users/Filipa/Desktop/UNI/CG/Fichas/Ficha7/code/build/class7.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

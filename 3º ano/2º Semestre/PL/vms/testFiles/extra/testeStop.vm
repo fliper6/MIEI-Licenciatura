@@ -1,0 +1,7 @@
+        start
+
+        pushi 0  // i -> 0
+        pushi 0  // j -> 1
+	stop
+        pushi 0  // i -> 0
+        pushi 0  // j -> 1

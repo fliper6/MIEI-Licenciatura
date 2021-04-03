@@ -1,0 +1,63 @@
+	// inicio declaracao da variavel "a"
+pushi 0
+	// fim declaracao da variavel "a"
+	// inicio declaracao da variavel "x"
+pushi 0
+	// fim declaracao da variavel "x"
+	// inicio declaracao da variavel "b"
+pushi 0
+	// fim declaracao da variavel "b"
+start
+
+	// inicio do ciclo while
+WHILE0:             
+	//condicao de permanencia no ciclo   
+	// inicio de get variavel "a"
+pushg 0	// fim de get variavel "a"
+pushi 0
+inf
+jz ENDWHILE0        
+read            
+atoi           
+storeg 2
+	// incicio de ite     
+	// inicio de get variavel "b"
+pushg 2	// fim de get variavel "b"
+pushi 2
+mod
+pushi 1
+equal
+	// comeca bloco THEN  
+jz ELSE0
+	// inicio de get variavel "x"
+pushg 1	// fim de get variavel "x"
+pushi 1
+add
+storeg 1
+	// inicio de get variavel "b"
+pushg 2	// fim de get variavel "b"
+                  
+writei
+pushs " \n"            
+writes
+jump ENDIF0
+	// comeca bloco ELSE  
+ELSE0:
+ENDIF0:
+	// fim de ite         
+	// inicio de get variavel "a"
+pushg 0	// fim de get variavel "a"
+pushi 1
+add
+storeg 0
+jump WHILE0         
+ENDWHILE0:          
+	// fim do ciclo while
+
+pushs "Numero de numeros impares:"            
+writes             
+	// inicio de get variavel "x"
+pushg 1	// fim de get variavel "x"
+                  
+writei
+stop

@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="SOSAnimalUI.Views.Registar"
+             BackgroundColor="#8ab1bc">
+
+    <StackLayout >
+        <Image Margin="0,20,0,0" VerticalOptions="Start" HeightRequest="80" Source="pata12.png" ></Image>
+        <Label x:Name="lbl_Nome" 
+               TextColor="Black"
+               FontSize="Medium" 
+               Margin="32,0,0,0" 
+               Text="Nome:"></Label>
+        <Entry  Text="{Binding Nome}" Margin="30,0,30,10" HorizontalOptions="Center" WidthRequest="400" Placeholder="Inserir o nome"></Entry>
+        <Label x:Name="lbl_Nrtele" 
+               TextColor="Black"
+               FontSize="Medium" 
+               Margin="32,0,0,0" 
+               Text="Número de telemóvel:"></Label>
+        <Entry  Text="{Binding NrTele}" Margin="30,0,30,10" HorizontalOptions="Center" WidthRequest="400" Placeholder="Inserir o número de telemóvel"></Entry>
+        <Label x:Name="lbl_email" 
+               TextColor="Black"
+               FontSize="Medium" 
+               Margin="32,0,0,0" 
+               Text="E-mail:"></Label>
+        <Entry Text="{Binding Email}" Margin="30,0,30,10" HorizontalOptions="Center" WidthRequest="400" Placeholder="Inserir o Email"></Entry>
+        <Label x:Name="lbl_pw" 
+               Margin="32,0,0,0"
+               TextColor="Black"
+               FontSize="Medium" 
+               Text="Password:"></Label>
+        <Entry Text="{Binding Password}" Margin="30,0,30,10" HorizontalOptions="Center" WidthRequest="400" Placeholder="Inserir a palavra-passe" IsPassword="True"></Entry>
+        <Label x:Name="lbl_pwConfirm" 
+               Margin="32,0,0,0"
+               TextColor="Black"
+               FontSize="Medium" 
+               Text="Confirmar Password:"></Label>
+        <Entry Text="{Binding CofPassword}" Margin="30,0,30,10" HorizontalOptions="Center" WidthRequest="400" Placeholder="Inserir a palavra-passe novamente" IsPassword="True"></Entry>
+        <Grid Margin="30,20,30,0" VerticalOptions="Start">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"></RowDefinition>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+
+            <Button Command="{Binding RegistarCommand}" Text="Registar" 
+                HorizontalOptions="Center"
+                WidthRequest="160"
+                HeightRequest="50"
+                VerticalOptions="Fill" Grid.Row="0" Grid.Column="0"
+                />
+            <Button Text="Voltar" x:Name="btn_back"
+                HorizontalOptions="Center"
+                Clicked="Button_Voltar_Clicked"    
+                WidthRequest="160"
+                VerticalOptions="FillAndExpand" Grid.Row="0" Grid.Column="1" 
+                />
+        </Grid>
+    </StackLayout>
+</ContentPage>

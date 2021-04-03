@@ -1,0 +1,28 @@
+start
+        pushi 0
+        pushi 0
+
+        pushs "introduza um numero inteiro:"
+        writes
+        read
+        atoi
+        storeg 0
+        pushs "introduza um numero inteiro:"
+        writes
+        read
+        atoi
+        storeg 1
+        pushg 1
+        pushg 0
+        supeq
+        jz amaior
+        pushs "O maior e: "
+        writes
+        pushg 1
+        writei
+        jump fim
+amaior: pushs "O maior e: "
+        writes
+        pushg 0
+        writei
+fim: stop

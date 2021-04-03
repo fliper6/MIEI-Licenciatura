@@ -1,0 +1,12 @@
+Grupo que inclui o Aluno com o Nº 85006
+MEIO-TP1 - Tabelas de probabilidades de pedidos e entregas de automóveis
+
+FILIAL 1
+Número de clientes:	  ;      0 ;      1 ;      2 ;      3 ;      4 ;      5 ;      6 ;      7 ;      8 ;      9 ;     10 ;     11 ;     12
+Probabilidade (pedidos):  ; 0.0476 ; 0.1388 ; 0.2252 ; 0.2260 ; 0.1644 ; 0.1044 ; 0.0564 ; 0.0240 ; 0.0100 ; 0.0024 ; 0.0004 ; 0.0004 ; 0.0000
+Probabilidade (entregas): ; 0.0412 ; 0.0908 ; 0.1092 ; 0.1332 ; 0.1376 ; 0.1180 ; 0.1092 ; 0.0832 ; 0.0612 ; 0.0448 ; 0.0380 ; 0.0244 ; 0.0092
+
+FILIAL 2
+Número de clientes:	  ;      0 ;      1 ;      2 ;      3 ;      4 ;      5 ;      6 ;      7 ;      8 ;      9 ;     10 ;     11 ;     12
+Probabilidade (pedidos):  ; 0.0444 ; 0.0992 ; 0.1288 ; 0.1444 ; 0.1224 ; 0.1068 ; 0.0968 ; 0.0792 ; 0.0612 ; 0.0488 ; 0.0364 ; 0.0220 ; 0.0096
+Probabilidade (entregas): ; 0.0280 ; 0.0656 ; 0.0904 ; 0.1320 ; 0.1508 ; 0.1268 ; 0.1124 ; 0.0928 ; 0.0720 ; 0.0608 ; 0.0356 ; 0.0240 ; 0.0088

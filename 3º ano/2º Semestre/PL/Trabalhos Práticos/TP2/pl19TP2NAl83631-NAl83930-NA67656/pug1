@@ -1,0 +1,12 @@
+doctype html
+html(lang="pt")
+  head
+    title= pageTitle
+    script(type="text/javascript").
+      if (foo) bar(1 + 5) 
+  body
+    h1 Pug - node template engine
+      #container.col.label.
+        #this is text
+        write text "".=
+    h2(type="full") Conteudo do h2

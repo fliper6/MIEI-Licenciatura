@@ -1,0 +1,51 @@
+	pushi 0
+	pushi 0
+	pushn 10
+start
+	pushi 0
+	storeg 0
+	pushi 1
+	storeg 1
+inif1: nop
+	pushg 0
+	pushi 10
+	inf
+	jz endf1
+	jump instrf1
+ultinstr1: nop
+	pushg 0
+	pushi 1
+	add
+	storeg 0
+	jump inif1
+instrf1: nop
+	read
+	atoi
+	storeg 1
+	pushgp
+	pushi 2
+	padd
+	pushg 0
+	dup 1
+	pushi 0
+	supeq
+	jz valid1
+	err "índice menor que 0."
+	stop
+valid1: nop
+	dup 1
+	pushi 10
+	infeq
+	jz valid2
+	err "índice maior que tamanho do array."
+	stop
+valid2: nop
+	pushg 1
+	pushi 2
+	add
+	storen
+	jump ultinstrf1
+endf1: nop
+	pushg 1
+	writei
+stop

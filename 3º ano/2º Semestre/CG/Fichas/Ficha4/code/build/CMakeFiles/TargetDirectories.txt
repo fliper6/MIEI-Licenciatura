@@ -1,0 +1,3 @@
+C:/Users/Filipa/Desktop/UNI/CG/Aulas Práticas/Aula 4/code/build/CMakeFiles/class4.dir
+C:/Users/Filipa/Desktop/UNI/CG/Aulas Práticas/Aula 4/code/build/CMakeFiles/ALL_BUILD.dir
+C:/Users/Filipa/Desktop/UNI/CG/Aulas Práticas/Aula 4/code/build/CMakeFiles/ZERO_CHECK.dir

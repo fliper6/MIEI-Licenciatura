@@ -1,0 +1,61 @@
+gid,latitude,longitude,Estado de Conservacao,Tipo de Abrigo,Abrigo com Publicidade?,Operadora,Carreira,Codigo de Rua,Nome da Rua,Freguesia
+124,-101302.34,-99804.3,Bom,Fechado dos Lados,No,LT,117,252,Avenida Infante Dom Henrique,Barcarena
+123,-101315.5,-99829.06,Bom,Fechado dos Lados,No,LT,117,252,Avenida Infante Dom Henrique,Barcarena
+117,-101493.79,-99968.88,Bom,Fechado dos Lados,Yes,LT,117,252,Avenida Infante Dom Henrique,Barcarena
+116,-101520.29,-100001.26,Bom,Fechado dos Lados,Yes,Carris,117,252,Avenida Infante Dom Henrique,Barcarena
+119,-101709.63,-100014.88,Bom,Fechado dos Lados,Yes,LT,117,978,Avenida de Santo António de Tercena,Barcarena
+118,-101728.86,-100021.08,Bom,Fechado dos Lados,No,LT,117,978,Avenida de Santo António de Tercena,Barcarena
+120,-101884.83,-100069.82,Bom,Fechado dos Lados,Yes,LT,117,978,Avenida de Santo António de Tercena,Barcarena
+121,-101894.85,-100053.16,Bom,Sem Abrigo,No,LT,117,978,Avenida de Santo António de Tercena,Barcarena
+122,-102021.07,-99964.5,Bom,Sem Abrigo,No,LT,117,978,Avenida de Santo António de Tercena,Barcarena
+141,-102028.47,-99961.71,Bom,Sem Abrigo,No,LT,117,978,Avenida de Santo António de Tercena,Barcarena
+143,-102122.63,-99975.95,Bom,Sem Abrigo,No,LT,117,241,Estrada das Fontainhas,Barcarena
+142,-102137.2,-99979.69,Bom,Sem Abrigo,No,LT,117,241,Estrada das Fontainhas,Barcarena
+139,-102277.41,-100088.41,Bom,Sem Abrigo,No,LT,117,241,Estrada das Fontainhas,Barcarena
+140,-102285.58,-100095.76,Bom,Sem Abrigo,No,LT,117,241,Estrada das Fontainhas,Barcarena
+137,-102792.58,-99921.93,Bom,Sem Abrigo,No,LT,117,201,Estrada do Cacém,Barcarena
+138,-102814.25,-99907.47,Mau,Fechado dos Lados,No,LT,117,201,Estrada do Cacém,Barcarena
+770,-103163.15,-99786.4,Bom,Fechado dos Lados,Yes,LT,117,201,Estrada do Cacém,Barcarena
+767,-103244.97,-99729.51,Bom,Fechado dos Lados,Yes,LT,117,235,Rua Felner Duarte,Barcarena
+779,-103283.29,-99818.83,Bom,Fechado dos Lados,No,Carris,117,985,Rua Sete de Junho,Barcarena
+766,-103346.29,-99565.78,Bom,Fechado dos Lados,Yes,LT,117,210,Largo Cinco de Outubro,Barcarena
+691,-103349.27,-99588.57,Bom,Sem Abrigo,No,LT,117,964,Jardim Público,Barcarena
+774,-103410.59,-99904.77,Bom,Fechado dos Lados,Yes,LT,117,985,Rua Sete de Junho,Barcarena
+773,-103414.27,-99913.2,Bom,Sem Abrigo,No,LT,117,985,Rua Sete de Junho,Barcarena
+765,-103522.68,-99425.21,Bom,Fechado dos Lados,Yes,LT,117,230,Rua Elias Garcia,Barcarena
+764,-103545.91,-99424.63,Bom,Sem Abrigo,No,LT,117,230,Rua Elias Garcia,Barcarena
+768,-103643.5,-99453.56,Bom,Sem Abrigo,No,LT,117,256,Rua Joaquim Sabino de Sousa,Barcarena
+769,-103650.67,-99459.31,Bom,Fechado dos Lados,No,LT,117,256,Rua Joaquim Sabino de Sousa,Barcarena
+781,-103703.89,-100125.35,Bom,Sem Abrigo,No,LT,117,262,Estrada de Leceia,Barcarena
+785,-103715.97,-100117.58,Bom,Fechado dos Lados,Yes,LT,117,242,Largo General Humberto Delgado,Barcarena
+771,-103918.36,-99410.5,Bom,Fechado dos Lados,No,LT,117,256,Rua Joaquim Sabino de Sousa,Barcarena
+787,-103931.57,-99415.05,Bom,Sem Abrigo,No,LT,117,201,Estrada do Cacém,Barcarena
+217,-104361.42,-99334.49,Bom,Sem Abrigo,No,LT,117,201,Estrada do Cacém,Barcarena
+218,-104375.85,-99328,Bom,Sem Abrigo,No,LT,117,201,Estrada do Cacém,Barcarena
+216,-104587.38,-99431.91,Bom,Sem Abrigo,No,LT,117,201,Estrada do Cacém,Barcarena
+215,-104638.85,-99443.96,Bom,Sem Abrigo,No,LT,117,201,Estrada do Cacém,Barcarena
+214,-104907.67,-99367.84,Bom,Sem Abrigo,No,LT,117,925,Estrada do Murganhal,Barcarena
+452,-105233.04,-99103.06,Bom,Sem Abrigo,No,LT,117,925,Estrada do Murganhal,"Oeiras e São Julião da Barra, Paço de Arcos e Caxias"
+322,-105424.33,-99044.64,Bom,Fechado dos Lados,Yes,LT,117,925,Estrada do Murganhal,"Oeiras e São Julião da Barra, Paço de Arcos e Caxias"
+321,-105462.35,-99002.28,Bom,Fechado dos Lados,No,LT,117,925,Estrada do Murganhal,"Oeiras e São Julião da Barra, Paço de Arcos e Caxias"
+320,-105649.56,-98984.75,Bom,Fechado dos Lados,Yes,LT,117,936,Largo da Quinta do Jardim,"Oeiras e São Julião da Barra, Paço de Arcos e Caxias"
+317,-105682.17,-99043.27,Bom,Fechado dos Lados,Yes,LT,117,909,Avenida João de Freitas Branco,"Oeiras e São Julião da Barra, Paço de Arcos e Caxias"
+319,-105790.91,-99107.05,Bom,Fechado dos Lados,Yes,LT,117,909,Avenida João de Freitas Branco,"Oeiras e São Julião da Barra, Paço de Arcos e Caxias"
+318,-105817.33,-99103.07,Bom,Fechado dos Lados,Yes,LT,117,909,Avenida João de Freitas Branco,"Oeiras e São Julião da Barra, Paço de Arcos e Caxias"
+299,-105855.31,-99342.8,Bom,Fechado dos Lados,No,LT,117,1805,Rua Dona Yesoa Godinho,"Oeiras e São Julião da Barra, Paço de Arcos e Caxias"
+273,-106004.77,-99221.99,Bom,Sem Abrigo,No,LT,117,858,Rua Calvet de Magalhães,"Oeiras e São Julião da Barra, Paço de Arcos e Caxias"
+274,-106013.52,-99221.37,Bom,Fechado dos Lados,No,LT,117,858,Rua Calvet de Magalhães,"Oeiras e São Julião da Barra, Paço de Arcos e Caxias"
+444,-106017.28,-98852.36,Bom,Sem Abrigo,No,LT,117,925,Estrada do Murganhal,"Oeiras e São Julião da Barra, Paço de Arcos e Caxias"
+446,-106025.83,-98604.24,Bom,Sem Abrigo,No,LT,117,830,Estrada Militar,"Oeiras e São Julião da Barra, Paço de Arcos e Caxias"
+445,-106027.77,-98850.69,Bom,Fechado dos Lados,Yes,LT,117,925,Estrada do Murganhal,"Oeiras e São Julião da Barra, Paço de Arcos e Caxias"
+448,-106045.74,-98590.38,Bom,Sem Abrigo,No,LT,117,830,Estrada Militar,"Oeiras e São Julião da Barra, Paço de Arcos e Caxias"
+431,-106095.33,-99310.37,Bom,Fechado dos Lados,Yes,LT,117,867,Avenida Conselheiro Ferreira Lobo,"Oeiras e São Julião da Barra, Paço de Arcos e Caxias"
+437,-106124.25,-99314.68,Bom,Sem Abrigo,No,LT,117,867,Avenida Conselheiro Ferreira Lobo,"Oeiras e São Julião da Barra, Paço de Arcos e Caxias"
+423,-106402.8,-99289.78,Bom,Fechado dos Lados,Yes,LT,117,1786,Rua de São João de Deus,"Oeiras e São Julião da Barra, Paço de Arcos e Caxias"
+447,-106415.98,-98591.36,Bom,Sem Abrigo,No,LT,117,830,Estrada Militar,"Oeiras e São Julião da Barra, Paço de Arcos e Caxias"
+439,-106462.23,-99301.85,Bom,Fechado dos Lados,No,LT,117,867,Avenida Conselheiro Ferreira Lobo,"Oeiras e São Julião da Barra, Paço de Arcos e Caxias"
+449,-106581.18,-99035.41,Bom,Fechado dos Lados,No,LT,117,882,Rua Doutor Jorge Rivotti,"Oeiras e São Julião da Barra, Paço de Arcos e Caxias"
+450,-106594.42,-99048.6,Bom,Sem Abrigo,No,LT,117,882,Rua Doutor Jorge Rivotti,"Oeiras e São Julião da Barra, Paço de Arcos e Caxias"
+88,-106688.11,-99381.79,Bom,Fechado dos Lados,Yes,LT,117,849,Avenida António Florêncio dos Santos,"Oeiras e São Julião da Barra, Paço de Arcos e Caxias"
+419,-106722.41,-99402.9,Bom,Fechado dos Lados,No,LT,117,849,Avenida António Florêncio dos Santos,"Oeiras e São Julião da Barra, Paço de Arcos e Caxias"
+409,-106998.97,-99255.62,Bom,Fechado dos Lados,Yes,LT,117,898,Estrada da Gibalta,"Oeiras e São Julião da Barra, Paço de Arcos e Caxias"

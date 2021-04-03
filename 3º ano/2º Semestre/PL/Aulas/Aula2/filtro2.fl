@@ -1,0 +1,7 @@
+%option noyywrap
+%%
+
+::+.*    {printf("%s\n", yytext+2);}
+.|\n     {}
+
+%%

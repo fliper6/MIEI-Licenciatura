@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<sitemanifest>
+  <IisApp path="D:\Projetos\Uni\3ano\2sem\LI4\LI4\SOSAnimalBackoffice\BackofficeSOSA\BackofficeSOSA\obj\Release\Package\PackageTmp" />
+  <setAcl path="D:\Projetos\Uni\3ano\2sem\LI4\LI4\SOSAnimalBackoffice\BackofficeSOSA\BackofficeSOSA\obj\Release\Package\PackageTmp" setAclResourceType="Directory" />
+  <setAcl path="D:\Projetos\Uni\3ano\2sem\LI4\LI4\SOSAnimalBackoffice\BackofficeSOSA\BackofficeSOSA\obj\Release\Package\PackageTmp" setAclUser="anonymousAuthenticationUser" setAclResourceType="Directory" />
+</sitemanifest>

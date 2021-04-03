@@ -1,0 +1,10 @@
+start
+pushi 3
+pushi 9 
+mul
+pushs "3 vezes 9 = "
+writes
+writei
+pushs " \n"
+writes
+stop

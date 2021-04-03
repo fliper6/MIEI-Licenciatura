@@ -1,0 +1,47 @@
+	// inicio declaracao da variavel "a"
+read
+atoi
+	// fim declaracao da variavel "a"
+	// inicio declaracao da variavel "menor"
+	// inicio de get variavel "a"
+pushg 0	// fim de get variavel "a"
+	// fim declaracao da variavel "menor"
+start
+
+	// inicio do ciclo while
+WHILE0:
+	//condicao de permanencia no ciclo
+	// inicio de get variavel "a"
+pushg 0	// fim de get variavel "a"
+pushi 0
+sup
+jz ENDWHILE0
+	// incicio de ite
+	// inicio de get variavel "menor"
+pushg 1	// fim de get variavel "menor"
+	// inicio de get variavel "a"
+pushg 0	// fim de get variavel "a"
+sup
+	// comeca bloco THEN
+jz ELSE0
+	// inicio de get variavel "a"
+pushg 0	// fim de get variavel "a"
+storeg 1
+jump ENDIF0
+	// comeca bloco ELSE
+ELSE0:
+ENDIF0:
+	// fim de ite
+read
+atoi
+storeg 0
+jump WHILE0
+ENDWHILE0:
+	// fim do ciclo while
+
+pushs "o menor do numeros inseridos foi o "            
+writes
+pushg 1	// fim de get variavel menor
+
+writei
+stop
