@@ -3,7 +3,7 @@
  <img src="https://facs2017.di.uminho.pt/sites/default/files/logo_UMEENG_sem_nome.jpg" align="center" height="125"> <br/>
 </p>
 <h1 align="center">MIEI-Licenciatura</h1><br/>
-Conteúdos das cadeiras da lincenciatura do curso Mestrado Integrado em Engenharia Informática da Universidade do Minho (2017-2020)<br/>
+Conteúdo das unidades curriculares da lincenciatura do curso Mestrado Integrado em Engenharia Informática da Universidade do Minho (2017-2020)<br/>
 
 ### 1º ANO: ----------------------------------------------------------------- <br/>
 
@@ -14,6 +14,7 @@ Conteúdos das cadeiras da lincenciatura do curso Mestrado Integrado em Engenhar
  - [Elementos de Engenharia de Sistemas](https://github.com/fliper6/MIEI-Licenciatura/tree/main/1%C2%BA%20ano/1%C2%BA%20Semestre/EES) <br/>
  - [Álgebra Linear](https://github.com/fliper6/MIEI-Licenciatura/tree/main/1%C2%BA%20ano/1%C2%BA%20Semestre/ALGEBRA) <br/>
  - [Cálculo](https://github.com/fliper6/MIEI-Licenciatura/tree/main/1%C2%BA%20ano/1%C2%BA%20Semestre/CALCULO) <br/>
+ - 
 #### 2º SEMESTRE: <br/>
  - [Programação Imperativa](https://github.com/fliper6/MIEI-Licenciatura/tree/main/1%C2%BA%20ano/PI) <br/>
  - [Laboratórios de Informática II](https://github.com/fliper6/MIEI-Licenciatura/tree/main/1%C2%BA%20ano/LI2) <br/>
