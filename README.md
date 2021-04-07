@@ -7,10 +7,10 @@
 <p  align="center"> Conteúdo das unidades curriculares da lincenciatura do Mestrado Integrado em Engenharia Informática (2017-2020) </p>
 
 ---
-Legenda:
-🔸 - UC de programação <br/>
-🔹 - UC com algum código elaborado, como ferramenta auxiliar <br/>
-🔺 - UC teórica <br/>
+Legenda: <br/>
+- 🔸 : UC de programação <br/>
+- 🔹 : UC com algum código elaborado, como ferramenta auxiliar <br/>
+- 🔺 : UC teórica <br/>
 
 ---
 ### 1º ANO: <br/>
