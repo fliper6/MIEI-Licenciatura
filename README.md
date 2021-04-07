@@ -7,7 +7,12 @@
 <p  align="center"> Conteúdo das unidades curriculares da lincenciatura do Mestrado Integrado em Engenharia Informática (2017-2020) </p>
 
 ---
+Legenda:
+🔸 - UC de programação
+🔹 - UC com algum código elaborado, como ferramenta auxiliar
+🔺 - UC teórica
 
+---
 ### 1º ANO: <br/>
 
 #### 1º SEMESTRE: <br/>
@@ -22,9 +27,9 @@
  - [Programação Imperativa](https://github.com/fliper6/MIEI-Licenciatura/tree/main/1%C2%BA%20ano/PI) 🔸 <br/>
  - [Laboratórios de Informática II](https://github.com/fliper6/MIEI-Licenciatura/tree/main/1%C2%BA%20ano/LI2) 🔸 <br/>
  - [Lógica EI](https://github.com/fliper6/MIEI-Licenciatura/tree/main/1%C2%BA%20ano/2%C2%BA%20Semestre/LOGICA) <br/>
- - [Sistemas de Computação](https://github.com/fliper6/MIEI-Licenciatura/tree/main/1%C2%BA%20ano/2%C2%BA%20Semestre/SC) <br/>
- - [Tópicos de Física Moderna](https://github.com/fliper6/MIEI-Licenciatura/tree/main/1%C2%BA%20ano/2%C2%BA%20Semestre/TFM) <br/>
- - [Análise](https://github.com/fliper6/MIEI-Licenciatura/tree/main/1%C2%BA%20ano/2%C2%BA%20Semestre/ANALISE) <br/>
+ - [Sistemas de Computação](https://github.com/fliper6/MIEI-Licenciatura/tree/main/1%C2%BA%20ano/2%C2%BA%20Semestre/SC) 🔺 <br/>
+ - [Tópicos de Física Moderna](https://github.com/fliper6/MIEI-Licenciatura/tree/main/1%C2%BA%20ano/2%C2%BA%20Semestre/TFM) 🔺 <br/>
+ - [Análise](https://github.com/fliper6/MIEI-Licenciatura/tree/main/1%C2%BA%20ano/2%C2%BA%20Semestre/ANALISE) 🔺 <br/>
 
 ---
 
@@ -32,11 +37,11 @@
 
 #### 1º SEMESTRE: <br/>
  - [Algoritmos e Complexidade](https://github.com/fliper6/MIEI-Licenciatura/tree/main/2%C2%BA%20ano/1%C2%BA%20Semestre/ALGC) 🔸 <br/>
- - [Arquitetura de Computadores](https://github.com/fliper6/MIEI-Licenciatura/tree/main/2%C2%BA%20ano/1%C2%BA%20Semestre/ARQC) <br/>
- - [Comunicação de Dados](https://github.com/fliper6/MIEI-Licenciatura/tree/main/2%C2%BA%20ano/1%C2%BA%20Semestre/CD) <br/>
- - [Estatística Aplicada](https://github.com/fliper6/MIEI-Licenciatura/tree/main/2%C2%BA%20ano/1%C2%BA%20Semestre/EA) <br/>
- - [Engenharia Económica](https://github.com/fliper6/MIEI-Licenciatura/tree/main/2%C2%BA%20ano/1%C2%BA%20Semestre/EE) <br/>
- - [Introdução aos Sistemas Dinâmicos](https://github.com/fliper6/MIEI-Licenciatura/tree/main/2%C2%BA%20ano/1%C2%BA%20Semestre/ISD) <br/>
+ - [Arquitetura de Computadores](https://github.com/fliper6/MIEI-Licenciatura/tree/main/2%C2%BA%20ano/1%C2%BA%20Semestre/ARQC) 🔺 <br/>
+ - [Comunicação de Dados](https://github.com/fliper6/MIEI-Licenciatura/tree/main/2%C2%BA%20ano/1%C2%BA%20Semestre/CD) 🔺 <br/>
+ - [Estatística Aplicada](https://github.com/fliper6/MIEI-Licenciatura/tree/main/2%C2%BA%20ano/1%C2%BA%20Semestre/EA) 🔺 <br/>
+ - [Engenharia Económica](https://github.com/fliper6/MIEI-Licenciatura/tree/main/2%C2%BA%20ano/1%C2%BA%20Semestre/EE) 🔺 <br/>
+ - [Introdução aos Sistemas Dinâmicos](https://github.com/fliper6/MIEI-Licenciatura/tree/main/2%C2%BA%20ano/1%C2%BA%20Semestre/ISD) 🔺 <br/>
 
 #### 2º SEMESTRE: <br/>
  - [Cálculo de Programas](https://github.com/fliper6/MIEI-Licenciatura/tree/main/2%C2%BA%20ano/2%C2%BA%20Semestre/CP) 🔸 <br/>
@@ -44,7 +49,7 @@
  - [Programação Orientada aos Objetos](https://github.com/fliper6/MIEI-Licenciatura/tree/main/2%C2%BA%20ano/2%C2%BA%20Semestre/POO) 🔸 <br/>
  - [Sistemas Operativos](https://github.com/fliper6/MIEI-Licenciatura/tree/main/2%C2%BA%20ano/2%C2%BA%20Semestre/SO) 🔸 <br/>
  - [Computação com R](https://github.com/fliper6/MIEI-Licenciatura/tree/main/2%C2%BA%20ano/2%C2%BA%20Semestre/R) 🔸 <br/>
- - [Eletromagnetismo](https://github.com/fliper6/MIEI-Licenciatura/tree/main/2%C2%BA%20ano/2%C2%BA%20Semestre/ELETRO) <br/>
+ - [Eletromagnetismo](https://github.com/fliper6/MIEI-Licenciatura/tree/main/2%C2%BA%20ano/2%C2%BA%20Semestre/ELETRO) 🔺 <br/>
 
 ---
 
@@ -53,15 +58,15 @@
 #### 1º SEMESTRE: <br/>
  - [Bases de Dados](https://github.com/fliper6/MIEI-Licenciatura/tree/main/3%C2%BA%20ano/1%C2%BA%20Semestre/BD) 🔸 <br/>
  - [Desenvolvimento de Sistemas de Software](https://github.com/fliper6/MIEI-Licenciatura/tree/main/3%C2%BA%20ano/1%C2%BA%20Semestre/DSS) 🔸 <br/>
- - [Modelos Determinísticos de Investigação Operacional](https://github.com/fliper6/MIEI-Licenciatura/tree/main/3%C2%BA%20ano/1%C2%BA%20Semestre/MDIO) <br/>
- - [Métodos Numéricos e Otimização não Linear](https://github.com/fliper6/MIEI-Licenciatura/tree/main/3%C2%BA%20ano/1%C2%BA%20Semestre/MNOL) <br/>
- - [Redes de Computadores](https://github.com/fliper6/MIEI-Licenciatura/tree/main/3%C2%BA%20ano/1%C2%BA%20Semestre/REDES) <br/>
  - [Sistemas Distribuídos](https://github.com/fliper6/MIEI-Licenciatura/tree/main/3%C2%BA%20ano/1%C2%BA%20Semestre/SD) 🔸 <br/>
+ - [Modelos Determinísticos de Investigação Operacional](https://github.com/fliper6/MIEI-Licenciatura/tree/main/3%C2%BA%20ano/1%C2%BA%20Semestre/MDIO) 🔹 <br/>
+ - [Métodos Numéricos e Otimização não Linear](https://github.com/fliper6/MIEI-Licenciatura/tree/main/3%C2%BA%20ano/1%C2%BA%20Semestre/MNOL) 🔹 <br/>
+ - [Redes de Computadores](https://github.com/fliper6/MIEI-Licenciatura/tree/main/3%C2%BA%20ano/1%C2%BA%20Semestre/REDES) 🔺 <br/>
 
 #### 2º SEMESTRE: <br/>
- - [Comunicações por Computador](https://github.com/fliper6/MIEI-Licenciatura/tree/main/3%C2%BA%20ano/2%C2%BA%20Semestre/CC) 🔸 <br/>
  - [Laboratórios de Informática IV](https://github.com/fliper6/MIEI-Licenciatura/tree/main/3%C2%BA%20ano/2%C2%BA%20Semestre/LI4) 🔸 <br/>
  - [Computação Gráfica](https://github.com/fliper6/MIEI-Licenciatura/tree/main/3%C2%BA%20ano/2%C2%BA%20Semestre/CG) 🔸 <br/>
- - [Modelos Estocásticos de Investigação Operacional](https://github.com/fliper6/MIEI-Licenciatura/tree/main/3%C2%BA%20ano/2%C2%BA%20Semestre/MEIO) 🔸 <br/>
  - [Processamento de Linguagens](https://github.com/fliper6/MIEI-Licenciatura/tree/main/3%C2%BA%20ano/2%C2%BA%20Semestre/PL) 🔸 <br/>
  - [Sistemas de Representação de Conhecimento e Raciocínio](https://github.com/fliper6/MIEI-Licenciatura/tree/main/3%C2%BA%20ano/2%C2%BA%20Semestre/SRCR) 🔸 <br/>
+ - [Modelos Estocásticos de Investigação Operacional](https://github.com/fliper6/MIEI-Licenciatura/tree/main/3%C2%BA%20ano/2%C2%BA%20Semestre/MEIO) 🔹 <br/>
+ - [Comunicações por Computador](https://github.com/fliper6/MIEI-Licenciatura/tree/main/3%C2%BA%20ano/2%C2%BA%20Semestre/CC) 🔹 <br/>
