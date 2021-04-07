@@ -8,9 +8,9 @@
 
 ---
 Legenda:
-🔸 - UC de programação
-🔹 - UC com algum código elaborado, como ferramenta auxiliar
-🔺 - UC teórica
+🔸 - UC de programação <br/>
+🔹 - UC com algum código elaborado, como ferramenta auxiliar <br/>
+🔺 - UC teórica <br/>
 
 ---
 ### 1º ANO: <br/>
