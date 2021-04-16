@@ -26,7 +26,7 @@ Legenda: <br/>
 #### 2º SEMESTRE: <br/>
  - [Programação Imperativa](https://github.com/fliper6/MIEI-Licenciatura/tree/main/1%C2%BA%20ano/PI) 🔸 <br/>
  - [Laboratórios de Informática II](https://github.com/fliper6/MIEI-Licenciatura/tree/main/1%C2%BA%20ano/LI2) 🔸 <br/>
- - [Lógica EI](https://github.com/fliper6/MIEI-Licenciatura/tree/main/1%C2%BA%20ano/2%C2%BA%20Semestre/LOGICA) <br/>
+ - [Lógica EI](https://github.com/fliper6/MIEI-Licenciatura/tree/main/1%C2%BA%20ano/2%C2%BA%20Semestre/LOGICA) 🔺 <br/>
  - [Sistemas de Computação](https://github.com/fliper6/MIEI-Licenciatura/tree/main/1%C2%BA%20ano/2%C2%BA%20Semestre/SC) 🔺 <br/>
  - [Tópicos de Física Moderna](https://github.com/fliper6/MIEI-Licenciatura/tree/main/1%C2%BA%20ano/2%C2%BA%20Semestre/TFM) 🔺 <br/>
  - [Análise](https://github.com/fliper6/MIEI-Licenciatura/tree/main/1%C2%BA%20ano/2%C2%BA%20Semestre/ANALISE) 🔺 <br/>
