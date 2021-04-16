@@ -18,10 +18,10 @@ Legenda: <br/>
 #### 1º SEMESTRE: <br/>
  - [Programação Funcional](https://github.com/fliper6/MIEI-Licenciatura/tree/main/1%C2%BA%20ano/1%C2%BA%20Semestre/PF) 🔸 <br/>
  - [Laboratórios de Informática I](https://github.com/fliper6/MIEI-Licenciatura/tree/main/1%C2%BA%20ano/1%C2%BA%20Semestre/LI1) 🔸 <br/>
- - [Tópicos de Matemática Discreta](https://github.com/fliper6/MIEI-Licenciatura/tree/main/1%C2%BA%20ano/1%C2%BA%20Semestre/TMD) <br/>
- - [Elementos de Engenharia de Sistemas](https://github.com/fliper6/MIEI-Licenciatura/tree/main/1%C2%BA%20ano/1%C2%BA%20Semestre/EES) <br/>
- - [Álgebra Linear](https://github.com/fliper6/MIEI-Licenciatura/tree/main/1%C2%BA%20ano/1%C2%BA%20Semestre/ALGEBRA) <br/>
- - [Cálculo](https://github.com/fliper6/MIEI-Licenciatura/tree/main/1%C2%BA%20ano/1%C2%BA%20Semestre/CALCULO) <br/>
+ - [Tópicos de Matemática Discreta](https://github.com/fliper6/MIEI-Licenciatura/tree/main/1%C2%BA%20ano/1%C2%BA%20Semestre/TMD) 🔺 <br/>
+ - [Elementos de Engenharia de Sistemas](https://github.com/fliper6/MIEI-Licenciatura/tree/main/1%C2%BA%20ano/1%C2%BA%20Semestre/EES) 🔺 <br/>
+ - [Álgebra Linear](https://github.com/fliper6/MIEI-Licenciatura/tree/main/1%C2%BA%20ano/1%C2%BA%20Semestre/ALGEBRA) 🔺 <br/>
+ - [Cálculo](https://github.com/fliper6/MIEI-Licenciatura/tree/main/1%C2%BA%20ano/1%C2%BA%20Semestre/CALCULO) 🔺 <br/>
  
 #### 2º SEMESTRE: <br/>
  - [Programação Imperativa](https://github.com/fliper6/MIEI-Licenciatura/tree/main/1%C2%BA%20ano/PI) 🔸 <br/>
